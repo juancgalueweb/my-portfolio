@@ -3,15 +3,20 @@ import { BsFillMoonStarsFill } from 'react-icons/bs'
 
 export const Navbar: FC = () => {
   return (
-    <section>
-      <nav>
-        <h1>Developed by JCG</h1>
-        <ul>
+    <section className='min-h-screen'>
+      <nav className='py-10 mb-12 flex justify-between'>
+        <h1 className='text-xl font-ruslan'>Developed by JCG</h1>
+        <ul className='flex items-center'>
           <li>
-            <BsFillMoonStarsFill />
+            <BsFillMoonStarsFill className='text-2xl cursor-pointer' />
           </li>
           <li>
-            <a href='#'>Resume</a>
+            <a
+              className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white rounded-md px-4 py-2 ml-8'
+              href='#'
+            >
+              Resume
+            </a>
           </li>
         </ul>
       </nav>
