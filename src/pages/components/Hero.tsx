@@ -1,9 +1,11 @@
+import Image from 'next/image'
 import { FC } from 'react'
 import {
   AiFillGithub,
   AiFillLinkedin,
   AiFillTwitterCircle,
 } from 'react-icons/ai'
+import PictureOfMe from '../../../public/Me.png'
 
 export const Hero: FC = () => {
   return (
@@ -24,6 +26,14 @@ export const Hero: FC = () => {
         <AiFillLinkedin className='text-[#0B66C2]' />
         <AiFillGithub />
         <AiFillTwitterCircle className='text-[#1DA1F2]' />
+      </div>
+      <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
+        <Image
+          src={PictureOfMe}
+          alt='My pprofile picture'
+          fill
+          style={{ objectFit: 'cover' }}
+        />
       </div>
     </>
   )
