@@ -7,7 +7,7 @@ import {
   AiFillTwitterCircle,
 } from 'react-icons/ai'
 
-export const Hero: FC = () => {
+const Hero: FC = () => {
   return (
     <div className='max-w-4xl mx-auto'>
       <div className='text-center p-10'>
@@ -39,3 +39,5 @@ export const Hero: FC = () => {
     </div>
   )
 }
+
+export default Hero

@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 
-export const Navbar: FC = () => {
+const Navbar: FC = () => {
   return (
     <nav className='py-10 mb-12 flex justify-between'>
       <h1 className='text-xl font-ruslan'>Developed by JCG</h1>
@@ -21,3 +21,5 @@ export const Navbar: FC = () => {
     </nav>
   )
 }
+
+export default Navbar
