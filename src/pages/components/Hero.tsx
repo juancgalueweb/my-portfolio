@@ -4,7 +4,7 @@ import { FC } from 'react'
 import {
   AiFillGithub,
   AiFillLinkedin,
-  AiFillTwitterCircle,
+  AiFillTwitterCircle
 } from 'react-icons/ai'
 
 const Hero: FC = () => {
