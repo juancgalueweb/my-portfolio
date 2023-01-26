@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-const Services: FC = () => {
+const Technologies: FC = () => {
   return (
     <section>
       <div className='max-w-4xl mx-auto my-10'>
@@ -19,8 +19,11 @@ const Services: FC = () => {
           delectus!
         </p>
       </div>
+      <div>
+        <div></div>
+      </div>
     </section>
   )
 }
 
-export default Services
+export default Technologies
