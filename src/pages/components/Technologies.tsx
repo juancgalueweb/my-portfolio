@@ -29,6 +29,7 @@ const Technologies: FC = () => {
             alt='Frontend development image'
             width='150'
             height='150'
+            placeholder='blur'
           />
           <h3 className='text-lg font-medium pt-4 pb-2'>
             Frontend development
@@ -50,6 +51,7 @@ const Technologies: FC = () => {
             alt='Backend development image'
             width='150'
             height='150'
+            placeholder='blur'
           />
           <h3 className='text-lg font-medium pt-4 pb-2'>Backend development</h3>
           <p className='py-2'>
