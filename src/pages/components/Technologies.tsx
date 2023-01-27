@@ -6,7 +6,7 @@ import { FC } from 'react'
 const Technologies: FC = () => {
   return (
     <section>
-      <div className='max-w-4xl mx-auto my-10'>
+      <div className='max-w-4xl mx-auto my-6'>
         <h3 className='text-3xl py-1'>Technologies I use</h3>
         <p className='text-md py-2 leading-8 text-gray-80'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
@@ -23,7 +23,7 @@ const Technologies: FC = () => {
         </p>
       </div>
       <div className='max-w-4xl mx-auto'>
-        <div className='shadow-lg rounded-xl p-10 my-10 flex flex-col items-center bg-slate-50'>
+        <div className='flex flex-col items-center p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 mb-4 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition-all duration-300'>
           <Image
             src={frontend}
             alt='Frontend development image'
@@ -45,7 +45,7 @@ const Technologies: FC = () => {
           <p className='text-gray-800 py-1'>Next.js</p>
           <p className='text-gray-800 py-1'>Ant Design</p>
         </div>
-        <div className='shadow-lg rounded-xl p-10 my-10 flex flex-col items-center bg-slate-50'>
+        <div className='flex flex-col items-center p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 my-4 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition-all duration-300'>
           <Image
             src={backend}
             alt='Backend development image'

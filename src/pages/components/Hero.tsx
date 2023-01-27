@@ -9,7 +9,7 @@ import {
 
 const Hero: FC = () => {
   return (
-    <div className='max-w-4xl mx-auto'>
+    <section className='max-w-4xl mx-auto'>
       <div className='text-center p-10'>
         <h2 className='text-5xl py-2 text-teal-600 font-medium'>
           Juan Carlos Galué
@@ -36,7 +36,7 @@ const Hero: FC = () => {
           style={{ objectFit: 'cover' }}
         />
       </div>
-    </div>
+    </section>
   )
 }
 
