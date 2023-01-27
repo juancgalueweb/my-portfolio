@@ -1,10 +1,13 @@
+import Image from 'next/image'
+import backend from 'public/backend.png'
+import frontend from 'public/frontend.png'
 import { FC } from 'react'
 
 const Technologies: FC = () => {
   return (
     <section>
       <div className='max-w-4xl mx-auto my-10'>
-        <h3 className='text-3xl py-1'>Services I offer</h3>
+        <h3 className='text-3xl py-1'>Technologies I use</h3>
         <p className='text-md py-2 leading-8 text-gray-80'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
           veritatis dolore. Non adipisci dolorum{' '}
@@ -19,8 +22,47 @@ const Technologies: FC = () => {
           delectus!
         </p>
       </div>
-      <div>
-        <div></div>
+      <div className='max-w-4xl mx-auto'>
+        <div className='shadow-lg rounded-xl p-10 my-10 flex flex-col items-center bg-slate-50'>
+          <Image
+            src={frontend}
+            alt='Frontend development image'
+            width='150'
+            height='150'
+          />
+          <h3 className='text-lg font-medium pt-4 pb-2'>
+            Frontend development
+          </h3>
+          <p className='py-2'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            praesentium vero mollitia earum perferendis architecto, voluptatum,
+            aperiam qui a eum quam nulla, aspernatur autem nesciunt delectus
+            assumenda ipsum voluptatibus molestiae.
+          </p>
+          <h4 className='py-4 text-teal-600'>Design tools I use</h4>
+          <p className='text-gray-800 py-1'>React.js</p>
+          <p className='text-gray-800 py-1'>Next.js</p>
+          <p className='text-gray-800 py-1'>Ant Design</p>
+        </div>
+        <div className='shadow-lg rounded-xl p-10 my-10 flex flex-col items-center bg-slate-50'>
+          <Image
+            src={backend}
+            alt='Backend development image'
+            width='150'
+            height='150'
+          />
+          <h3 className='text-lg font-medium pt-4 pb-2'>Backend development</h3>
+          <p className='py-2'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            praesentium vero mollitia earum perferendis architecto, voluptatum,
+            aperiam qui a eum quam nulla, aspernatur autem nesciunt delectus
+            assumenda ipsum voluptatibus molestiae.
+          </p>
+          <h4 className='py-4 text-teal-600'>Design tools I use</h4>
+          <p className='text-gray-800 py-1'>Express.js</p>
+          <p className='text-gray-800 py-1'>Node.js</p>
+          <p className='text-gray-800 py-1'>Mongo DB</p>
+        </div>
       </div>
     </section>
   )
