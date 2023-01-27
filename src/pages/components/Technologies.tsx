@@ -30,6 +30,7 @@ const Technologies: FC = () => {
             width='150'
             height='150'
             placeholder='blur'
+            className='rounded'
           />
           <h3 className='text-lg font-medium pt-4 pb-2'>
             Frontend development
@@ -52,6 +53,7 @@ const Technologies: FC = () => {
             width='150'
             height='150'
             placeholder='blur'
+            className='rounded'
           />
           <h3 className='text-lg font-medium pt-4 pb-2'>Backend development</h3>
           <p className='py-2'>

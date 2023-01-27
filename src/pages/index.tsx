@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
+import Portfolio from './components/Portfolio'
 import Technologies from './components/Technologies'
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
           <Navbar />
           <Hero />
           <Technologies />
+          <Portfolio />
         </section>
       </main>
     </>
