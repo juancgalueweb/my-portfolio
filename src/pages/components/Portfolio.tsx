@@ -1,3 +1,9 @@
+import Image from 'next/image'
+import libraryProject from 'public/biblioteca-mern.png'
+import cocktailsDBProject from 'public/cocktails-db.png'
+import winesProject from 'public/mywines.jpg'
+import tictactoeProject from 'public/tic-tac-toe.png'
+
 import { FC } from 'react'
 
 const Portfolio: FC = () => {
@@ -18,6 +24,40 @@ const Portfolio: FC = () => {
           odit ipsam. Placeat non iusto illum dolore ratione magnam error magni
           delectus!
         </p>
+      </div>
+      <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
+        <div className='basis-1/3 flex-1'>
+          <Image
+            src={winesProject}
+            alt='mywines app home screen image'
+            className='rounded-lg shadow-md object-cover'
+            placeholder='blur'
+          />
+        </div>
+        <div className='basis-1/3 flex-1'>
+          <Image
+            src={libraryProject}
+            alt='library app home screen image'
+            className='rounded-lg shadow-md object-cover'
+            placeholder='blur'
+          />
+        </div>
+        <div className='basis-1/3 flex-1'>
+          <Image
+            src={tictactoeProject}
+            alt='tic-tac-toe app home screen image'
+            className='rounded-lg shadow-md object-cover'
+            placeholder='blur'
+          />
+        </div>
+        <div className='basis-1/3 flex-1'>
+          <Image
+            src={cocktailsDBProject}
+            alt='tic-tac-toe app home screen image'
+            className='rounded-lg shadow-md object-cover'
+            placeholder='blur'
+          />
+        </div>
       </div>
     </section>
   )

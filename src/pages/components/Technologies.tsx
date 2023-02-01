@@ -22,8 +22,8 @@ const Technologies: FC = () => {
           delectus!
         </p>
       </div>
-      <div className='max-w-4xl mx-auto'>
-        <div className='flex flex-col items-center p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 mb-4 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition-all duration-300'>
+      <div className='max-w-4xl mx-auto lg:flex gap-10'>
+        <div className='flex flex-col items-center p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 my-4 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition-all duration-300'>
           <Image
             src={frontend}
             alt='Frontend development image'
