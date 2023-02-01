@@ -26,7 +26,7 @@ const Portfolio: FC = () => {
         </p>
       </div>
       <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-        <div className='basis-1/3 flex-1 hover:scale-[1.05] transform transition duration-300'>
+        <div className='basis-1/3 flex-1 hover:scale-[1.02] transform transition duration-300'>
           <Image
             src={winesProject}
             alt='mywines app home screen image'
@@ -34,7 +34,7 @@ const Portfolio: FC = () => {
             placeholder='blur'
           />
         </div>
-        <div className='basis-1/3 flex-1 hover:scale-[1.05] transform transition duration-300'>
+        <div className='basis-1/3 flex-1 hover:scale-[1.02] transform transition duration-300'>
           <Image
             src={libraryProject}
             alt='library app home screen image'
@@ -42,7 +42,7 @@ const Portfolio: FC = () => {
             placeholder='blur'
           />
         </div>
-        <div className='basis-1/3 flex-1 hover:scale-[1.05] transform transition duration-300'>
+        <div className='basis-1/3 flex-1 hover:scale-[1.02] transform transition duration-300'>
           <Image
             src={tictactoeProject}
             alt='tic-tac-toe app home screen image'
@@ -50,7 +50,7 @@ const Portfolio: FC = () => {
             placeholder='blur'
           />
         </div>
-        <div className='basis-1/3 flex-1 hover:scale-[1.05] transform transition duration-300'>
+        <div className='basis-1/3 flex-1 hover:scale-[1.02] transform transition duration-300'>
           <Image
             src={cocktailsDBProject}
             alt='tic-tac-toe app home screen image'
