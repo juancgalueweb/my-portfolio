@@ -14,8 +14,10 @@ const Hero: FC = () => {
         <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>
           Juan Carlos Galué
         </h2>
-        <h3 className='text-2xl py-2 md-text-3xl'>Fullstack MERN developer</h3>
-        <p className='text-md py-5 leading-8 text-gray-800 md:text-xl'>
+        <h3 className='text-2xl py-2 md-text-3xl dark:text-slate-200'>
+          Fullstack MERN developer
+        </h3>
+        <p className='text-md py-5 leading-8 text-gray-800 md:text-xl dark:text-slate-200'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
           repellat ducimus nesciunt cupiditate nisi impedit ex praesentium odio
           quibusdam est. Officiis et dolore totam quis quibusdam id laboriosam
@@ -37,7 +39,7 @@ const Hero: FC = () => {
           rel='noreferrer'
           className='hover:scale-[1.2] transform transition duration-300'
         >
-          <AiFillGithub />
+          <AiFillGithub className='dark:text-white' />
         </a>
         <a
           href='https://twitter.com/juancgalue'
