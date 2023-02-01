@@ -23,9 +23,30 @@ const Hero: FC = () => {
         </p>
       </div>
       <div className='text-5xl flex justify-center gap-16'>
-        <AiFillLinkedin className='text-[#0B66C2]' />
-        <AiFillGithub />
-        <AiFillTwitterCircle className='text-[#1DA1F2]' />
+        <a
+          href='https://www.linkedin.com/in/juancgalue/'
+          target='_blank'
+          rel='noreferrer'
+          className='hover:scale-[1.2] transform transition duration-300'
+        >
+          <AiFillLinkedin className='text-[#0B66C2]' />
+        </a>
+        <a
+          href='https://github.com/juancgalueweb'
+          target='_blank'
+          rel='noreferrer'
+          className='hover:scale-[1.2] transform transition duration-300'
+        >
+          <AiFillGithub />
+        </a>
+        <a
+          href='https://twitter.com/juancgalue'
+          target='_blank'
+          rel='noreferrer'
+          className='hover:scale-[1.2] transform transition duration-300'
+        >
+          <AiFillTwitterCircle className='text-[#1DA1F2]' />
+        </a>
       </div>
       <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-lg mt-10 overflow-hidden w-72 h-80 md:w-80 md:h-96'>
         <Image
