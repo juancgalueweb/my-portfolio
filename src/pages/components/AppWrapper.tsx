@@ -25,7 +25,7 @@ const AppWrapper: FC<PropsWithChildren<TProps>> = ({
         </Head>
         <main className='bg-white dark:bg-[#101827] min-h-screen relative'>
           <Navbar />
-          {children}
+          <section className='max-w-4xl mx-auto pt-10'>{children}</section>
         </main>
       </div>
     </>

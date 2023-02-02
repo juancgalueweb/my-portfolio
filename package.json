@@ -2,6 +2,8 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "author": "Juan Carlos Galué",
+  "description": "Juan's website portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -5,8 +5,8 @@ import { FC } from 'react'
 
 const Technologies: FC = () => {
   return (
-    <section>
-      <div className='max-w-4xl mx-auto my-6'>
+    <>
+      <div className='my-6'>
         <h3 className='text-3xl p-3 text-gray-900 dark:text-slate-200'>
           Technologies I use
         </h3>
@@ -26,7 +26,7 @@ const Technologies: FC = () => {
           delectus!
         </p>
       </div>
-      <div className='max-w-4xl mx-auto lg:flex gap-10'>
+      <div className='lg:flex gap-10'>
         <div className='flex flex-col items-center p-6 m-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 my-4 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition-all duration-300 dark:text-slate-200'>
           <Image
             src={frontend}
@@ -76,7 +76,7 @@ const Technologies: FC = () => {
           <p className='text-gray-800 py-1 dark:text-slate-200'>Mongo DB</p>
         </div>
       </div>
-    </section>
+    </>
   )
 }
 

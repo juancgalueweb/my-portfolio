@@ -3,8 +3,8 @@ import { FC } from 'react'
 
 const Portfolio: FC = () => {
   return (
-    <section className='max-w-4xl mx-auto'>
-      <div className='p-3'>
+    <>
+      <div className='m-3'>
         <h3 className='text-3xl py-1 text-gray-900 dark:text-slate-200'>
           Portfolio
         </h3>
@@ -27,7 +27,7 @@ const Portfolio: FC = () => {
       <div className='flex flex-col items-center gap-10 py-10 lg:flex-row lg:flex-wrap'>
         <div className='basis-1/3 flex-1 m-3 hover:scale-[1.02] transform transition duration-300'>
           <Card
-            href='#'
+            href='mywines'
             imgAlt='mywines app home screen image'
             imgSrc='mywines-low.jpg'
           >
@@ -66,7 +66,8 @@ const Portfolio: FC = () => {
             </h5>
             <p className='font-normal text-gray-700 dark:text-gray-400'>
               App sencilla para practicar conceptos básicos de React, como{' '}
-              <i>useState</i>, <i>localStorage</i>
+              <i>useState</i>, <i>localStorage</i> y estructurar mejor el
+              código.
             </p>
           </Card>
         </div>
@@ -80,12 +81,12 @@ const Portfolio: FC = () => {
               BD de cocteles usando la API de Cocktail DB
             </h5>
             <p className='font-normal text-gray-700 dark:text-gray-400'>
-              App que consume una API con una extensa base de datos de cocteles
+              App que consume una API con una extensa base de datos de cocteles.
             </p>
           </Card>
         </div>
       </div>
-    </section>
+    </>
   )
 }
 
