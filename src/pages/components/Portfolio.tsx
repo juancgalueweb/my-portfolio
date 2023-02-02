@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import libraryProject from 'public/biblioteca-mern.png'
-import cocktailsDBProject from 'public/cocktails-db.png'
-import winesProject from 'public/mywines.jpg'
-import tictactoeProject from 'public/tic-tac-toe.png'
+import libraryProject from 'public/biblioteca-mern.webp'
+import cocktailsDBProject from 'public/cocktails-db.webp'
+import winesProject from 'public/mywines-low.jpg'
+import tictactoeProject from 'public/tic-tac-toe.webp'
 import { FC } from 'react'
 
 const Portfolio: FC = () => {
@@ -13,7 +13,7 @@ const Portfolio: FC = () => {
         <p className='text-md py-2 leading-8 text-gray-80 dark:text-slate-200'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
           veritatis dolore. Non adipisci dolorum{' '}
-          <span className='text-teal-500'>itaque libero!</span> Sunt iure rem
+          <span className='text-teal-600'>itaque libero!</span> Sunt iure rem
           autem cum reiciendis nam facilis minus, quidem a soluta molestiae
           voluptatum.
         </p>

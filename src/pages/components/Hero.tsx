@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import PictureOfMe from 'public/Me.png'
+import PictureOfMe from 'public/Me.webp'
 import { FC } from 'react'
 import {
   AiFillGithub,

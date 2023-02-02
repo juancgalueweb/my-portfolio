@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import backend from 'public/backend.png'
-import frontend from 'public/frontend.png'
+import backend from 'public/backend.webp'
+import frontend from 'public/frontend.webp'
 import { FC } from 'react'
 
 const Technologies: FC = () => {
@@ -13,7 +13,7 @@ const Technologies: FC = () => {
         <p className='text-md py-2 leading-8 text-gray-700 dark:text-slate-200'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
           veritatis dolore. Non adipisci dolorum{' '}
-          <span className='text-teal-500'>itaque libero!</span> Sunt iure rem
+          <span className='text-teal-600'>itaque libero!</span> Sunt iure rem
           autem cum reiciendis nam facilis minus, quidem a soluta molestiae
           voluptatum.
         </p>
