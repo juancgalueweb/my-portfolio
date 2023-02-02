@@ -11,7 +11,7 @@ const Hero: FC = () => {
   return (
     <section className='max-w-4xl mx-auto'>
       <div className='text-center p-10'>
-        <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>
+        <h2 className='text-5xl py-2 text-teal-900 font-medium md:text-6xl dark:text-[#20C997]'>
           Juan Carlos Galué
         </h2>
         <h3 className='text-2xl py-2 md-text-3xl dark:text-slate-200'>
@@ -50,7 +50,7 @@ const Hero: FC = () => {
           <AiFillTwitterCircle className='text-[#1DA1F2]' />
         </a>
       </div>
-      <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-lg mt-10 overflow-hidden w-72 h-80 md:w-80 md:h-96'>
+      <div className='relative mx-auto bg-gradient-to-b from-teal-500 dark:from-green-300 rounded-lg mt-10 overflow-hidden w-72 h-80 md:w-80 md:h-96'>
         <Image
           src={PictureOfMe}
           alt='My pprofile picture'

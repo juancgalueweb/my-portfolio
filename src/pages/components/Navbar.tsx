@@ -30,7 +30,7 @@ const Navbar: FC = () => {
           )}
         </li>
         <li>
-          <Button gradientMonochrome='teal' className='ml-8'>
+          <Button outline={true} gradientDuoTone='greenToBlue' className='ml-8'>
             Resume
           </Button>
         </li>
