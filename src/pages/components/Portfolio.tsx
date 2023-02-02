@@ -3,7 +3,6 @@ import libraryProject from 'public/biblioteca-mern.png'
 import cocktailsDBProject from 'public/cocktails-db.png'
 import winesProject from 'public/mywines.jpg'
 import tictactoeProject from 'public/tic-tac-toe.png'
-
 import { FC } from 'react'
 
 const Portfolio: FC = () => {

@@ -5,7 +5,7 @@ import { BsBrightnessHighFill, BsFillMoonStarsFill } from 'react-icons/bs'
 const Navbar: FC = () => {
   const { darkMode, setDarkMode } = useContext(DarkModeContext)
 
-  const changeDarkMode = () => {
+  const changeDarkMode = (): void => {
     setDarkMode(!darkMode)
   }
 
