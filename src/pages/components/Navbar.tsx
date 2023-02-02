@@ -1,4 +1,5 @@
 import { DarkModeContext } from '@/context/DarkModeContext'
+import { Button } from 'flowbite-react'
 import { FC, useContext } from 'react'
 import { BsBrightnessHighFill, BsFillMoonStarsFill } from 'react-icons/bs'
 
@@ -29,12 +30,9 @@ const Navbar: FC = () => {
           )}
         </li>
         <li>
-          <a
-            className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white rounded-md px-4 py-2 ml-8'
-            href='#'
-          >
+          <Button gradientMonochrome='teal' className='ml-8'>
             Resume
-          </a>
+          </Button>
         </li>
       </ul>
     </nav>
