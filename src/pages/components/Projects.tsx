@@ -1,12 +1,12 @@
 import { Card } from 'flowbite-react'
 import { FC } from 'react'
 
-const Portfolio: FC = () => {
+const Projects: FC = () => {
   return (
     <>
       <div className='m-3'>
         <h3 className='text-3xl py-1 text-gray-900 dark:text-slate-200'>
-          Portfolio
+          Proyectos
         </h3>
         <p className='text-md py-2 leading-8 text-gray-700 dark:text-slate-200'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
@@ -24,7 +24,7 @@ const Portfolio: FC = () => {
           delectus!
         </p>
       </div>
-      <div className='flex flex-col items-center gap-10 py-10 lg:flex-row lg:flex-wrap'>
+      <div className='flex flex-col items-center gap-5 py-10 lg:flex-row lg:flex-wrap'>
         <div className='basis-1/3 flex-1 m-3 hover:scale-[1.02] transform transition duration-300'>
           <Card
             href='mywines'
@@ -47,11 +47,11 @@ const Portfolio: FC = () => {
             imgSrc='biblioteca-mern.webp'
           >
             <h5 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-              CRUD de libros de una biblioteca con comentarios/ratings
+              CRUD de libros de una biblioteca
             </h5>
             <p className='font-normal text-gray-700 dark:text-gray-400'>
               Esta app tiene login y registro con autenticación de e-mail, rutas
-              protegidas, roles, entre otros.
+              protegidas, roles, ratings/comentarios, entre otros.
             </p>
           </Card>
         </div>
@@ -90,4 +90,4 @@ const Portfolio: FC = () => {
   )
 }
 
-export default Portfolio
+export default Projects

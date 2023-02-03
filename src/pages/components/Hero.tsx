@@ -14,7 +14,7 @@ const Hero: FC = () => {
         <h2 className='text-5xl py-2 m-3 text-teal-900 font-medium md:text-6xl dark:text-[#20C997]'>
           Juan Carlos Galu&eacute;
         </h2>
-        <h3 className='text-2xl py-2 m-3 md-text-3xl dark:text-slate-200'>
+        <h3 className='text-2xl py-2 m-3 md-text-3xl text-gray-900 dark:text-slate-200'>
           Desarrollador Fullstack MERN
         </h3>
         <p className='text-md py-2 m-3 leading-8 text-gray-800 md:text-xl dark:text-slate-200'>

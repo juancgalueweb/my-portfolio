@@ -1,6 +1,5 @@
 import AppWrapper from './components/AppWrapper'
 import Hero from './components/Hero'
-import Portfolio from './components/Portfolio'
 import Technologies from './components/Technologies'
 
 export default function Home() {
@@ -11,7 +10,6 @@ export default function Home() {
     <AppWrapper title={title} description={description}>
       <Hero />
       <Technologies />
-      <Portfolio />
     </AppWrapper>
   )
 }
