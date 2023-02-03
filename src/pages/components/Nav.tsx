@@ -55,16 +55,13 @@ const Nav: FC = () => {
           Diplomas
         </Navbar.Link>
         <Navbar.Link
+          href='https://github.com/juancgalueweb/my-portfolio'
+          target='_blank'
+          rel='noopener noreferrer'
           className={`text-base dark:text-slate-200 ${styles['desired-text-color']} hover:underline hover:underline-offset-4`}
         >
-          <a
-            href='https://github.com/juancgalueweb/my-portfolio'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <AiFillGithub className='dark:text-white inline-block mr-1 mb-1 text-base' />
-            C&oacute;digo
-          </a>
+          <AiFillGithub className='dark:text-white inline-block mr-1 mb-1 text-base' />
+          C&oacute;digo
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
