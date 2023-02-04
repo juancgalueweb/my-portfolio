@@ -54,7 +54,6 @@ const Hero: FC = () => {
         <Image
           src={PictureOfMe}
           alt='My pprofile picture'
-          fill
           placeholder='blur'
           style={{ objectFit: 'cover' }}
         />
