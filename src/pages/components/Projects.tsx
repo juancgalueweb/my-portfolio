@@ -1,4 +1,10 @@
 import { Card } from 'flowbite-react'
+import Image from 'next/image'
+import libraryApp from 'public/biblioteca-mern.webp'
+import cocktailsApp from 'public/cocktails-db.webp'
+import myWinesApp from 'public/mywines-low.jpg'
+import tictactoeApp from 'public/tic-tac-toe.webp'
+
 import { FC } from 'react'
 
 const Projects: FC = () => {
@@ -24,13 +30,15 @@ const Projects: FC = () => {
           delectus!
         </p>
       </div>
-      <div className='flex flex-col items-center gap-5 py-10 lg:flex-row lg:flex-wrap'>
-        <div className='basis-1/3 flex-1 m-3 hover:scale-[1.02] transform transition duration-300'>
-          <Card
-            href='mywines'
-            imgAlt='mywines app home screen image'
-            imgSrc='mywines-low.jpg'
-          >
+      <div className='flex flex-col place-items-start gap-5 py-10 lg:flex-row lg:flex-wrap'>
+        <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
+          <Card href='/mywines'>
+            <Image
+              src={myWinesApp}
+              alt='mywines app home screen image'
+              placeholder='blur'
+              className='rounded'
+            />
             <h5 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
               Registra tus vinos favoritos
             </h5>
@@ -40,12 +48,14 @@ const Projects: FC = () => {
             </p>
           </Card>
         </div>
-        <div className='basis-1/3 flex-1 m-3 hover:scale-[1.02] transform transition duration-300'>
-          <Card
-            href='#'
-            imgAlt='library app home screen image'
-            imgSrc='biblioteca-mern.webp'
-          >
+        <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
+          <Card href='#'>
+            <Image
+              src={libraryApp}
+              alt='library app home screen image'
+              placeholder='blur'
+              className='rounded'
+            />
             <h5 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
               CRUD de libros de una biblioteca
             </h5>
@@ -55,12 +65,14 @@ const Projects: FC = () => {
             </p>
           </Card>
         </div>
-        <div className='basis-1/3 flex-1 m-3 hover:scale-[1.02] transform transition duration-300'>
-          <Card
-            href='#'
-            imgAlt='tic-tac-toe app home screen image'
-            imgSrc='tic-tac-toe.webp'
-          >
+        <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
+          <Card href='#'>
+            <Image
+              src={tictactoeApp}
+              alt='tic-tac-toe app home screen image'
+              placeholder='blur'
+              className='rounded'
+            />
             <h5 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
               Juego de tic-tac-toe
             </h5>
@@ -71,12 +83,14 @@ const Projects: FC = () => {
             </p>
           </Card>
         </div>
-        <div className='basis-1/3 flex-1 m-3 hover:scale-[1.02] transform transition duration-300'>
-          <Card
-            href='#'
-            imgAlt='cocktails db app home screen'
-            imgSrc='cocktails-db.webp'
-          >
+        <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
+          <Card href='#'>
+            <Image
+              src={cocktailsApp}
+              alt='cocktails db app home screen'
+              placeholder='blur'
+              className='rounded'
+            />
             <h5 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
               BD de cocteles usando la API de Cocktail DB
             </h5>

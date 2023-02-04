@@ -1,8 +1,13 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
+import Router from 'next/router'
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 import { useEffect } from 'react'
 
 export default function App({ Component, pageProps }: AppProps) {
+  NProgress.configure({ showSpinner: false })
+
   useEffect(() => {
     if (
       localStorage.theme === 'dark' ||
@@ -17,5 +22,15 @@ export default function App({ Component, pageProps }: AppProps) {
       document.documentElement.classList.add('light') //OPTIONAL - add light to the <html></html> itself as <html class='light'></html>
     }
   }, [])
+
+  useEffect(() => {
+    Router.events.on('routeChangeStart', () => {
+      NProgress.start()
+    })
+    Router.events.on('routeChangeComplete', () => {
+      NProgress.done()
+    })
+  }, [])
+
   return <Component {...pageProps} />
 }
