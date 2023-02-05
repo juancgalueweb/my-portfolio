@@ -19,13 +19,21 @@ const Hero: FC = () => {
         </h3>
         <p className='text-md py-2 m-3 leading-8 text-gray-800 md:text-xl dark:text-slate-200'>
           En los inicios de la pandemia tom&eacute; la decisi&oacute;n de dar un
-          giro a mi vida laboral. Mis 14 a&ntilde;os de experiencia en la
+          giro a mi vida laboral. Mis 14&nbsp;a&ntilde;os de experiencia en la
           profesi&oacute;n que estudi&eacute;, ingenier&iacute;a
-          el&eacute;ctrica, ya no me llenaban 🥹.
-          <br />
+          el&eacute;ctrica, ya no me llenaban&nbsp;🥹.
+        </p>
+        <p className='text-md py-2 m-3 leading-8 text-gray-800 md:text-xl dark:text-slate-200'>
           Como desde ni&ntilde;o me gustan las computadoras y la
-          tecnolog&iacute;a, decid&iacute; estudiar programaci&oacute;n web. Me
-          he enfocado en aprender el stack de MERN.
+          tecnolog&iacute;a, decid&iacute; estudiar programaci&oacute;n web y
+          desde entonce me he enfocado en aprender el stack MERN.
+        </p>
+        <p className='text-md py-2 m-3 leading-8 text-gray-800 md:text-xl dark:text-slate-200'>
+          Seguir&eacute; estudiando y haciendo proyectos pr&aacute;cticos para
+          mejorar mis habilidades y{' '}
+          <span className='text-pink-600 dark:text-pink-400'>
+            lograr la reconversi&oacute;n laboral al mundo TI.
+          </span>
         </p>
       </div>
       <div className='text-5xl flex justify-center gap-16'>

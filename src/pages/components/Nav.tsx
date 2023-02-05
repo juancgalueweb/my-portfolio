@@ -22,7 +22,13 @@ const Nav: FC = () => {
       </Navbar.Brand>
       <div className='flex items-center md:order-2'>
         <Button outline={true} gradientDuoTone='greenToBlue'>
-          Mi CV
+          <a
+            href='https://certifications-and-courses.s3.sa-east-1.amazonaws.com/CV/CV+Juan+Galue%CC%81+wd+(2022)_Esp.pdf'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Mi CV
+          </a>
         </Button>
         <ThemeSwitch />
         <Navbar.Toggle />

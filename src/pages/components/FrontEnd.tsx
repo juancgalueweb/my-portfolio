@@ -35,44 +35,46 @@ const FrontEnd: FC = () => {
       <h4 className='py-4 text-teal-900 dark:text-[#20C997] text-center'>
         Tecnolog&iacute;as que uso
       </h4>
-      <p className='text-gray-800 py-1 dark:text-slate-200'>
-        <SiHtml5 className='inline text-[#D84925] mr-2' />
-        HTML
-      </p>
-      <p className='text-gray-800 py-1 dark:text-slate-200'>
-        <SiCss3 className='inline text-[#3592CA] mr-2' />
-        CSS
-      </p>
-      <p className='text-gray-800 py-1 dark:text-slate-200 text-left'>
-        <SiJavascript className='inline text-[#F4C701] mr-2' />
-        JavaScript
-      </p>
-      <p className='text-gray-800 py-1 dark:text-slate-200 text-left'>
-        <SiTypescript className='inline text-[#2F71BC] mr-2' />
-        Typescript
-      </p>
-      <p className='text-gray-800 py-1 dark:text-slate-200'>
-        <SiReact className='inline text-[#5CCEEE] mr-2' />
-        React.js
-      </p>
-      <p className='text-gray-800 py-1 dark:text-slate-200'>
-        <SiNextdotjs className='inline mr-2' />
-        Next.js
-      </p>
-      <p className='text-gray-800 py-1 dark:text-slate-200'>
-        <Image
-          src={antDesignIcon}
-          alt='Ant design icon'
-          width={17}
-          height={17}
-          className='inline mr-2'
-        />
-        Ant Design
-      </p>
-      <p className='text-gray-800 py-1 dark:text-slate-200'>
-        <SiTailwindcss className='inline text-[#37BDF9] mr-2' />
-        Tailwind CSS
-      </p>
+      <ul>
+        <li className='text-gray-800 py-1 dark:text-slate-200'>
+          <SiHtml5 className='inline text-[#D84925] mr-2' />
+          HTML
+        </li>
+        <li className='text-gray-800 py-1 dark:text-slate-200'>
+          <SiCss3 className='inline text-[#3592CA] mr-2' />
+          CSS
+        </li>
+        <li className='text-gray-800 py-1 dark:text-slate-200 text-left'>
+          <SiJavascript className='inline text-[#F4C701] mr-2' />
+          JavaScript
+        </li>
+        <li className='text-gray-800 py-1 dark:text-slate-200 text-left'>
+          <SiTypescript className='inline text-[#2F71BC] mr-2' />
+          Typescript
+        </li>
+        <li className='text-gray-800 py-1 dark:text-slate-200'>
+          <SiReact className='inline text-[#5CCEEE] mr-2' />
+          React.js
+        </li>
+        <li className='text-gray-800 py-1 dark:text-slate-200'>
+          <SiNextdotjs className='inline mr-2' />
+          Next.js
+        </li>
+        <li className='text-gray-800 py-1 dark:text-slate-200'>
+          <Image
+            src={antDesignIcon}
+            alt='Ant design icon'
+            width={17}
+            height={17}
+            className='inline mr-2'
+          />
+          Ant Design
+        </li>
+        <li className='text-gray-800 py-1 dark:text-slate-200'>
+          <SiTailwindcss className='inline text-[#37BDF9] mr-2' />
+          Tailwind CSS
+        </li>
+      </ul>
     </div>
   )
 }
