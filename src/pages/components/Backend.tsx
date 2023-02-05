@@ -3,7 +3,7 @@ import backend from 'public/backend.webp'
 import { FC } from 'react'
 import { SiExpress, SiJavascript, SiMongodb, SiNodedotjs } from 'react-icons/si'
 
-const Backend: FC = () => {
+const BackEnd: FC = () => {
   return (
     <div className='flex flex-col p-6 m-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 my-4 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition-all duration-300 dark:text-slate-200'>
       <Image
@@ -48,4 +48,4 @@ const Backend: FC = () => {
   )
 }
 
-export default Backend
+export default BackEnd

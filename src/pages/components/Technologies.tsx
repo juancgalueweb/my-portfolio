@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import Backend from './Backend'
+import BackEnd from './BackEnd'
 import FrontEnd from './FrontEnd'
 
 const Technologies: FC = () => {
@@ -27,7 +27,7 @@ const Technologies: FC = () => {
       </div>
       <div className='lg:flex gap-10'>
         <FrontEnd />
-        <Backend />
+        <BackEnd />
       </div>
     </>
   )
