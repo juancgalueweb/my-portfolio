@@ -18,10 +18,14 @@ const Hero: FC = () => {
           Desarrollador Fullstack MERN
         </h3>
         <p className='text-md py-2 m-3 leading-8 text-gray-800 md:text-xl dark:text-slate-200'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          repellat ducimus nesciunt cupiditate nisi impedit ex praesentium odio
-          quibusdam est. Officiis et dolore totam quis quibusdam id laboriosam
-          odio incidunt?
+          En los inicios de la pandemia tom&eacute; la decisi&oacute;n de dar un
+          giro a mi vida laboral. Mis 14 a&ntilde;os de experiencia en la
+          profesi&oacute;n que estudi&eacute;, ingenier&iacute;a
+          el&eacute;ctrica, ya no me llenaban 🥹.
+          <br />
+          Como desde ni&ntilde;o me gustan las computadoras y la
+          tecnolog&iacute;a, decid&iacute; estudiar programaci&oacute;n web. Me
+          he enfocado en aprender el stack de MERN.
         </p>
       </div>
       <div className='text-5xl flex justify-center gap-16'>

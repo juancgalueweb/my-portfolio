@@ -1,7 +1,6 @@
-import Image from 'next/image'
-import backend from 'public/backend.webp'
-import frontend from 'public/frontend.webp'
 import { FC } from 'react'
+import Backend from './Backend'
+import FrontEnd from './FrontEnd'
 
 const Technologies: FC = () => {
   return (
@@ -27,54 +26,8 @@ const Technologies: FC = () => {
         </p>
       </div>
       <div className='lg:flex gap-10'>
-        <div className='flex flex-col items-center p-6 m-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 my-4 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition-all duration-300 dark:text-slate-200'>
-          <Image
-            src={frontend}
-            alt='Frontend development image'
-            width='150'
-            height='150'
-            placeholder='blur'
-            className='rounded'
-          />
-          <h3 className='text-lg font-medium pt-4 pb-2'>
-            Frontend development
-          </h3>
-          <p className='py-2'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-            praesentium vero mollitia earum perferendis architecto, voluptatum,
-            aperiam qui a eum quam nulla, aspernatur autem nesciunt delectus
-            assumenda ipsum voluptatibus molestiae.
-          </p>
-          <h4 className='py-4 text-teal-900 dark:text-[#20C997]'>
-            Design tools I use
-          </h4>
-          <p className='text-gray-800 py-1 dark:text-slate-200'>React.js</p>
-          <p className='text-gray-800 py-1 dark:text-slate-200'>Next.js</p>
-          <p className='text-gray-800 py-1 dark:text-slate-200'>Ant Design</p>
-        </div>
-        <div className='flex flex-col items-center p-6 m-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 my-4 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition-all duration-300 dark:text-slate-200'>
-          <Image
-            src={backend}
-            alt='Backend development image'
-            width='150'
-            height='150'
-            placeholder='blur'
-            className='rounded'
-          />
-          <h3 className='text-lg font-medium pt-4 pb-2'>Backend development</h3>
-          <p className='py-2'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-            praesentium vero mollitia earum perferendis architecto, voluptatum,
-            aperiam qui a eum quam nulla, aspernatur autem nesciunt delectus
-            assumenda ipsum voluptatibus molestiae.
-          </p>
-          <h4 className='py-4 text-teal-900 dark:text-[#20C997]'>
-            Design tools I use
-          </h4>
-          <p className='text-gray-800 py-1 dark:text-slate-200'>Express.js</p>
-          <p className='text-gray-800 py-1 dark:text-slate-200'>Node.js</p>
-          <p className='text-gray-800 py-1 dark:text-slate-200'>Mongo DB</p>
-        </div>
+        <FrontEnd />
+        <Backend />
       </div>
     </>
   )

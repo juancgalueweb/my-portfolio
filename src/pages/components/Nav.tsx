@@ -1,5 +1,5 @@
 import ThemeSwitch from '@/services/ThemeSwitch'
-import styles from '@/styles/Underline.module.css'
+import styles from '@/styles/Navbar.module.css'
 import { Button, Navbar } from 'flowbite-react'
 import { useRouter } from 'next/router'
 import { FC } from 'react'
@@ -7,6 +7,7 @@ import { AiFillGithub } from 'react-icons/ai'
 
 const Nav: FC = () => {
   const router = useRouter()
+  const currentRoute = router.pathname
 
   return (
     <Navbar
@@ -15,7 +16,7 @@ const Nav: FC = () => {
       className='sticky top-0 z-10 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-slate-100 border-b dark:bg-[#1F2937] dark:border-gray-600 dark:bg-opacity-30'
     >
       <Navbar.Brand onClick={() => router.push('/')}>
-        <span className='self-center font-ruslan whitespace-nowrap text-xl font-semibold dark:text-slate-200 cursor-pointer'>
+        <span className='self-center font-ruslan whitespace-nowrap text-xl font-semibold dark:text-slate-200 cursor-pointer p-1'>
           Desarrollado por JCG
         </span>
       </Navbar.Brand>
@@ -29,13 +30,21 @@ const Nav: FC = () => {
       <Navbar.Collapse>
         <Navbar.Link
           onClick={() => router.push('/proyectos')}
-          className={`text-base dark:text-slate-200 cursor-pointer ${styles['desired-text-color']} hover:underline hover:underline-offset-4`}
+          className={
+            currentRoute === '/proyectos'
+              ? `text-base ${styles['active-link']} cursor-pointer ${styles['desired-text-color']} hover:underline hover:underline-offset-4 dark:bg-[#88ccca] dark:hover:${styles['active-link']} dark:text-[#111827] dark:hover:${styles['dark-active-link']}`
+              : `text-base dark:text-slate-200 cursor-pointer ${styles['desired-text-color']} hover:underline hover:underline-offset-4 ${styles['extra-padding']}`
+          }
         >
           Proyectos
         </Navbar.Link>
         <Navbar.Link
-          href='#'
-          className={`text-base dark:text-slate-200 ${styles['desired-text-color']} hover:underline hover:underline-offset-4`}
+          onClick={() => router.push('/diplomas')}
+          className={
+            currentRoute === '/diplomas'
+              ? `text-base ${styles['active-link']} cursor-pointer ${styles['desired-text-color']} hover:underline hover:underline-offset-4 dark:bg-[#88ccca] dark:hover:${styles['active-link']} dark:text-[#111827] dark:hover:${styles['dark-active-link']}`
+              : `text-base dark:text-slate-200 cursor-pointer ${styles['desired-text-color']} hover:underline hover:underline-offset-4 ${styles['extra-padding']}`
+          }
         >
           Diplomas
         </Navbar.Link>
@@ -43,7 +52,7 @@ const Nav: FC = () => {
           href='https://github.com/juancgalueweb/my-portfolio'
           target='_blank'
           rel='noopener noreferrer'
-          className={`text-base dark:text-slate-200 ${styles['desired-text-color']} hover:underline hover:underline-offset-4`}
+          className={`text-base dark:text-slate-200 ${styles['desired-text-color']} hover:underline hover:underline-offset-4 ${styles['extra-padding']}`}
         >
           <AiFillGithub className='dark:text-white inline-block mr-1 mb-1 text-base' />
           C&oacute;digo

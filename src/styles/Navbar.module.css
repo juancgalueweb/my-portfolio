@@ -1,0 +1,18 @@
+.desired-text-color:hover {
+  color: #111827;
+}
+
+.active-link {
+  padding: 4px;
+  background-color: #88ccca;
+}
+
+.active-link:hover {
+  padding: 4px !important;
+  background-color: #88ccca !important;
+  color: #111827 !important;
+}
+
+.extra-padding {
+  padding: 4px;
+}

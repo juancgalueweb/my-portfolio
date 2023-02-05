@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { BsBrightnessHighFill, BsFillMoonStarsFill } from 'react-icons/bs'
 
-const isDark = () =>
+const isDark = (): boolean =>
   //Function that will return boolean if any of the condition is satisfied
   (localStorage && localStorage.theme === 'dark') || //Condition 1 - has local storage and theme = dark in local storage is found
   (!('theme' in localStorage) &&
