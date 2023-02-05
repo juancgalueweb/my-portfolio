@@ -13,7 +13,7 @@ const Portfolio: FC = () => {
       <h3 className='m-3 text-3xl text-gray-900 dark:text-slate-200'>
         Proyectos
       </h3>
-      <div className='flex flex-col place-items-start gap-5 py-5 lg:flex-row lg:flex-wrap'>
+      <div className='flex flex-col place-items-start gap-5 py-5 lg:flex-row lg:flex-wrap mb-10'>
         <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
           <Card href='/mywines'>
             <Image

@@ -1,11 +1,6 @@
 import Image from 'next/image'
 import PictureOfMe from 'public/Me.webp'
 import { FC } from 'react'
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiFillTwitterCircle
-} from 'react-icons/ai'
 
 const Hero: FC = () => {
   return (
@@ -36,36 +31,10 @@ const Hero: FC = () => {
           </span>
         </p>
       </div>
-      <div className='text-5xl flex justify-center gap-16'>
-        <a
-          href='https://www.linkedin.com/in/juancgalue/'
-          target='_blank'
-          rel='noreferrer'
-          className='hover:scale-[1.2] transform transition duration-300'
-        >
-          <AiFillLinkedin className='text-[#0B66C2]' />
-        </a>
-        <a
-          href='https://github.com/juancgalueweb'
-          target='_blank'
-          rel='noreferrer'
-          className='hover:scale-[1.2] transform transition duration-300'
-        >
-          <AiFillGithub className='dark:text-white' />
-        </a>
-        <a
-          href='https://twitter.com/juancgalue'
-          target='_blank'
-          rel='noreferrer'
-          className='hover:scale-[1.2] transform transition duration-300'
-        >
-          <AiFillTwitterCircle className='text-[#1DA1F2]' />
-        </a>
-      </div>
       <div className='relative mx-auto bg-gradient-to-b from-teal-500 dark:from-green-300 rounded-lg mt-10 overflow-hidden w-72 h-80 md:w-80 md:h-96'>
         <Image
           src={PictureOfMe}
-          alt='My pprofile picture'
+          alt='My profile picture'
           placeholder='blur'
           style={{ objectFit: 'cover' }}
         />

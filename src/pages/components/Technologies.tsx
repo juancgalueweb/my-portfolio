@@ -7,7 +7,7 @@ const Technologies: FC = () => {
     <>
       <div className='my-6'>
         <h3 className='text-3xl p-3 text-gray-900 dark:text-slate-200'>
-          Technologies I use
+          Tecnolog&iacute;as que uso
         </h3>
         <p className='text-md p-3 leading-8 text-gray-700 dark:text-slate-200'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
@@ -25,7 +25,7 @@ const Technologies: FC = () => {
           delectus!
         </p>
       </div>
-      <div className='lg:flex gap-10'>
+      <div className='lg:flex gap-10 mb-10'>
         <FrontEnd />
         <BackEnd />
       </div>
