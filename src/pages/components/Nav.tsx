@@ -35,9 +35,19 @@ const Nav: FC = () => {
       </div>
       <Navbar.Collapse>
         <Navbar.Link
-          onClick={() => router.push('/proyectos')}
+          onClick={() => router.push('/technologies')}
           className={
-            currentRoute === '/proyectos'
+            currentRoute === '/technologies'
+              ? `text-base ${styles['active-link']} cursor-pointer ${styles['desired-text-color']} hover:underline hover:underline-offset-4 dark:bg-[#88ccca] dark:hover:${styles['active-link']} dark:text-[#111827] dark:hover:${styles['dark-active-link']}`
+              : `text-base dark:text-slate-200 cursor-pointer ${styles['desired-text-color']} hover:underline hover:underline-offset-4 ${styles['extra-padding']}`
+          }
+        >
+          Tecnolog&iacute;as
+        </Navbar.Link>
+        <Navbar.Link
+          onClick={() => router.push('/myprojects')}
+          className={
+            currentRoute === '/myprojects'
               ? `text-base ${styles['active-link']} cursor-pointer ${styles['desired-text-color']} hover:underline hover:underline-offset-4 dark:bg-[#88ccca] dark:hover:${styles['active-link']} dark:text-[#111827] dark:hover:${styles['dark-active-link']}`
               : `text-base dark:text-slate-200 cursor-pointer ${styles['desired-text-color']} hover:underline hover:underline-offset-4 ${styles['extra-padding']}`
           }

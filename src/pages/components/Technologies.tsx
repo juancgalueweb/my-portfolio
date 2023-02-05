@@ -19,5 +19,3 @@ const Technologies: FC = () => {
 }
 
 export default Technologies
-
-//lg:flex gap-10 mb-10

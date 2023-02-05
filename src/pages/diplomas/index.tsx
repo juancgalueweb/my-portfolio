@@ -2,9 +2,9 @@ import { NextPage } from 'next'
 import AppWrapper from '../components/AppWrapper'
 
 const Projects: NextPage = () => {
-  const title = 'Mis proyectos web'
+  const title = 'Diplomas y certificaciones'
   const description =
-    'Detalle de los proyectos que he realizado como desarrollador full stack con MERN'
+    'Detalle de los diplomas, certificaciones y certificaciones de asistencia que he adquirido como desarrollador full stack con MERN'
 
   return (
     <AppWrapper title={title} description={description}>
