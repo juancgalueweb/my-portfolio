@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import antDesignIcon from 'public/ant-design.svg'
-import frontend from 'public/frontend.webp'
+import AntDesignLogo from 'public/ant-design.svg'
+import FrontendPic from 'public/frontend.webp'
 import { FC } from 'react'
 import {
   SiCss3,
@@ -16,7 +16,7 @@ const FrontEnd: FC = () => {
   return (
     <div className='max-w-3xl flex flex-col p-6 m-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 my-4 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition-all duration-300 dark:text-slate-200'>
       <Image
-        src={frontend}
+        src={FrontendPic}
         alt='Frontend development image'
         width={200}
         height={200}
@@ -70,7 +70,7 @@ const FrontEnd: FC = () => {
         </li>
         <li className='text-gray-800 py-1 dark:text-slate-200 md:text-lg'>
           <Image
-            src={antDesignIcon}
+            src={AntDesignLogo}
             alt='Ant design icon'
             width={17}
             height={17}

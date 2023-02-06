@@ -27,7 +27,7 @@ const Portfolio: FC = () => {
             </h5>
             <p className='font-normal text-gray-700 dark:text-gray-400'>
               Esta app tiene login y registro sencillo, puedes usar fotos reales
-              para tus vinos, darle puntuación, entre otros.
+              para tus vinos, darle puntuaci&oacute;n, entre otros.
             </p>
           </Card>
         </div>
@@ -43,8 +43,8 @@ const Portfolio: FC = () => {
               CRUD de libros de una biblioteca
             </h5>
             <p className='font-normal text-gray-700 dark:text-gray-400'>
-              Esta app tiene login y registro con autenticación de e-mail, rutas
-              protegidas, roles, ratings/comentarios, entre otros.
+              Esta app tiene login y registro con autenticaci&oacute;n de
+              e-mail, rutas protegidas, roles, ratings/comentarios, entre otros.
             </p>
           </Card>
         </div>
@@ -60,9 +60,9 @@ const Portfolio: FC = () => {
               Juego de tic-tac-toe
             </h5>
             <p className='font-normal text-gray-700 dark:text-gray-400'>
-              App sencilla para practicar conceptos básicos de React, como{' '}
-              <i>useState</i>, <i>localStorage</i> y estructurar mejor el
-              código.
+              App sencilla para practicar conceptos b&aacute;sicos de React,
+              como <i>useState</i>, <i>localStorage</i> y estructurar mejor el
+              c&oacute;digo.
             </p>
           </Card>
         </div>

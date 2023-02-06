@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import backend from 'public/backend.webp'
+import BackendPic from 'public/backend.webp'
 import { FC } from 'react'
 import { SiExpress, SiJavascript, SiMongodb, SiNodedotjs } from 'react-icons/si'
 
@@ -7,7 +7,7 @@ const BackEnd: FC = () => {
   return (
     <div className='max-w-3xl flex flex-col p-6 m-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 my-4 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition-all duration-300 dark:text-slate-200'>
       <Image
-        src={backend}
+        src={BackendPic}
         alt='Backend development image'
         width={200}
         height={200}
@@ -19,11 +19,12 @@ const BackEnd: FC = () => {
       </h3>
       <p className='indent-6 py-2 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         Si bien el desarrollo front-end es muy importante porque es lo que ve el
-        usuario final - colores, animaciones, imágenes - el back-end tiene una
-        especial importancia. Es en el back-end donde va la lógica del negocio,
-        las rutas seguras, autenticaciones, manejo de errores, manejo de la base
-        de datos, APIs, en fin, es aquí donde está el cerebro de una página web
-        dinámica.
+        usuario final - colores, animaciones, im&aacute;genes - el back-end
+        tiene una especial importancia. Es en el back-end donde va la
+        l&oacute;gica del negocio, las rutas seguras, autenticaciones, manejo de
+        errores, middlewares, manejo de la base de datos, creaci&oacute;n de
+        APIs, en fin, es aqu&iacute; donde est&aacute; el cerebro de una
+        p&aacute;gina web din&aacute;mica.
       </p>
       <p className='indent-6 py-2 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         Las principales herramientas que uso son:
