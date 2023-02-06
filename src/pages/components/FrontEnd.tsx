@@ -15,29 +15,30 @@ import {
 const FrontEnd: FC = () => {
   return (
     <div className='max-w-3xl flex flex-col p-6 m-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 my-4 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition-all duration-300 dark:text-slate-200'>
+      <h3 className='text-xl font-medium py-2 mb-4 text-center'>
+        Desarrollo <i>front-end</i>
+      </h3>
       <Image
         src={FrontendPic}
         alt='Frontend development image'
         width={200}
         height={200}
         placeholder='blur'
-        className='rounded self-center'
+        className='rounded self-center mb-4'
       />
-      <h3 className='text-xl font-medium pt-4 pb-2 text-center'>
-        Desarrollo <i>front-end</i>
-      </h3>
       <p className='indent-6 py-2 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         Cuando inici&eacute; mis estudios de manera autodidacta, lo primero que
         aprend&iacute; fue HTML, CSS y JavaScript, despu&eacute;s
         descubr&iacute; jQuery pero no tard&eacute; mucho en aprender a usar
         React.js, y desde entonces m&aacute;s nunca he realizado proyectos sin
-        React. Esa biblioteca de JavaScript es muy potente y ayuda un
-        mont&oacute;n en el dise&ntilde;o de las interfaces de usuario, y
-        escribir el c&oacute;digo en JSX lo hace a&uacute;n m&aacute;s amigable.
-        Luego aprend&iacute; Next.js y sus maravillosas bondades para generar
-        p&aacute;ginas est&aacute;ticas, estructura de rutas con
-        &quot;pages&quot;, SSR, entre otros. Luego de estudiar TypeScript, trato
-        de escribir todo mi c&oacute;digo con ese lenguaje de
+        esta potente biblioteca de JavaScript, la cual ayuda un mont&oacute;n en
+        el dise&ntilde;o de las interfaces de usuario, escribir el c&oacute;digo
+        en JSX es amigable, y junto con el manejo del DOM virtual y los{' '}
+        <i>hooks</i> hacen que esta herramienta est&eacute; en alta demanda hoy
+        en d&iacute;a. Luego aprend&iacute; Next.js y sus maravillosas bondades
+        para generar p&aacute;ginas est&aacute;ticas, estructura de rutas con
+        &quot;pages&quot;, SSR, entre otros, y luego de estudiar TypeScript,
+        trato de escribir todo mi c&oacute;digo con ese lenguaje de
         programaci&oacute;n.
       </p>
       <p className='indent-6 py-2 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>

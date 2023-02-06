@@ -1,13 +1,16 @@
 import Image from 'next/image'
 import AWSS3Logo from 'public/Amazon-S3-Logo.svg'
+import ChromeLogo from 'public/chrome-logo.svg'
 import JestLogo from 'public/jest-logo.svg'
 import LinodeLogo from 'public/linode.svg'
 import PlaywrightLogo from 'public/playwright-logo.svg'
+import PythonLogo from 'public/python-logo.svg'
 import SQliteLogo from 'public/Sqlite-square-icon.svg'
 import OtherToolsPic from 'public/tools-for-web-design.webp'
 import VimLogo from 'public/vim-logo.svg'
 import { FC } from 'react'
 import { AiFillGithub } from 'react-icons/ai'
+import { BsTerminalFill } from 'react-icons/bs'
 import {
   FaAws,
   FaBitbucket,
@@ -15,20 +18,26 @@ import {
   FaDocker,
   FaGitSquare
 } from 'react-icons/fa'
-import { SiMaterialui, SiVercel, SiVisualstudio, SiVultr } from 'react-icons/si'
+import {
+  SiMacos,
+  SiMaterialui,
+  SiVercel,
+  SiVisualstudio,
+  SiVultr
+} from 'react-icons/si'
 
 const OtherTools: FC = () => {
   return (
     <div className='max-w-3xl flex flex-col p-6 m-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 my-4 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition-all duration-300 dark:text-slate-200'>
+      <h3 className='text-xl font-medium py-2 mb-4 text-center'>
+        Otras herramientas &uacute;tiles para el desarrollo web
+      </h3>
       <Image
         src={OtherToolsPic}
         alt='Other tools for web development image'
         placeholder='blur'
-        className='rounded self-center w-[300px] h-auto'
+        className='rounded self-center w-[300px] h-auto mb-4'
       />
-      <h3 className='text-xl font-medium pt-4 pb-2 text-center'>
-        Otras herramientas &uacute;tiles para el desarrollo web
-      </h3>
       <p className='indent-6 py-2 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         Para el desarollo web es importante usar otras herramientas,
         tecnolog&iacute;as, saber hacer <i>deployment</i>, manejar editores de
@@ -135,9 +144,38 @@ const OtherTools: FC = () => {
             </li>
           </ul>
         </li>
+
+        <li className='text-gray-800 py-1 dark:text-slate-200 md:text-lg'>
+          Sistema operativo para programar:
+          <ul>
+            <li className='ml-6'>
+              <SiMacos className='inline mr-2' />
+              Mac OS
+            </li>
+          </ul>
+        </li>
+        <li className='text-gray-800 py-1 dark:text-slate-200 md:text-lg'>
+          Otro lenguaje:
+          <ul>
+            <li className='ml-6'>
+              <Image
+                src={PythonLogo}
+                alt='Python logo'
+                width={20}
+                height={20}
+                className='inline mr-2'
+              />
+              Python
+            </li>
+          </ul>
+        </li>
         <li className='text-gray-800 py-1 dark:text-slate-200 md:text-lg'>
           Otras herramientas:
           <ul>
+            <li className='ml-6'>
+              <BsTerminalFill className='inline mr-2' />
+              Manejo de terminal en Mac OS y servidores como Ubuntu
+            </li>
             <li className='ml-6'>
               <Image
                 src={AWSS3Logo}
@@ -167,6 +205,16 @@ const OtherTools: FC = () => {
                 className='inline mr-2'
               />
               Playwright
+            </li>
+            <li className='ml-6'>
+              <Image
+                src={ChromeLogo}
+                alt='Google Chrome logo'
+                width={20}
+                height={20}
+                className='inline mr-2'
+              />
+              Chrome Element Inspector
             </li>
           </ul>
         </li>
