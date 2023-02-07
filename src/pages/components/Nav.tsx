@@ -1,7 +1,9 @@
 import ThemeSwitch from '@/services/ThemeSwitch'
 import styles from '@/styles/Navbar.module.css'
 import { Button, Navbar } from 'flowbite-react'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
+import myLogo from 'public/logo-color.png'
 import { FC } from 'react'
 import { AiFillGithub } from 'react-icons/ai'
 
@@ -16,8 +18,13 @@ const Nav: FC = () => {
       className='sticky top-0 z-10 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-slate-100 border-b dark:bg-[#1F2937] dark:border-gray-600 dark:bg-opacity-30'
     >
       <Navbar.Brand onClick={() => router.push('/')}>
+        <Image
+          src={myLogo}
+          alt='Imagen de mi logo'
+          className='w-10 h-10 rounded-full mr-2'
+        />
         <span className='self-center font-ruslan whitespace-nowrap text-xl font-semibold dark:text-slate-200 cursor-pointer p-1'>
-          Desarrollado por JCG
+          J. Galu&eacute;
         </span>
       </Navbar.Brand>
       <div className='flex items-center md:order-2'>

@@ -22,7 +22,7 @@ const AppWrapper: FC<PropsWithChildren<TProps>> = ({
         <title>{title}</title>
         {description && <meta name='description' content={description} />}
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon' />
+        <link rel='shortcut icon' href='favicon.png' type='image/x-icon' />
       </Head>
       <main className='bg-white dark:bg-[#101827]'>
         <Nav />
