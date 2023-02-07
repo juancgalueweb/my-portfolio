@@ -1,8 +1,12 @@
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import PictureOfMe from 'public/Me.webp'
 import { FC } from 'react'
+import { RiArrowRightSLine } from 'react-icons/ri'
 
 const Hero: FC = () => {
+  const router = useRouter()
+
   return (
     <div className='mb-10'>
       <h2 className='text-5xl py-2 m-3 text-teal-900 font-medium md:text-6xl dark:text-[#20C997] text-center'>
@@ -37,6 +41,15 @@ const Hero: FC = () => {
           lograr la reconversi&oacute;n laboral al mundo TI.
         </span>
       </p>
+      <div className='flex justify-center items-center'>
+        <button
+          onClick={() => router.push('/myprojects')}
+          type='button'
+          className='dark:text-gray-900 text-white hover:bg-[#2C7A7B] bg-[#319795] dark:bg-[#88cccb] dark:hover:bg-[#50D0C4] font-medium rounded-lg text-base px-5 py-2.5 mr-2 mb-2'
+        >
+          Mis proyectos <RiArrowRightSLine className='inline text-xl' />{' '}
+        </button>
+      </div>
     </div>
   )
 }
