@@ -12,10 +12,8 @@ const BackEnd: FC = () => {
       <Image
         src={BackendPic}
         alt='Backend development image'
-        width={200}
-        height={200}
         placeholder='blur'
-        className='rounded self-center mb-4'
+        className='rounded self-center mb-4 w-[200px] h-[200px]'
       />
       <p className='indent-6 py-2 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         Si bien el desarrollo front-end es muy importante porque es lo que ve el

@@ -65,9 +65,7 @@ const OtherTools: FC = () => {
               <Image
                 src={SQliteLogo}
                 alt='SqLite logo'
-                width={17}
-                height={17}
-                className='inline mr-2'
+                className='inline mr-2 w-[17px] h-[17px]'
               />
               SQLite
             </li>
@@ -117,9 +115,7 @@ const OtherTools: FC = () => {
               <Image
                 src={LinodeLogo}
                 alt='Linode logo'
-                width={20}
-                height={20}
-                className='inline mr-2'
+                className='inline mr-2 w-[20px] h-[20px]'
               />
               Linode
             </li>
@@ -136,9 +132,7 @@ const OtherTools: FC = () => {
               <Image
                 src={VimLogo}
                 alt='Vim logo'
-                width={20}
-                height={20}
-                className='inline mr-2'
+                className='inline mr-2 w-[20px] h-[20px]'
               />
               Vim
             </li>
@@ -161,9 +155,7 @@ const OtherTools: FC = () => {
               <Image
                 src={PythonLogo}
                 alt='Python logo'
-                width={20}
-                height={20}
-                className='inline mr-2'
+                className='inline mr-2 w-[20px] h-[20px]'
               />
               Python
             </li>
@@ -180,9 +172,7 @@ const OtherTools: FC = () => {
               <Image
                 src={AWSS3Logo}
                 alt='AWS s3 logo'
-                width={20}
-                height={20}
-                className='inline mr-2'
+                className='inline mr-2 w-[20px] h-[20px]'
               />
               AWS s3 bucket
             </li>
@@ -190,9 +180,7 @@ const OtherTools: FC = () => {
               <Image
                 src={JestLogo}
                 alt='Jest logo'
-                width={20}
-                height={20}
-                className='inline mr-2'
+                className='inline mr-2 w-[20px] h-[20px]'
               />
               Jest
             </li>
@@ -200,9 +188,7 @@ const OtherTools: FC = () => {
               <Image
                 src={PlaywrightLogo}
                 alt='Playwright logo'
-                width={20}
-                height={20}
-                className='inline mr-2'
+                className='inline mr-2 w-[20px] h-[20px]'
               />
               Playwright
             </li>
@@ -210,9 +196,7 @@ const OtherTools: FC = () => {
               <Image
                 src={ChromeLogo}
                 alt='Google Chrome logo'
-                width={20}
-                height={20}
-                className='inline mr-2'
+                className='inline mr-2 w-[20px] h-[20px]'
               />
               Chrome Element Inspector
             </li>

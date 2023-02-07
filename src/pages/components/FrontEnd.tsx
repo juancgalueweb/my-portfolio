@@ -21,10 +21,8 @@ const FrontEnd: FC = () => {
       <Image
         src={FrontendPic}
         alt='Frontend development image'
-        width={200}
-        height={200}
         placeholder='blur'
-        className='rounded self-center mb-4'
+        className='rounded self-center mb-4 w-[200px] h-[200px]'
       />
       <p className='indent-6 py-2 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         Cuando inici&eacute; mis estudios de manera autodidacta, lo primero que
@@ -73,9 +71,7 @@ const FrontEnd: FC = () => {
           <Image
             src={AntDesignLogo}
             alt='Ant design icon'
-            width={17}
-            height={17}
-            className='inline mr-2'
+            className='inline mr-2 w-[17px] h-[17px]'
           />
           Ant Design
         </li>
