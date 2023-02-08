@@ -28,8 +28,8 @@ const Portfolio: FC = () => {
                 Juego de tic-tac-toe
               </h5>
               <p className='font-normal text-gray-700 dark:text-gray-400'>
-                App sencilla para practicar conceptos b&aacute;sicos de React,
-                como <i>useState</i>, <i>localStorage</i> y estructurar mejor el
+                App para practicar conceptos b&aacute;sicos de React, como{' '}
+                <i>useState</i>, <i>localStorage</i> y estructurar mejor el
                 c&oacute;digo.
               </p>
             </Card>
@@ -68,8 +68,7 @@ const Portfolio: FC = () => {
               </h5>
               <p className='font-normal text-gray-700 dark:text-gray-400'>
                 Esta app tiene login y registro con autenticaci&oacute;n de
-                e-mail, rutas protegidas, roles, ratings/comentarios, entre
-                otros.
+                e-mail, rutas protegidas, roles, ratings/comentarios.
               </p>
             </Card>
           </Link>
