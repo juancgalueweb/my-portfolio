@@ -36,8 +36,8 @@ const Portfolio: FC = () => {
           </Link>
         </div>
         <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
-          <Link href=''>
-            <Card href='/myprojects/cocktailsdb-app'>
+          <Link href='/myprojects/cocktailsdb-app'>
+            <Card>
               <Image
                 src={cocktailsApp}
                 alt='cocktails db app home screen'

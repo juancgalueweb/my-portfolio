@@ -18,23 +18,23 @@ const Hero: FC = () => {
       <div className='relative mx-auto bg-gradient-to-b from-teal-500 dark:from-green-300 rounded-lg my-5 overflow-hidden w-72 h-80 md:w-80 md:h-96'>
         <Image src={PictureOfMe} alt='My profile picture' placeholder='blur' />
       </div>
-      <p className='indent-6 text-md py-2 m-3 leading-relaxed text-gray-800 md:text-xl dark:text-slate-200'>
+      <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-xl dark:text-slate-200'>
         En los inicios de la pandemia tom&eacute; la decisi&oacute;n de dar un
         giro a mi vida laboral. Mis 14&nbsp;a&ntilde;os de experiencia en la
         profesi&oacute;n que estudi&eacute;, ingenier&iacute;a el&eacute;ctrica,
         ya no satisfac&iacute;an mis expectativas laborales.
       </p>
-      <p className='indent-6 text-md py-2 m-3 leading-relaxed text-gray-800 md:text-xl dark:text-slate-200'>
+      <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-xl dark:text-slate-200'>
         Como desde ni&ntilde;o me gustan las computadoras y la
         tecnolog&iacute;a, decid&iacute; estudiar programaci&oacute;n web y
         desde entonce me he enfocado en aprender el stack MERN.
       </p>
-      <p className='indent-6 text-md py-2 m-3 leading-relaxed text-gray-800 md:text-xl dark:text-slate-200'>
+      <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-xl dark:text-slate-200'>
         Me gusta aprender nuevas tecnolog&iacute;as y herramientas que hagan que
         los productos finales sean m&aacute;s amigables con los usuarios
         finales.
       </p>
-      <p className='indent-6 text-md py-2 m-3 leading-relaxed text-gray-800 md:text-xl dark:text-slate-200'>
+      <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-xl dark:text-slate-200'>
         Seguir&eacute; estudiando y haciendo proyectos pr&aacute;cticos para
         mejorar mis habilidades y{' '}
         <span className='text-pink-600 dark:text-pink-400'>
