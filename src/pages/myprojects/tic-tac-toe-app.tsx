@@ -61,7 +61,7 @@ const TicTacToeApp: NextPage = () => {
         </span>
         React.js, Vite, JavaScript, canvas-confetti
       </p>
-      <div className='flex justify-center items-center'>
+      <div className='flex justify-center items-center m-3'>
         <figure>
           <Image
             src={appDemoGif}

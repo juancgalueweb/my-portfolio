@@ -122,7 +122,9 @@ const CocktailsDbApp: NextPage = () => {
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
           Front-end
         </span>
-        Next.js, Typescript, Plaiceholder, NProgress, AntDesign, TailwindCSS
+        Next.js, Typescript, Plaiceholder, NProgress, AntDesign, TailwindCSS,
+        FontAwesome, getStaticProps y getStaticPaths para el SSG,{' '}
+        <i>static-site generation</i>
       </p>
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
@@ -130,7 +132,7 @@ const CocktailsDbApp: NextPage = () => {
         </span>
         getServerSideProps y API de TheCocktailDB
       </p>
-      <div className='flex justify-center items-center my-10'>
+      <div className='flex justify-center items-center my-10 mx-3'>
         <figure>
           <Image
             src={cocktailPic1}
@@ -144,7 +146,7 @@ const CocktailsDbApp: NextPage = () => {
           </figcaption>
         </figure>
       </div>
-      <div className='flex justify-center items-center my-10'>
+      <div className='flex justify-center items-center my-10 mx-3'>
         <figure>
           <Image
             src={cocktailPic2}
@@ -157,7 +159,7 @@ const CocktailsDbApp: NextPage = () => {
           </figcaption>
         </figure>
       </div>
-      <div className='flex justify-center items-center my-10'>
+      <div className='flex justify-center items-center my-10 mx-3'>
         <figure>
           <Image
             src={cocktailPic3}
@@ -171,7 +173,7 @@ const CocktailsDbApp: NextPage = () => {
           </figcaption>
         </figure>
       </div>
-      <div className='flex justify-center items-center my-10'>
+      <div className='flex justify-center items-center my-10 mx-3'>
         <figure>
           <Image
             src={cocktailPic4}
