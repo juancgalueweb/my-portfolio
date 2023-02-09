@@ -1,12 +1,9 @@
-import styles from '@/styles/ScrollToTop.module.css'
 import { Button } from 'flowbite-react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Error404 from 'public/404-page-not-found.svg'
 import { FaHome } from 'react-icons/fa'
-import { HiArrowUp } from 'react-icons/hi'
-import ScrollToTop from 'react-scroll-to-top'
 
 export default function Custom404() {
   const router = useRouter()
@@ -22,11 +19,6 @@ export default function Custom404() {
         <link rel='shortcut icon' href='favicon.png' type='image/x-icon' />
       </Head>
       <main className='bg-white dark:bg-[#101827] w-full mx-auto pt-10 min-h-screen'>
-        <ScrollToTop
-          smooth
-          component={<HiArrowUp className='text-2xl text-[#111827]' />}
-          className={`flex justify-center items-center mb-8 ${styles['custom-bg']}`}
-        />
         <figure>
           <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
             <a

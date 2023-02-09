@@ -5,8 +5,8 @@ import JestLogo from 'public/jest-logo.svg'
 import LinodeLogo from 'public/linode.svg'
 import PlaywrightLogo from 'public/playwright-logo.svg'
 import PythonLogo from 'public/python-logo.svg'
+import OtherToolsPic from 'public/room-amico.svg'
 import SQliteLogo from 'public/Sqlite-square-icon.svg'
-import OtherToolsPic from 'public/tools-for-web-design.webp'
 import VimLogo from 'public/vim-logo.svg'
 import { FC } from 'react'
 import { AiFillGithub } from 'react-icons/ai'
@@ -32,12 +32,22 @@ const OtherTools: FC = () => {
       <h3 className='text-xl font-medium py-2 mb-4 text-center'>
         Otras herramientas &uacute;tiles para el desarrollo web
       </h3>
-      <Image
-        src={OtherToolsPic}
-        alt='Other tools for web development image'
-        placeholder='blur'
-        className='rounded self-center w-[300px] h-auto mb-4'
-      />
+      <figure className='self-center mb-6'>
+        <Image
+          src={OtherToolsPic}
+          alt='Other tools for web development image'
+          className='rounded w-[300px] h-auto mb-4'
+        />
+        <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
+          <a
+            href='https://storyset.com/web'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Web illustrations by Storyset
+          </a>
+        </figcaption>
+      </figure>
       <p className='indent-6 py-2 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         Para el desarollo web es importante usar otras herramientas,
         tecnolog&iacute;as, saber hacer <i>deployment</i>, manejar editores de

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import AntDesignLogo from 'public/ant-design.svg'
-import FrontendPic from 'public/frontend.webp'
+import FrontendPic from 'public/developer-activity-bro.svg'
 import { FC } from 'react'
 import {
   SiCss3,
@@ -18,12 +18,22 @@ const FrontEnd: FC = () => {
       <h3 className='text-xl font-medium py-2 mb-4 text-center'>
         Desarrollo <i>front-end</i>
       </h3>
-      <Image
-        src={FrontendPic}
-        alt='Frontend development image'
-        placeholder='blur'
-        className='rounded self-center mb-4 w-[200px] h-[200px]'
-      />
+      <figure className='self-center mb-6'>
+        <Image
+          src={FrontendPic}
+          alt='Frontend development image'
+          className='rounded mb-4 w-[300px] h-auto'
+        />
+        <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
+          <a
+            href='https://storyset.com/web'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Web illustrations by Storyset
+          </a>
+        </figcaption>
+      </figure>
       <p className='indent-6 py-2 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         Cuando inici&eacute; mis estudios de manera autodidacta, lo primero que
         aprend&iacute; fue HTML, CSS y JavaScript, despu&eacute;s

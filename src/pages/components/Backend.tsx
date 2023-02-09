@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import BackendPic from 'public/backend.webp'
+import BackendPic from 'public/backend-amico.svg'
 import { FC } from 'react'
 import { SiExpress, SiJavascript, SiMongodb, SiNodedotjs } from 'react-icons/si'
 
@@ -9,12 +9,22 @@ const BackEnd: FC = () => {
       <h3 className='text-xl font-medium py-2 mb-4 text-center'>
         Desarrollo <i>back-end</i>
       </h3>
-      <Image
-        src={BackendPic}
-        alt='Backend development image'
-        placeholder='blur'
-        className='rounded self-center mb-4 w-[200px] h-[200px]'
-      />
+      <figure className='self-center mb-6'>
+        <Image
+          src={BackendPic}
+          alt='Backend development image'
+          className='rounded mb-4 w-[300px] h-auto'
+        />
+        <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
+          <a
+            href='https://storyset.com/web'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Web illustrations by Storyset
+          </a>
+        </figcaption>
+      </figure>
       <p className='indent-6 py-2 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         Si bien el desarrollo front-end es muy importante porque es lo que ve el
         usuario final &mdash; colores, animaciones, im&aacute;genes &mdash; el
