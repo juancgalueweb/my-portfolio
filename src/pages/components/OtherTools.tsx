@@ -38,7 +38,7 @@ const OtherTools: FC = () => {
           alt='Other tools for web development image'
           className='rounded w-[300px] h-auto mb-4'
         />
-        <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
+        <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-xs mt-2 font-extralight text-center'>
           <a
             href='https://storyset.com/web'
             target='_blank'

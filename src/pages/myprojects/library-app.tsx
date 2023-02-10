@@ -56,7 +56,7 @@ const LibraryApp: NextPage = () => {
         </li>
         <li>
           <AiOutlineCheckCircle className='inline mr-2' />
-          Registro en la App con un correo verdadero, porque se debe validar el
+          Debes registrarte con un e-mail verdadero, porque se debe validar el
           e-mail ingresando una OTP, contrase&ntilde;a de un solo uso, que se
           env&iacute;a al mismo e-mail con que se registr&oacute;.
         </li>
@@ -67,6 +67,10 @@ const LibraryApp: NextPage = () => {
         <li>
           <AiOutlineCheckCircle className='inline mr-2' />
           Cambiar contrase&ntilde;a en caso de olvido.
+        </li>
+        <li>
+          <AiOutlineCheckCircle className='inline mr-2' />
+          Redirecciona al login cuando el token ha expirado.
         </li>
       </ul>
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
