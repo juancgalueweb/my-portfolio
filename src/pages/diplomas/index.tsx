@@ -15,7 +15,7 @@ const Projects: NextPage = () => {
       <h3 className='m-3 text-3xl text-gray-900 dark:text-slate-200 mb-10'>
         Diplomas, certificaciones y constancias de culminación de cursos
       </h3>
-      <ol className='relative border-l border-gray-200 dark:border-gray-700 m-3'>
+      <ol className='relative border-l border-gray-200 dark:border-gray-700 ml-4 my-3 mr-3'>
         {/* Typescript diploma */}
         <li className='mb-10 ml-6'>
           <span className='absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900'>
@@ -39,17 +39,17 @@ const Projects: NextPage = () => {
               M&aacute;s reciente
             </span>
           </h3>
-          <h4 className='mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-500 flex items-center'>
+          <h4 className='mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300 flex items-center'>
             <BsStopwatchFill className='inline text-base mr-1' />6 horas y 16
             minutos
           </h4>
-          <h4 className='mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-500'>
+          <h4 className='mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'>
             Otorgado por: Microsoft Learn
           </h4>
-          <time className='block mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-500'>
+          <time className='block mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'>
             27 de enero de 2023
           </time>
-          <p className='mb-4 text-base font-normal text-gray-600 dark:text-gray-400'>
+          <p className='mb-4 text-base font-normal text-gray-800 dark:text-slate-200'>
             Incluye declaración de tipos de variables, implementación de
             interfaces, desarrollo de funciones con tipo, definición de
             genéricos, entre otros.
@@ -101,17 +101,17 @@ const Projects: NextPage = () => {
           <h3 className='flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white'>
             Curso de NextJS
           </h3>
-          <h4 className='mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-500 flex items-center'>
+          <h4 className='mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300 flex items-center'>
             <BsStopwatchFill className='inline text-base mr-1' />
             13,5 horas
           </h4>
-          <h4 className='mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-500'>
+          <h4 className='mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'>
             Otorgado por: Rootlab
           </h4>
-          <time className='block mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-500'>
+          <time className='block mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'>
             Octubre de 2023
           </time>
-          <p className='mb-4 text-base font-normal text-gray-600 dark:text-gray-400'>
+          <p className='mb-4 text-base font-normal text-gray-800 dark:text-slate-200'>
             Conceptos fundamentales de Next.js como rutas con pages, manejo de
             APIs, generación de páginas estáticas, getServerSideProps,
             getStaticProps, getStaticProps, optimización de imágenes, uso de
