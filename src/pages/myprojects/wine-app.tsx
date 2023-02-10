@@ -40,15 +40,15 @@ const WinesApp: NextPage = () => {
         </li>
         <li>
           <AiOutlineCheckCircle className='inline mr-2' />
-          El CRUD es básico: puedes crear tus vinos, editarlos, eliminarlos y
-          visualizarlos en una tabla.
+          El CRUD es b&aacute;sico: puedes crear tus vinos, editarlos,
+          eliminarlos y visualizarlos en una tabla.
         </li>
         <li>
           <AiOutlineCheckCircle className='inline mr-2' />
           Lo interesante de esta App es que se conecta con AWS s3 para guardar
-          las imágenes de los usuarios. No se preocupen, se guardan con un
-          nombre que no es el original, y solo la App tiene las credenciales
-          para leer los objetos a través de una url prefirmada.
+          las im&aacute;genes de los usuarios. No se preocupen, se guardan con
+          un nombre que no es el original, y solo la App tiene las credenciales
+          para leer los objetos a trav&eacute;s de una url prefirmada.
         </li>
         <li>
           <AiOutlineCheckCircle className='inline mr-2' />
