@@ -1,7 +1,7 @@
 import { NextPage } from 'next'
 import Image from 'next/image'
 import WinePic1 from 'public/wines-app/wines-app-1.webp'
-import WinePic2 from 'public/wines-app/wines-app-2.webp'
+import WinePic2 from 'public/wines-app/wines-app-2.jpg'
 import { AiFillGithub, AiOutlineCheckCircle } from 'react-icons/ai'
 import { BsBoxArrowInUpRight } from 'react-icons/bs'
 import { RiArrowRightSLine } from 'react-icons/ri'

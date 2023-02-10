@@ -29,8 +29,7 @@ const Portfolio: FC = () => {
               </h5>
               <p className='font-normal text-gray-700 dark:text-gray-400'>
                 App para practicar conceptos b&aacute;sicos de React, como{' '}
-                <i>useState</i>, <i>localStorage</i> y estructurar mejor el
-                c&oacute;digo.
+                <i>useState</i>.
               </p>
             </Card>
           </Link>

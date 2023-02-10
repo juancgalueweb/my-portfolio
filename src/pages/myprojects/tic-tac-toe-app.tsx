@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 import Image from 'next/image'
-import appDemoGif from 'public/tic-tac-toe-demo.gif'
+import appDemoPic from 'public/tic-tac-toe/tic-tac-toe-demo.jpg'
 import { AiFillGithub } from 'react-icons/ai'
 import { BsBoxArrowInUpRight } from 'react-icons/bs'
 import { RiArrowRightSLine } from 'react-icons/ri'
@@ -70,12 +70,13 @@ const TicTacToeApp: NextPage = () => {
       <div className='flex justify-center items-center m-3'>
         <figure>
           <Image
-            src={appDemoGif}
-            alt='demo app gif'
-            className='w-[400px] h-auto rounded-lg shadow-lg mt-10'
+            src={appDemoPic}
+            alt='demo app pic'
+            placeholder='blur'
+            className='w-[800px] h-auto rounded-lg shadow-lg mt-10'
           />
           <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
-            Demo de una partida en un GIF
+            Pantalla de cuando una partida se gana
           </figcaption>
         </figure>
       </div>
