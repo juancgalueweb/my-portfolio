@@ -128,7 +128,7 @@ const CocktailsDbApp: NextPage = () => {
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
           Front-end
         </span>
-        Next.js, TypeScript, Plaiceholder, NProgress, AntDesign, TailwindCSS,
+        Next.js, TypeScript, plaiceholder, NProgress, AntDesign, TailwindCSS,
         FontAwesome, getStaticProps y getStaticPaths para el SSG,{' '}
         <i>static-site generation</i>
       </p>

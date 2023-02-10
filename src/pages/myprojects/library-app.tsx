@@ -110,14 +110,14 @@ const LibraryApp: NextPage = () => {
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
           Front-end
         </span>
-        React, JavaScript, AntDesign, FontAwesome, Axios, Bootstrap, Formik,
-        Moment, Sweetalert, Yup
+        React, JavaScript, AntDesign, FontAwesome, axios, bootstrap, formik,
+        moment, sweetalert, yup
       </p>
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
           Back-end
         </span>
-        Bcryptjs, Cors, Dotenv, Express, Jsonwebtoken, SendinBlue, MongoDB
+        Bcryptjs, cors, dotenv, express, jsonwebtoken, SendinBlue, MongoDB
       </p>
       <div className='flex justify-center items-center my-10 mx-3'>
         <figure>
