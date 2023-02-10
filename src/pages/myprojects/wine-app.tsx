@@ -26,8 +26,8 @@ const WinesApp: NextPage = () => {
         </h3>
       </div>
       <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
-        Es una app sencilla, pero desarolla todo el concepto de full stack MERN,
-        para que puedas registrar tus vinos favoritos.
+        Es una app sencilla, pero desarrolla todo el concepto de full stack
+        MERN, para que puedas registrar tus vinos favoritos.
       </p>
       <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         Este proyecto tiene:

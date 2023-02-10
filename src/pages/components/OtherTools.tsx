@@ -49,9 +49,9 @@ const OtherTools: FC = () => {
         </figcaption>
       </figure>
       <p className='indent-6 py-2 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
-        Para el desarollo web es importante usar otras herramientas,
+        Para el desarrollo web es importante usar otras herramientas,
         tecnolog&iacute;as, saber hacer <i>deployment</i>, manejar editores de
-        texto nativos de la terminal, usar herramientras para guardar objetos en
+        texto nativos de la terminal, usar herramientas para guardar objetos en
         la nube, para crear y probar las APIs de tus aplicaciones web, para
         hacer <i>debug</i> de tu c&oacute;digo, entre otros. A
         continuaci&oacute;n otras herramientas que tambi&eacute;n manejo:

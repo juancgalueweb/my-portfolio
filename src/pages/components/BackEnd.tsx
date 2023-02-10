@@ -30,8 +30,8 @@ const BackEnd: FC = () => {
         usuario final &mdash; colores, animaciones, im&aacute;genes &mdash; el
         back-end tiene una especial importancia. Es en el back-end donde va la
         l&oacute;gica del negocio, las rutas seguras, autenticaciones, manejo de
-        errores, middlewares, manejo de la base de datos, creaci&oacute;n de
-        APIs, en fin, es aqu&iacute; donde est&aacute; el cerebro de una
+        errores, <i>middlewares</i>, manejo de la base de datos, creaci&oacute;n
+        de APIs, en fin, es aqu&iacute; donde est&aacute; el cerebro de una
         p&aacute;gina web din&aacute;mica.
       </p>
       <p className='indent-6 py-2 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>

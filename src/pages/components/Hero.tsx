@@ -27,7 +27,7 @@ const Hero: FC = () => {
       <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-xl dark:text-slate-200'>
         Como desde ni&ntilde;o me gustan las computadoras y la
         tecnolog&iacute;a, decid&iacute; estudiar programaci&oacute;n web y
-        desde entonce me he enfocado en aprender el stack MERN.
+        desde entonces me he enfocado en aprender el stack MERN.
       </p>
       <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-xl dark:text-slate-200'>
         Me gusta aprender nuevas tecnolog&iacute;as y herramientas que hagan que

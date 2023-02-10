@@ -53,7 +53,7 @@ const CocktailsDbApp: NextPage = () => {
           Plaiceholder
         </a>{' '}
         para convertir de manera dinámica las imágenes recibidas de las APIs en
-        una versión de baja resolución, codificada comom un <i>string</i> del
+        una versión de baja resolución, codificada como un <i>string</i> del
         tipo <i>Base64</i>. Esto crea un efecto <i>blur</i> mientras se
         descargan las imágenes.
       </p>
@@ -72,7 +72,7 @@ const CocktailsDbApp: NextPage = () => {
         </li>
         <li>
           <AiOutlineCheckCircle className='inline mr-2' />
-          Manejo de errores cuando se intenga buscar un coctel cuyo nombre no
+          Manejo de errores cuando se intenta buscar un coctel cuyo nombre no
           existe en la base de datos
         </li>
       </ul>
@@ -174,8 +174,8 @@ const CocktailsDbApp: NextPage = () => {
             placeholder='blur'
           />
           <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
-            Detalle de un coctel de una página generada estáticamente en el{' '}
-            <i>build</i>
+            Detalle de un coctel de una página generada est&aacute;ticamente en
+            el <i>build</i>
           </figcaption>
         </figure>
       </div>
@@ -188,8 +188,8 @@ const CocktailsDbApp: NextPage = () => {
             placeholder='blur'
           />
           <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
-            Cocteles más populares. Esta página se genera estáticamente en el{' '}
-            <i>build</i>
+            Cocteles más populares. Esta página se genera est&aacute;ticamente
+            en el <i>build</i>
           </figcaption>
         </figure>
       </div>
