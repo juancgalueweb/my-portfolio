@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import NextJSDiploma from 'public/diplomas/RootLab-NextJS.webp'
+import ScriptingInPythonDiploma from 'public/diplomas/ScriptingInPython.jpg'
 import { BsStopwatchFill } from 'react-icons/bs'
 
-const NextJS2022 = () => {
+const ScriptingInPython2020 = () => {
   return (
     <li className='mb-10 ml-6'>
       <span className='absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900'>
@@ -21,32 +21,31 @@ const NextJS2022 = () => {
         </svg>
       </span>
       <h3 className='flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white'>
-        Curso de NextJS
+        Introduction to Scripting in Python
       </h3>
       <h4 className='mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300 flex items-center'>
         <BsStopwatchFill className='inline text-base mr-1' />
-        13,5 horas
+        16 semanas
       </h4>
       <h4 className='mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'>
-        Otorgado por: Rootlab
+        Otorgado por: University of Rice a trav&eacute;s de Coursera
       </h4>
       <time className='block mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'>
-        Octubre de 2022
+        21 de noviembre de 2020
       </time>
       <p className='mb-4 text-base font-normal text-gray-800 dark:text-slate-200'>
-        Conceptos fundamentales de Next.js como rutas con pages, manejo de APIs,
-        generación de páginas estáticas, getServerSideProps, getStaticProps,
-        getStaticProps, optimización de imágenes, uso de middleware, entre
-        otros.
+        En total fueron 4 cursos sobre programaci&oacute;n esencial con Python,
+        representaciones de data con Python, an&aacute;lisis de datos con
+        Python, visualizaci&oacute;n de datos con Python.
       </p>
       <Image
-        src={NextJSDiploma}
-        alt='Next.js diploma image'
+        src={ScriptingInPythonDiploma}
+        alt='Scripting in Python diploma image'
         className='w-[400px] h-auto rounded-lg shadow-md mb-4'
         placeholder='blur'
       />
       <a
-        href='https://certifications-and-courses.s3.sa-east-1.amazonaws.com/Rootlab/Juan+Carlos+Galue_Certificado-RootLab_Next.JS.pdf'
+        href='https://www.coursera.org/account/accomplishments/specialization/CYPAYBNMGSUM'
         target='_blank'
         rel='noopener noreferrer'
         className='inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700'
@@ -69,4 +68,4 @@ const NextJS2022 = () => {
   )
 }
 
-export default NextJS2022
+export default ScriptingInPython2020

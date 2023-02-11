@@ -43,7 +43,7 @@ const TypeScript2023 = () => {
       <Image
         src={TSDiploma}
         alt='TypeScript diploma image'
-        className='w-[300px] h-auto rounded-lg shadow-md mb-4'
+        className='w-[400px] h-auto rounded-lg shadow-md mb-4'
         placeholder='blur'
       />
       <a
