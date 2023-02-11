@@ -4,6 +4,7 @@ import AppWrapper from '../components/AppWrapper'
 import CodingDojo2021 from '../components/Diplomas/CodingDojo2021'
 import Docker2022 from '../components/Diplomas/Docker2022'
 import NextJS2022 from '../components/Diplomas/NextJS2022'
+import PFE2020 from '../components/Diplomas/PFE2020'
 import ScriptingInPython2020 from '../components/Diplomas/ScriptingInPython2020'
 import TypeScript2023 from '../components/Diplomas/TypeScript2023'
 import WDFE2021 from '../components/Diplomas/WDFE2021'
@@ -25,6 +26,7 @@ const Projects: NextPage = () => {
         <CodingDojo2021 />
         <WDFE2021 />
         <ScriptingInPython2020 />
+        <PFE2020 />
       </ol>
     </AppWrapper>
   )
