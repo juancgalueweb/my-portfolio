@@ -31,7 +31,7 @@ const PFE2020 = () => {
         Otorgado por: University of Michigan a trav&eacute;s de Coursera
       </h4>
       <time className='block mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'>
-        16 de julio de 2020
+        17 de julio de 2020
       </time>
       <p className='mb-4 text-base font-normal text-gray-800 dark:text-slate-200'>
         En total fueron 4 cursos sobre los principios de Python, las estructuras

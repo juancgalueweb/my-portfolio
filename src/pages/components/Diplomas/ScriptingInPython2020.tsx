@@ -31,7 +31,7 @@ const ScriptingInPython2020 = () => {
         Otorgado por: University of Rice a trav&eacute;s de Coursera
       </h4>
       <time className='block mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'>
-        21 de noviembre de 2020
+        22 de noviembre de 2020
       </time>
       <p className='mb-4 text-base font-normal text-gray-800 dark:text-slate-200'>
         En total fueron 4 cursos sobre programaci&oacute;n esencial con Python,

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import NextJSDiploma from 'public/diplomas/RootLab-NextJS.webp'
+import NextJSDiploma from 'public/diplomas/RootLab-NextJS.jpg'
 import { BsStopwatchFill } from 'react-icons/bs'
 
 const NextJS2022 = () => {

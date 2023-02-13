@@ -31,7 +31,7 @@ const CodingDojo2021 = () => {
         Otorgado por: Coding Dojo Latam
       </h4>
       <time className='block mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'>
-        20 de diciembre de 2021
+        10 de diciembre de 2021
       </time>
       <p className='mb-4 text-base font-normal text-gray-800 dark:text-slate-200'>
         HTML, CSS, Git/Github, jQuery, dise&ntilde;o web responsivo,{' '}
