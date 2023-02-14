@@ -1,13 +1,15 @@
+import { useTranslation } from '@/context/i18n'
 import Image from 'next/image'
 import BackendPic from 'public/backend-amico.svg'
 import { FC } from 'react'
 import { SiExpress, SiJavascript, SiMongodb, SiNodedotjs } from 'react-icons/si'
 
 const BackEnd: FC = () => {
+  const { t } = useTranslation()
   return (
     <div className='flex flex-col p-6 m-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 my-4 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition-all duration-300 dark:text-slate-200'>
       <h3 className='text-xl font-medium py-2 mb-4 text-center'>
-        Desarrollo <i>back-end</i>
+        {t('BACK_END_H3')}
       </h3>
       <figure className='self-center mb-6'>
         <Image
@@ -21,21 +23,15 @@ const BackEnd: FC = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            Web illustrations by Storyset
+            {t('SVG_CREDITS')}
           </a>
         </figcaption>
       </figure>
       <p className='indent-6 py-2 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
-        Si bien el desarrollo front-end es muy importante porque es lo que ve el
-        usuario final &mdash; colores, animaciones, im&aacute;genes &mdash; el
-        back-end tiene una especial importancia. Es en el back-end donde va la
-        l&oacute;gica del negocio, las rutas seguras, autenticaciones, manejo de
-        errores, <i>middlewares</i>, manejo de la base de datos, creaci&oacute;n
-        de APIs, en fin, es aqu&iacute; donde est&aacute; el cerebro de una
-        p&aacute;gina web din&aacute;mica.
+        {t('BACK_END_P1')}
       </p>
       <p className='indent-6 py-2 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
-        Las principales herramientas que uso son:
+        {t('FRONT_END_P_2')}
       </p>
       <ul>
         <li className='text-gray-800 py-1 dark:text-slate-200 md:text-lg'>

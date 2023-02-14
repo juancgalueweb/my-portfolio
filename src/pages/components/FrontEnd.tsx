@@ -1,3 +1,4 @@
+import { useTranslation } from '@/context/i18n'
 import Image from 'next/image'
 import AntDesignLogo from 'public/ant-design.svg'
 import FrontendPic from 'public/developer-activity-bro.svg'
@@ -13,10 +14,12 @@ import {
 } from 'react-icons/si'
 
 const FrontEnd: FC = () => {
+  const { t } = useTranslation()
+
   return (
     <div className='flex flex-col p-6 m-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 my-4 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition-all duration-300 dark:text-slate-200'>
       <h3 className='text-xl font-medium py-2 mb-4 text-center'>
-        Desarrollo <i>front-end</i>
+        {t('FRONT_END_H3')}
       </h3>
       <figure className='self-center mb-6'>
         <Image
@@ -30,27 +33,15 @@ const FrontEnd: FC = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            Web illustrations by Storyset
+            {t('SVG_CREDITS')}
           </a>
         </figcaption>
       </figure>
       <p className='indent-6 py-2 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
-        Cuando inici&eacute; mis estudios de manera autodidacta, lo primero que
-        aprend&iacute; fue HTML, CSS y JavaScript, despu&eacute;s
-        descubr&iacute; jQuery pero no tard&eacute; mucho en aprender a usar
-        React.js, y desde entonces m&aacute;s nunca he realizado proyectos sin
-        esta potente biblioteca de JavaScript, la cual ayuda un mont&oacute;n en
-        el dise&ntilde;o de las interfaces de usuario, escribir el c&oacute;digo
-        en JSX es amigable, y junto con el manejo del DOM virtual y los{' '}
-        <i>hooks</i> hacen que esta herramienta est&eacute; en alta demanda hoy
-        en d&iacute;a. Luego aprend&iacute; Next.js y sus maravillosas bondades
-        para generar p&aacute;ginas est&aacute;ticas, estructura de rutas con
-        &quot;pages&quot;, SSR, entre otros, y luego de estudiar TypeScript,
-        trato de escribir todo mi c&oacute;digo con ese lenguaje de
-        programaci&oacute;n.
+        {t('FRONT_END_P_1')}
       </p>
       <p className='indent-6 py-2 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
-        Las principales herramientas que uso son:
+        {t('FRONT_END_P_2')}
       </p>
       <ul>
         <li className='text-gray-800 py-1 dark:text-slate-200 md:text-lg'>
