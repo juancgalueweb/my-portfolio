@@ -1,13 +1,16 @@
 import { useTranslation } from '@/context/i18n'
 import ThemeSwitch from '@/services/ThemeSwitch'
 import styles from '@/styles/Navbar.module.css'
-import { Button, Navbar } from 'flowbite-react'
+import { Navbar, Tooltip } from 'flowbite-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import myLogo from 'public/logo-color.png'
 import { FC } from 'react'
 import { AiFillGithub } from 'react-icons/ai'
+import { FcDocument } from 'react-icons/fc'
+// import { GrLanguage } from 'react-icons/gr'
+import { HiTranslate } from 'react-icons/hi'
 
 const Nav: FC = () => {
   const { t } = useTranslation()
@@ -36,15 +39,6 @@ const Nav: FC = () => {
         </span>
       </Navbar.Brand>
       <div className='flex items-center md:order-2'>
-        <Button outline={true} gradientDuoTone='greenToBlue'>
-          <a
-            href='https://certifications-and-courses.s3.sa-east-1.amazonaws.com/CV/CV+Juan+Galue%CC%81+wd+(2022)_Esp.pdf'
-            target='_blank'
-            rel='noreferrer'
-          >
-            {t('NAVBAR_RESUME_BUTTON')}
-          </a>
-        </Button>
         <Link
           href={
             currentRoute === '/technologies'
@@ -57,19 +51,12 @@ const Nav: FC = () => {
           }
           locale={restOfLocales && restOfLocales[0]}
         >
-          {restOfLocales && restOfLocales[0] === 'en' ? (
-            <div className='flex justify-center items-center ml-1.5'>
-              <p className='inline text-gray-900 dark:text-white'>en</p>
-              <span className='text-2xl ml-1'>🇺🇸</span>
+          <Tooltip content='es - en' placement='bottom'>
+            <div className='rounded-md hover:rounded-md hover:border-gray-200 hover:bg-gray-200 dark:border-slate-200 dark:bg-slate-200 dark:hover:bg-white dark:hover:border-white p-2 transform transition duration-300 hover:cursor-pointer mx-1'>
+              <HiTranslate className='text-2xl cursor-pointer text-gray-800' />
             </div>
-          ) : (
-            <div className='flex justify-center items-center ml-1.5'>
-              <p className='inline text-gray-900 dark:text-white'>es</p>
-              <span className='text-2xl ml-1'>🇨🇱</span>
-            </div>
-          )}
+          </Tooltip>
         </Link>
-
         <ThemeSwitch />
         <Navbar.Toggle />
       </div>
@@ -110,8 +97,18 @@ const Nav: FC = () => {
           rel='noopener noreferrer'
           className={`text-base dark:text-slate-200 ${styles['desired-text-color']} hover:underline hover:underline-offset-4 ${styles['extra-padding']}`}
         >
-          <AiFillGithub className='dark:text-white inline-block mr-1 mb-1 text-base' />
+          <AiFillGithub className='dark:text-white inline mr-1 mb-1 text-base' />
           {t('NAVBAR_LINK_4')}
+        </Navbar.Link>
+
+        <Navbar.Link
+          href='https://certifications-and-courses.s3.sa-east-1.amazonaws.com/CV/CV+Juan+Galue%CC%81+wd+(2022)_Esp.pdf'
+          target='_blank'
+          rel='noopener noreferrer'
+          className={`text-base dark:text-slate-200 ${styles['desired-text-color']} hover:underline hover:underline-offset-4 ${styles['extra-padding']}`}
+        >
+          <FcDocument className='inline mr-1 mb-1 text-base' />
+          {t('NAVBAR_RESUME_BUTTON')}
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
