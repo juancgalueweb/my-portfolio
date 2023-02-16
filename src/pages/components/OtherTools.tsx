@@ -1,3 +1,4 @@
+import { useTranslation } from '@/context/i18n'
 import Image from 'next/image'
 import AWSS3Logo from 'public/Amazon-S3-Logo.svg'
 import ChromeLogo from 'public/chrome-logo.svg'
@@ -27,10 +28,11 @@ import {
 } from 'react-icons/si'
 
 const OtherTools: FC = () => {
+  const { t } = useTranslation()
   return (
     <div className='flex flex-col p-6 m-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 my-4 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition-all duration-300 dark:text-slate-200'>
       <h3 className='text-xl font-medium py-2 mb-4 text-center'>
-        Otras herramientas &uacute;tiles para el desarrollo web
+        {t('OTHER_TOOLS_H3')}
       </h3>
       <figure className='self-center mb-6'>
         <Image
@@ -44,17 +46,12 @@ const OtherTools: FC = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            Web illustrations by Storyset
+            {t('SVG_CREDITS')}
           </a>
         </figcaption>
       </figure>
       <p className='indent-6 py-2 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
-        Para el desarrollo web es importante usar otras herramientas,
-        tecnolog&iacute;as, saber hacer <i>deployment</i>, manejar editores de
-        texto nativos de la terminal, usar herramientas para guardar objetos en
-        la nube, para crear y probar las APIs de tus aplicaciones web, para
-        hacer <i>debug</i> de tu c&oacute;digo, entre otros. A
-        continuaci&oacute;n otras herramientas que tambi&eacute;n manejo:
+        {t('OTHER_TOOLS_P1')}
       </p>
       <ul>
         <li className='text-gray-800 py-1 dark:text-slate-200 md:text-lg'>
@@ -82,7 +79,7 @@ const OtherTools: FC = () => {
           </ul>
         </li>
         <li className='text-gray-800 py-1 dark:text-slate-200 md:text-lg'>
-          Control de versiones:
+          {t('OTHER_TOOLS_LI_3')}
           <ul>
             <li className='ml-6'>
               <FaGitSquare className='inline text-[#E74B1B] mr-2' />
@@ -99,11 +96,11 @@ const OtherTools: FC = () => {
           </ul>
         </li>
         <li className='text-gray-800 py-1 dark:text-slate-200 md:text-lg'>
-          Despliegue:
+          {t('OTHER_TOOLS_LI_4')}
           <ul>
             <li className='ml-6'>
               <FaDocker className='inline text-[#0BA9D1] mr-2' />
-              Docker y docker-compose
+              {t('OTHER_TOOLS_LI_4_U_L1')}
             </li>
             <li className='ml-6'>
               <FaAws className='inline text-[#E98610] dark:text-[#EB9D19] mr-2' />
@@ -132,7 +129,7 @@ const OtherTools: FC = () => {
           </ul>
         </li>
         <li className='text-gray-800 py-1 dark:text-slate-200 md:text-lg'>
-          Editores de texto:
+          {t('OTHER_TOOLS_LI_5')}
           <ul>
             <li className='ml-6'>
               <SiVisualstudio className='inline text-[#0773C1] mr-2' />
@@ -150,7 +147,7 @@ const OtherTools: FC = () => {
         </li>
 
         <li className='text-gray-800 py-1 dark:text-slate-200 md:text-lg'>
-          Sistema operativo para programar:
+          {t('OTHER_TOOLS_LI_6')}
           <ul>
             <li className='ml-6'>
               <SiMacos className='inline mr-2' />
@@ -159,7 +156,7 @@ const OtherTools: FC = () => {
           </ul>
         </li>
         <li className='text-gray-800 py-1 dark:text-slate-200 md:text-lg'>
-          Otro lenguaje:
+          {t('OTHER_TOOLS_LI_7')}
           <ul>
             <li className='ml-6'>
               <Image
@@ -172,11 +169,11 @@ const OtherTools: FC = () => {
           </ul>
         </li>
         <li className='text-gray-800 py-1 dark:text-slate-200 md:text-lg'>
-          Otras herramientas:
+          {t('OTHER_TOOLS_LI_8')}
           <ul>
             <li className='ml-6'>
               <BsTerminalFill className='inline mr-2' />
-              Manejo de terminal en Mac OS y servidores como Ubuntu
+              {t('OTHER_TOOLS_LI_8_U_L1')}
             </li>
             <li className='ml-6'>
               <Image

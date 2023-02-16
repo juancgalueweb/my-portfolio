@@ -21,5 +21,15 @@
   "FRONT_END_P_2": "The main tools that I use are:",
   "SVG_CREDITS": "Web illustrations by Storyset",
   "BACK_END_H3": "Back-end development",
-  "BACK_END_P1": "While front-end development is very important because it is what the end user sees - colors, animations, images - the back-end is especially important. The back-end is where the business logic, secure routes, authentications, error handling, middleware, database management, API creation, in short, the brain of a dynamic website, is located."
+  "BACK_END_P1": "While front-end development is very important because it is what the end user sees - colors, animations, images - the back-end is especially important. The back-end is where the business logic, secure routes, authentications, error handling, middleware, database management, API creation, in short, the brain of a dynamic website, is located.",
+  "OTHER_TOOLS_H3": "Other useful tools for web development",
+  "OTHER_TOOLS_P1": "It is important to use other tools, technologies, to know how to deploy, to use native text editors in the terminal, to use tools to save objects in the cloud, to create and test the APIs of your web applications, to debug your code, among others. Here are some other tools that I also use:",
+  "OTHER_TOOLS_LI_3": "Versions control:",
+  "OTHER_TOOLS_LI_4": "Deployment:",
+  "OTHER_TOOLS_LI_4_U_L1": "Docker & docker-compose",
+  "OTHER_TOOLS_LI_5": "Text editors:",
+  "OTHER_TOOLS_LI_6": "Operating system for programming:",
+  "OTHER_TOOLS_LI_7": "Other programming language:",
+  "OTHER_TOOLS_LI_8": "Other tools:",
+  "OTHER_TOOLS_LI_8_U_L1": "Terminal management on Mac OS and servers like Ubuntu"
 }

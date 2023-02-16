@@ -9,16 +9,13 @@ import myLogo from 'public/logo-color.png'
 import { FC } from 'react'
 import { AiFillGithub } from 'react-icons/ai'
 import { FcDocument } from 'react-icons/fc'
-// import { GrLanguage } from 'react-icons/gr'
 import { HiTranslate } from 'react-icons/hi'
 
 const Nav: FC = () => {
   const { t } = useTranslation()
   const router = useRouter()
-  const currentRoute = router.pathname
 
-  const locale = router.locale
-  const locales = router.locales
+  const { locale, locales, push, pathname } = router
 
   const restOfLocales = locales && locales.filter(l => l !== locale)
 
@@ -28,7 +25,7 @@ const Nav: FC = () => {
       rounded={true}
       className='sticky top-0 z-10 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-slate-100 border-b dark:bg-[#1F2937] dark:border-gray-600 dark:bg-opacity-30'
     >
-      <Navbar.Brand onClick={() => router.push('/')}>
+      <Navbar.Brand onClick={() => push('/')}>
         <Image
           src={myLogo}
           alt='Imagen de mi logo'
@@ -41,11 +38,11 @@ const Nav: FC = () => {
       <div className='flex items-center md:order-2'>
         <Link
           href={
-            currentRoute === '/technologies'
+            pathname === '/technologies'
               ? '/technologies'
-              : currentRoute === '/myprojects'
+              : pathname === '/myprojects'
               ? '/myprojects'
-              : currentRoute === '/diplomas'
+              : pathname === '/diplomas'
               ? '/diplomas'
               : '/'
           }
@@ -62,9 +59,9 @@ const Nav: FC = () => {
       </div>
       <Navbar.Collapse>
         <Navbar.Link
-          onClick={() => router.push('/technologies')}
+          onClick={() => push('/technologies')}
           className={
-            currentRoute === '/technologies'
+            pathname === '/technologies'
               ? `text-base ${styles['active-link']} cursor-pointer ${styles['desired-text-color']} hover:underline hover:underline-offset-4 dark:bg-[#88ccca] dark:hover:${styles['active-link']} dark:text-[#111827] dark:hover:${styles['dark-active-link']}`
               : `text-base dark:text-slate-200 cursor-pointer ${styles['desired-text-color']} hover:underline hover:underline-offset-4 ${styles['extra-padding']}`
           }
@@ -72,9 +69,9 @@ const Nav: FC = () => {
           {t('NAVBAR_LINK_1')}
         </Navbar.Link>
         <Navbar.Link
-          onClick={() => router.push('/myprojects')}
+          onClick={() => push('/myprojects')}
           className={
-            currentRoute === '/myprojects'
+            pathname === '/myprojects'
               ? `text-base ${styles['active-link']} cursor-pointer ${styles['desired-text-color']} hover:underline hover:underline-offset-4 dark:bg-[#88ccca] dark:hover:${styles['active-link']} dark:text-[#111827] dark:hover:${styles['dark-active-link']}`
               : `text-base dark:text-slate-200 cursor-pointer ${styles['desired-text-color']} hover:underline hover:underline-offset-4 ${styles['extra-padding']}`
           }
@@ -82,9 +79,9 @@ const Nav: FC = () => {
           {t('NAVBAR_LINK_2')}
         </Navbar.Link>
         <Navbar.Link
-          onClick={() => router.push('/diplomas')}
+          onClick={() => push('/diplomas')}
           className={
-            currentRoute === '/diplomas'
+            pathname === '/diplomas'
               ? `text-base ${styles['active-link']} cursor-pointer ${styles['desired-text-color']} hover:underline hover:underline-offset-4 dark:bg-[#88ccca] dark:hover:${styles['active-link']} dark:text-[#111827] dark:hover:${styles['dark-active-link']}`
               : `text-base dark:text-slate-200 cursor-pointer ${styles['desired-text-color']} hover:underline hover:underline-offset-4 ${styles['extra-padding']}`
           }

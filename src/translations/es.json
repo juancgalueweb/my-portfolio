@@ -21,5 +21,15 @@
   "FRONT_END_P_2": "Las principales herramientas que uso son:",
   "SVG_CREDITS": "Las ilustraciones web son de Storyset",
   "BACK_END_H3": "Desarrollo back-end",
-  "BACK_END_P1": "Si bien el desarrollo front-end es muy importante porque es lo que ve el usuario final (colores, animaciones, imágenes) el back-end tiene una especial importancia. Es en el back-end donde va la lógica del negocio, las rutas seguras, autenticaciones, manejo de errores, middlewares, manejo de la base de datos, creación de APIs, en fin, es aquí donde está el cerebro de una página web dinámica."
+  "BACK_END_P1": "Si bien el desarrollo front-end es muy importante porque es lo que ve el usuario final (colores, animaciones, imágenes) el back-end tiene una especial importancia. Es en el back-end donde va la lógica del negocio, las rutas seguras, autenticaciones, manejo de errores, middlewares, manejo de la base de datos, creación de APIs, en fin, es aquí donde está el cerebro de una página web dinámica.",
+  "OTHER_TOOLS_H3": "Otras herramientas útiles para el desarrollo web",
+  "OTHER_TOOLS_P1": "Para el desarrollo web es importante usar otras herramientas, tecnologías, saber hacer deployment, manejar editores de texto nativos de la terminal, usar herramientas para guardar objetos en la nube, para crear y probar las APIs de tus aplicaciones web, para hacer debug de tu código, entre otros. A continuación otras herramientas que también manejo:",
+  "OTHER_TOOLS_LI_3": "Control de versiones:",
+  "OTHER_TOOLS_LI_4": "Despliegue:",
+  "OTHER_TOOLS_LI_4_U_L1": "Docker y docker-compose",
+  "OTHER_TOOLS_LI_5": "Editores de texto:",
+  "OTHER_TOOLS_LI_6": "Sistema operativo para programar:",
+  "OTHER_TOOLS_LI_7": "Otro lenguaje de programación:",
+  "OTHER_TOOLS_LI_8": "Otras herramientas:",
+  "OTHER_TOOLS_LI_8_U_L1": "Manejo de terminal en Mac OS y servidores como Ubuntu"
 }
