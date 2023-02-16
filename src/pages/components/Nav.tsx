@@ -1,4 +1,5 @@
 import { useTranslation } from '@/context/i18n'
+import { CheckValidPath } from '@/services/CheckValidPaths'
 import ThemeSwitch from '@/services/ThemeSwitch'
 import styles from '@/styles/Navbar.module.css'
 import { Navbar, Tooltip } from 'flowbite-react'
@@ -14,7 +15,6 @@ import { HiTranslate } from 'react-icons/hi'
 const Nav: FC = () => {
   const { t } = useTranslation()
   const router = useRouter()
-
   const { locale, locales, push, pathname } = router
 
   const restOfLocales = locales && locales.filter(l => l !== locale)
@@ -37,22 +37,22 @@ const Nav: FC = () => {
       </Navbar.Brand>
       <div className='flex items-center md:order-2'>
         <Link
-          href={
-            pathname === '/technologies'
-              ? '/technologies'
-              : pathname === '/myprojects'
-              ? '/myprojects'
-              : pathname === '/diplomas'
-              ? '/diplomas'
-              : '/'
-          }
+          href={CheckValidPath(pathname)}
           locale={restOfLocales && restOfLocales[0]}
         >
-          <Tooltip content='es - en' placement='bottom'>
-            <div className='rounded-md hover:rounded-md hover:border-gray-200 hover:bg-gray-200 dark:border-slate-200 dark:bg-slate-200 dark:hover:bg-white dark:hover:border-white p-2 transform transition duration-300 hover:cursor-pointer mx-1'>
-              <HiTranslate className='text-2xl cursor-pointer text-gray-800' />
-            </div>
-          </Tooltip>
+          {locale === 'es' ? (
+            <Tooltip content='es → en' placement='bottom'>
+              <div className='rounded-md hover:rounded-md hover:border-gray-200 hover:bg-gray-200 dark:border-slate-200 dark:bg-slate-200 dark:hover:bg-white dark:hover:border-white p-2 transform transition duration-300 hover:cursor-pointer mx-1'>
+                <HiTranslate className='text-2xl cursor-pointer text-gray-800' />
+              </div>
+            </Tooltip>
+          ) : (
+            <Tooltip content='en → es' placement='bottom'>
+              <div className='rounded-md hover:rounded-md hover:border-gray-200 hover:bg-gray-200 dark:border-slate-200 dark:bg-slate-200 dark:hover:bg-white dark:hover:border-white p-2 transform transition duration-300 hover:cursor-pointer mx-1'>
+                <HiTranslate className='text-2xl cursor-pointer text-gray-800' />
+              </div>
+            </Tooltip>
+          )}
         </Link>
         <ThemeSwitch />
         <Navbar.Toggle />

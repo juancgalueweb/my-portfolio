@@ -1,3 +1,4 @@
+import { useTranslation } from '@/context/i18n'
 import { Button } from 'flowbite-react'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -9,6 +10,7 @@ export default function Custom404() {
   const router = useRouter()
   const title = 'Page not found'
   const description = 'Page to handle error 404: page not found'
+  const { t } = useTranslation()
 
   return (
     <>
@@ -16,7 +18,7 @@ export default function Custom404() {
         <title>{title}</title>
         {description && <meta name='description' content={description} />}
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='shortcut icon' href='favicon.png' type='image/x-icon' />
+        <link rel='shortcut icon' href='favicon1.png' type='image/x-icon' />
       </Head>
       <main className='bg-white dark:bg-[#101827] w-full mx-auto pt-10 min-h-screen'>
         <figure>
@@ -26,7 +28,7 @@ export default function Custom404() {
               target='_blank'
               rel='noopener noreferrer'
             >
-              Web illustrations by Storyset
+              {t('SVG_CREDITS')}
             </a>
           </figcaption>
           <Image
@@ -37,13 +39,13 @@ export default function Custom404() {
         </figure>
         <div className='max-w-3xl flex justify-between items-center my-10 mx-auto'>
           <Button gradientDuoTone='purpleToBlue' onClick={() => router.back()}>
-            Volver
+            {t('404_BUTTON_1')}
           </Button>
           <Button
             gradientDuoTone='greenToBlue'
             onClick={() => router.push('/')}
           >
-            Regr&eacute;same a <FaHome className='inline text-xl ml-2' />
+            {t('404_BUTTON_2')} <FaHome className='inline text-xl ml-2' />
           </Button>
         </div>
       </main>

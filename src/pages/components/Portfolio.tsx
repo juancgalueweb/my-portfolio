@@ -1,3 +1,4 @@
+import { useTranslation } from '@/context/i18n'
 import { Card } from 'flowbite-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -9,10 +10,11 @@ import tictactoeApp from 'public/tic-tac-toe.webp'
 import { FC } from 'react'
 
 const Portfolio: FC = () => {
+  const { t } = useTranslation()
   return (
     <>
       <h3 className='m-3 text-3xl text-gray-900 dark:text-slate-200'>
-        Proyectos
+        {t('PORTFOLIO_H3')}
       </h3>
       <div className='flex flex-col place-items-start gap-5 py-5 lg:flex-row lg:flex-wrap mb-10'>
         <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
@@ -25,11 +27,10 @@ const Portfolio: FC = () => {
                 className='rounded'
               />
               <h5 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-                Juego de tic-tac-toe
+                {t('PORTFOLIO_P1_TITLE')}
               </h5>
               <p className='font-normal text-gray-700 dark:text-gray-400'>
-                App para practicar conceptos b&aacute;sicos de React, como{' '}
-                <i>useState</i>.
+                {t('PORTFOLIO_P1_CONTENT')}
               </p>
             </Card>
           </Link>
@@ -44,11 +45,10 @@ const Portfolio: FC = () => {
                 className='rounded'
               />
               <h5 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-                BD de cocteles usando la API de Cocktail DB
+                {t('PORTFOLIO_P2_TITLE')}
               </h5>
               <p className='font-normal text-gray-700 dark:text-gray-400'>
-                App que consume una API con una extensa base de datos de
-                cocteles.
+                {t('PORTFOLIO_P2_CONTENT')}
               </p>
             </Card>
           </Link>
@@ -63,11 +63,10 @@ const Portfolio: FC = () => {
                 className='rounded'
               />
               <h5 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-                CRUD de libros de una biblioteca
+                {t('PORTFOLIO_P3_TITLE')}
               </h5>
               <p className='font-normal text-gray-700 dark:text-gray-400'>
-                Esta app tiene login y registro con autenticaci&oacute;n de
-                e-mail, rutas protegidas, roles, ratings/comentarios.
+                {t('PORTFOLIO_P3_CONTENT')}
               </p>
             </Card>
           </Link>
@@ -82,11 +81,10 @@ const Portfolio: FC = () => {
                 className='rounded'
               />
               <h5 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-                Registra tus vinos favoritos
+                {t('PORTFOLIO_P4_TITLE')}
               </h5>
               <p className='font-normal text-gray-700 dark:text-gray-400'>
-                Esta app tiene login y registro sencillo, puedes usar fotos
-                reales para tus vinos, darle puntuaci&oacute;n, entre otros.
+                {t('PORTFOLIO_P4_CONTENT')}
               </p>
             </Card>
           </Link>

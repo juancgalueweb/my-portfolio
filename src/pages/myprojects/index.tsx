@@ -1,14 +1,15 @@
+import { useTranslation } from '@/context/i18n'
 import { NextPage } from 'next'
 import AppWrapper from '../components/AppWrapper'
 import Portfolio from '../components/Portfolio'
 
 const Projects: NextPage = () => {
-  const title = 'Mis proyectos web'
-  const description =
-    'Detalle de los proyectos que he realizado como desarrollador full stack con MERN'
-
+  const { t } = useTranslation()
   return (
-    <AppWrapper title={title} description={description}>
+    <AppWrapper
+      title={t('PORTFOLIO_SEO_TITLE')}
+      description={t('PORTFOLIO_SEO_DESCRIPTION')}
+    >
       <Portfolio />
     </AppWrapper>
   )

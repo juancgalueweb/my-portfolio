@@ -1,3 +1,4 @@
+import { useTranslation } from '@/context/i18n'
 import { NextPage } from 'next'
 import Image from 'next/image'
 import appDemoPic from 'public/tic-tac-toe/tic-tac-toe-demo.jpg'
@@ -7,30 +8,30 @@ import { RiArrowRightSLine } from 'react-icons/ri'
 import AppWrapper from '../components/AppWrapper'
 
 const TicTacToeApp: NextPage = () => {
-  const title = 'App de Tic Tac Toe'
-  const description = 'Detalles del proyecto de Tic Tac Toe'
-
+  const { t } = useTranslation()
   return (
-    <AppWrapper title={title} description={description}>
+    <AppWrapper
+      title={t('TIC_TAC_TOE_SEO_TITLE')}
+      description={t('TIC_TAC_TOE_SEO_DESCRIPTION')}
+    >
       <div className='flex justify-start'>
         <h3 className='m-3 text-3xl text-blue-700 dark:text-pink-400'>
-          Proyecto <RiArrowRightSLine className='inline text-3xl' />{' '}
-          <span className='text-gray-900 dark:text-slate-200'>Tic Tac Toe</span>
+          {t('TIC_TAC_TOE_H3')}{' '}
+          <RiArrowRightSLine className='inline text-3xl' />{' '}
+          <span className='text-gray-900 dark:text-slate-200'>
+            {t('TIC_TAC_TOE_H3_SPAN_1')}
+          </span>
           <span className='bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-1.5 rounded-full dark:bg-blue-900 dark:text-blue-300 ml-4 align-middle'>
-            ene/2023
+            {t('TIC_TAC_TOE_H3_SPAN_2')}
           </span>
         </h3>
       </div>
       <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
-        Este proyecto donde se cre&oacute; el juego popular conocido como
-        tic-tac-toe, tres en raya o Xs y Os, pone a prueba la l&oacute;gica de
-        programaci&oacute;n y permite repasar el concepto fundamental de estados
-        de React, con el <i>hook useState</i>. Usa <i>localStorage</i> para
-        guardar la partida.
+        {t('TIC_TAC_TOE_P1')}
       </p>
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
-          Website
+          {t('TIC_TAC_TOE_P2_SPAN')}
         </span>
         <a
           href='https://juancgalueweb.github.io/tic-tac-toe-with-react/'
@@ -44,13 +45,13 @@ const TicTacToeApp: NextPage = () => {
       </p>
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
-          Despliegue
+          {t('TIC_TAC_TOE_P3_SPAN')}
         </span>
         Github Pages
       </p>
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
-          C&oacute;digo
+          {t('TIC_TAC_TOE_P4_SPAN')}
         </span>
         <a
           href='https://github.com/juancgalueweb/tic-tac-toe-with-react'
@@ -76,7 +77,7 @@ const TicTacToeApp: NextPage = () => {
             className='w-[800px] h-auto rounded-lg shadow-lg mt-10'
           />
           <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
-            Pantalla de cuando una partida se gana
+            {t('TIC_TAC_TOE_FIGCAPTION_1')}
           </figcaption>
         </figure>
       </div>
