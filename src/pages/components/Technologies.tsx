@@ -9,11 +9,9 @@ const Technologies: FC = () => {
 
   return (
     <>
-      <div className='my-6'>
-        <h3 className='text-3xl p-3 text-gray-900 dark:text-slate-200 text-center'>
-          {t('TECHNOLOGIES_H3')}
-        </h3>
-      </div>
+      <h3 className='text-3xl m-3 text-gray-900 dark:text-slate-200 mb-10'>
+        {t('TECHNOLOGIES_H3')}
+      </h3>
       <div className='flex flex-col items-center mb-10'>
         <FrontEnd />
         <BackEnd />
