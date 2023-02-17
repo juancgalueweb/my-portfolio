@@ -1,8 +1,11 @@
+import { useTranslation } from '@/context/i18n'
 import Image from 'next/image'
 import PFEDiploma from 'public/diplomas/PFEDiploma.jpg'
 import { BsStopwatchFill } from 'react-icons/bs'
 
 const PFE2020 = () => {
+  const { t } = useTranslation()
+
   return (
     <li className='mb-10 ml-6'>
       <span className='absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900'>
@@ -21,22 +24,20 @@ const PFE2020 = () => {
         </svg>
       </span>
       <h3 className='flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white'>
-        Python for Everybody
+        {t('PFE2020_H3')}
       </h3>
       <h4 className='mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300 flex items-center'>
         <BsStopwatchFill className='inline text-base mr-1' />
-        32 semanas
+        {t('PFE2020_H4_1')}
       </h4>
       <h4 className='mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'>
-        Otorgado por: University of Michigan a trav&eacute;s de Coursera
+        {t('PFE2020_H4_2')}
       </h4>
       <time className='block mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'>
-        17 de julio de 2020
+        {t('PFE2020_TIME')}
       </time>
       <p className='mb-4 text-base font-normal text-gray-800 dark:text-slate-200'>
-        En total fueron 4 cursos sobre los principios de Python, las estructuras
-        de datos en Python, usar Python para acceder a data en la web &#40;web
-        scraping&#41;, usar bases de datos con Python y el proyecto final.
+        {t('PFE2020_P')}
       </p>
       <Image
         src={PFEDiploma}
@@ -61,8 +62,8 @@ const PFE2020 = () => {
             d='M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z'
             clipRule='evenodd'
           ></path>
-        </svg>{' '}
-        Descargar
+        </svg>
+        {t('DIPLOMAS_BUTTON')}
       </a>
     </li>
   )

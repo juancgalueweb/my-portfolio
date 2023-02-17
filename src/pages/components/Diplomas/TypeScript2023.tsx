@@ -1,8 +1,11 @@
+import { useTranslation } from '@/context/i18n'
 import Image from 'next/image'
 import TSDiploma from 'public/diplomas/microsoft-typescript.webp'
 import { BsStopwatchFill } from 'react-icons/bs'
 
 const TypeScript2023 = () => {
+  const { t } = useTranslation()
+
   return (
     <li className='mb-10 ml-6'>
       <span className='absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900'>
@@ -23,22 +26,21 @@ const TypeScript2023 = () => {
       <h3 className='flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white'>
         Build JavaScript applications using TypeScript
         <span className='bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3'>
-          M&aacute;s reciente
+          {t('LATEST_COURSE')}
         </span>
       </h3>
       <h4 className='mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300 flex items-center'>
-        <BsStopwatchFill className='inline text-base mr-1' />6 horas y 16
-        minutos
+        <BsStopwatchFill className='inline text-base mr-1' />
+        {t('TypeScript2023_H4_1')}
       </h4>
       <h4 className='mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'>
-        Otorgado por: Microsoft Learn
+        {t('TypeScript2023_H4_2')}
       </h4>
       <time className='block mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'>
-        27 de enero de 2023
+        {t('TypeScript2023_TIME')}
       </time>
       <p className='mb-4 text-base font-normal text-gray-800 dark:text-slate-200'>
-        Incluye declaración de tipos de variables, implementación de interfaces,
-        desarrollo de funciones con tipo, definición de genéricos, entre otros.
+        {t('TypeScript2023_P')}
       </p>
       <Image
         src={TSDiploma}
@@ -64,7 +66,7 @@ const TypeScript2023 = () => {
             clipRule='evenodd'
           ></path>
         </svg>{' '}
-        Descargar
+        {t('DIPLOMAS_BUTTON')}
       </a>
     </li>
   )

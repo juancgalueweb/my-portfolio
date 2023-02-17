@@ -1,8 +1,10 @@
+import { useTranslation } from '@/context/i18n'
 import Image from 'next/image'
 import DockerDiploma from 'public/diplomas/docker-udemy.jpg'
 import { BsStopwatchFill } from 'react-icons/bs'
 
 const Docker2022 = () => {
+  const { t } = useTranslation()
   return (
     <li className='mb-10 ml-6'>
       <span className='absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900'>
@@ -21,23 +23,20 @@ const Docker2022 = () => {
         </svg>
       </span>
       <h3 className='flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white'>
-        Docker for the Absolute Beginner - Hands On - DevOps
+        {t('Docker2022_H3')}
       </h3>
       <h4 className='mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300 flex items-center'>
         <BsStopwatchFill className='inline text-base mr-1' />
-        4,5 horas
+        {t('Docker2022_H4_1')}
       </h4>
       <h4 className='mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'>
-        Otorgado por: Udemy
+        {t('Docker2022_H4_2')}
       </h4>
       <time className='block mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'>
-        25 de julio de 2022
+        {t('Docker2022_TIME')}
       </time>
       <p className='mb-4 text-base font-normal text-gray-800 dark:text-slate-200'>
-        Introducci&oacute;n a Docker, comandos b&aacute;sicos de Docker,
-        construir im&aacute;genes de Docker usando Dockerfiles, entender
-        qu&eacute; es Docker Compose, construir aplicaciones usando Docker
-        Compose.
+        {t('Docker2022_P')}
       </p>
       <Image
         src={DockerDiploma}
@@ -62,8 +61,8 @@ const Docker2022 = () => {
             d='M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z'
             clipRule='evenodd'
           ></path>
-        </svg>{' '}
-        Descargar
+        </svg>
+        {t('DIPLOMAS_BUTTON')}
       </a>
     </li>
   )
