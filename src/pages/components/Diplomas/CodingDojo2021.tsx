@@ -1,8 +1,10 @@
+import { useTranslation } from '@/context/i18n'
 import Image from 'next/image'
 import CodingDojoDiploma from 'public/diplomas/Coding-Dojo.jpg'
 import { BsStopwatchFill } from 'react-icons/bs'
 
 const CodingDojo2021 = () => {
+  const { t } = useTranslation()
   return (
     <li className='mb-10 ml-6'>
       <span className='absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900'>
@@ -21,22 +23,20 @@ const CodingDojo2021 = () => {
         </svg>
       </span>
       <h3 className='flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white'>
-        Desarrollador Full-Stack MERN
+        {t('CodingDojo2021_H3')}
       </h3>
       <h4 className='mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300 flex items-center'>
         <BsStopwatchFill className='inline text-base mr-1' />
-        16 semanas
+        {t('CodingDojo2021_H4_1')}
       </h4>
       <h4 className='mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'>
-        Otorgado por: Coding Dojo Latam
+        {t('CodingDojo2021_H4_2')}
       </h4>
       <time className='block mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'>
-        10 de diciembre de 2021
+        {t('CodingDojo2021_TIME')}
       </time>
       <p className='mb-4 text-base font-normal text-gray-800 dark:text-slate-200'>
-        HTML, CSS, Git/Github, jQuery, dise&ntilde;o web responsivo,{' '}
-        <i>wireframing</i>, JavaScript, Node, Express, Mongo DB, React y
-        despliegue.
+        {t('CodingDojo2021_P')}
       </p>
       <Image
         src={CodingDojoDiploma}
@@ -62,7 +62,7 @@ const CodingDojo2021 = () => {
             clipRule='evenodd'
           ></path>
         </svg>{' '}
-        Descargar
+        {t('DIPLOMAS_BUTTON')}
       </a>
     </li>
   )

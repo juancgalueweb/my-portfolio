@@ -1,3 +1,4 @@
+import { useTranslation } from '@/context/i18n'
 import { NextPage } from 'next'
 import Image from 'next/image'
 import WinePic1 from 'public/wines-app/wines-app-1.webp'
@@ -8,62 +9,55 @@ import { RiArrowRightSLine } from 'react-icons/ri'
 import AppWrapper from '../components/AppWrapper'
 
 const WinesApp: NextPage = () => {
-  const title = 'App de Mis Vinos Favoritos'
-  const description =
-    'Detalles del proyecto de una App para registrar tus vinos favoritos'
+  const { t } = useTranslation()
 
   return (
-    <AppWrapper title={title} description={description}>
+    <AppWrapper
+      title={t('WINE_APP_SEO_TITLE')}
+      description={t('WINE_APP_SEO_DESCRIPTION')}
+    >
       <div className='flex justify-start'>
         <h3 className='m-3 text-3xl text-blue-700 dark:text-pink-400'>
-          Proyecto <RiArrowRightSLine className='inline text-3xl' />{' '}
+          {t('WINE_APP_H3')} <RiArrowRightSLine className='inline text-3xl' />{' '}
           <span className='text-gray-900 dark:text-slate-200'>
-            Registro de tus vinos favoritos
+            {t('WINE_APP_H3_SPAN_1')}
           </span>
           <span className='bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-1.5 rounded-full dark:bg-blue-900 dark:text-blue-300 ml-4 align-middle'>
-            nov/2021
+            {t('WINE_APP_H3_SPAN_2')}
           </span>
         </h3>
       </div>
       <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
-        Es una app sencilla, pero desarrolla todo el concepto de full stack
-        MERN, para que puedas registrar tus vinos favoritos.
+        {t('WINE_APP_P1')}
       </p>
       <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
-        Este proyecto tiene:
+        {t('WINE_APP_P2')}
       </p>
       <ul className='py-2 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <li>
           <AiOutlineCheckCircle className='inline mr-2' />
-          Login y registro sencillo. Puedes usar un correo ficticio, ya que no
-          se requiere verificar el e-mail.
+          {t('WINE_APP_UL_L1')}
         </li>
         <li>
           <AiOutlineCheckCircle className='inline mr-2' />
-          El CRUD es b&aacute;sico: puedes crear tus vinos, editarlos,
-          eliminarlos y visualizarlos en una tabla.
+          {t('WINE_APP_UL_L2')}
         </li>
         <li>
           <AiOutlineCheckCircle className='inline mr-2' />
-          Lo interesante de esta App es que se conecta con AWS s3 para guardar
-          las im&aacute;genes de los usuarios. No se preocupen, se guardan con
-          un nombre que no es el original, y solo la App tiene las credenciales
-          para leer los objetos a trav&eacute;s de una url prefirmada.
+          {t('WINE_APP_UL_L3')}
         </li>
         <li>
           <AiOutlineCheckCircle className='inline mr-2' />
-          Pueden agregar una sola imagen a cada vino.
+          {t('WINE_APP_UL_L4')}
         </li>
         <li>
           <AiOutlineCheckCircle className='inline mr-2' />
-          Al consultar los <i>endpoints</i> de las API, se valida si el usuario
-          tiene el permiso necesario usando <i>jsonwebtoken</i>, de ser
-          correcto, puede escribir/actualizar la BD.
+          {t('WINE_APP_UL_L5')}
         </li>
       </ul>
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
-          Website
+          {t('LIBRARY_APP_P3_SPAN')}
         </span>
         <a
           href='https://mywines.juancgalue-web.cl/home'
@@ -77,13 +71,13 @@ const WinesApp: NextPage = () => {
       </p>
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
-          Despliegue
+          {t('LIBRARY_APP_P4_SPAN')}
         </span>
-        Linode con Docker
+        {t('WINE_APP_P4')}
       </p>
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
-          C&oacute;digo
+          {t('LIBRARY_APP_P5_SPAN')}
         </span>
         <a
           href='https://github.com/juancgalueweb/wines-blog'
@@ -117,8 +111,7 @@ const WinesApp: NextPage = () => {
             placeholder='blur'
           />
           <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
-            Pantalla del usuario donde puede hacer el CRUD completo de sus
-            vinos.
+            {t('WINE_APP_FIGCAPTION_1')}
           </figcaption>
         </figure>
       </div>
@@ -131,8 +124,7 @@ const WinesApp: NextPage = () => {
             placeholder='blur'
           />
           <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
-            Observen que para editar un vino, se puede borrar la foto actual y
-            colocar una nueva. Queda guardada en aws-s3
+            {t('WINE_APP_FIGCAPTION_2')}
           </figcaption>
         </figure>
       </div>
