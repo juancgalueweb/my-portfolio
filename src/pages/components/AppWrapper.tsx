@@ -4,6 +4,7 @@ import { FC, PropsWithChildren } from 'react'
 import { HiArrowUp } from 'react-icons/hi'
 import ScrollToTop from 'react-scroll-to-top'
 import Footer from './Footer'
+import Layout from './Layout'
 import Nav from './Nav'
 
 interface TProps {
@@ -31,9 +32,11 @@ const AppWrapper: FC<PropsWithChildren<TProps>> = ({
           component={<HiArrowUp className='text-2xl text-[#111827]' />}
           className={`flex justify-center items-center mb-8 ${styles['custom-bg']}`}
         />
-        <section className='max-w-3xl mx-auto pt-10 min-h-screen'>
-          {children}
-        </section>
+        <Layout>
+          <section className='max-w-3xl mx-auto pt-10 min-h-screen'>
+            {children}
+          </section>
+        </Layout>
         <Footer />
       </main>
     </>

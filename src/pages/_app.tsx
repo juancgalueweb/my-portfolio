@@ -1,5 +1,6 @@
 import { I18NProvider } from '@/context/i18n'
 import '@/styles/globals.css'
+import { AnimatePresence } from 'framer-motion'
 import type { AppProps } from 'next/app'
 import Router from 'next/router'
 import NProgress from 'nprogress'
@@ -35,7 +36,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <I18NProvider>
-      <Component {...pageProps} />
+      <AnimatePresence mode='wait' initial={true}>
+        <Component {...pageProps} />
+      </AnimatePresence>
     </I18NProvider>
   )
 }
