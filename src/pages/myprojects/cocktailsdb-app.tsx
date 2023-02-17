@@ -26,7 +26,7 @@ const CocktailsDbApp: NextPage = () => {
             {t('COCKTAILS_DB_H3_SPAN_1')}
           </span>
           <span className='bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-1.5 rounded-full dark:bg-blue-900 dark:text-blue-300 ml-4 align-middle'>
-            oct/2022
+            {t('COCKTAILS_DB_H3_SPAN_2')}
           </span>
         </h3>
       </div>
