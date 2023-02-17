@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion'
+import { useRouter } from 'next/router'
 import { FC, PropsWithChildren } from 'react'
 
 const Layout: FC<PropsWithChildren> = ({ children }) => {
+  const router = useRouter()
   const variants = {
     hidden: { opacity: 0, x: 0, y: 20 },
     enter: { opacity: 1, x: 0, y: 0 },
@@ -10,7 +12,7 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
 
   return (
     <motion.div
-      key='layout-wrapper'
+      key={router.pathname}
       initial='hidden'
       animate='enter'
       exit='exit'
