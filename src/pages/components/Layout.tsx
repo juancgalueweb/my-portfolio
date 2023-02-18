@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import { useRouter } from 'next/router'
 import { FC, PropsWithChildren } from 'react'
 
@@ -11,17 +11,19 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
   }
 
   return (
-    <motion.div
-      key={router.pathname}
-      initial='hidden'
-      animate='enter'
-      exit='exit'
-      variants={variants}
-      transition={{ duration: 0.4, ease: 'easeInOut' }}
-      style={{ position: 'relative' }}
-    >
-      {children}
-    </motion.div>
+    <AnimatePresence mode='wait' initial={true}>
+      <motion.section
+        key={router.route}
+        initial='hidden'
+        animate='enter'
+        exit='exit'
+        variants={variants}
+        transition={{ duration: 0.75, ease: 'backInOut' }}
+        className='max-w-3xl mx-auto pt-10 min-h-screen'
+      >
+        {children}
+      </motion.section>
+    </AnimatePresence>
   )
 }
 

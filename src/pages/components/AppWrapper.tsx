@@ -32,11 +32,7 @@ const AppWrapper: FC<PropsWithChildren<TProps>> = ({
           component={<HiArrowUp className='text-2xl text-[#111827]' />}
           className={`flex justify-center items-center mb-8 ${styles['custom-bg']}`}
         />
-        <Layout>
-          <section className='max-w-3xl mx-auto pt-10 min-h-screen'>
-            {children}
-          </section>
-        </Layout>
+        <Layout>{children}</Layout>
         <Footer />
       </main>
     </>
