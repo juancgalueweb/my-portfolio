@@ -15,6 +15,7 @@ const LanguageSwitch = () => {
     <Link
       href={CheckValidPath(pathname)}
       locale={restOfLocales && restOfLocales[0]}
+      scroll={false}
     >
       {locale === 'es' ? (
         <Tooltip content='es → en' placement='bottom'>
