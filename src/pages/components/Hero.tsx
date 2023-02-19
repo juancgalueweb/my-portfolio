@@ -1,12 +1,11 @@
 import { useTranslation } from '@/context/i18n'
 import Image from 'next/image'
-import { useRouter } from 'next/router'
+import Link from 'next/link'
 import PictureOfMe from 'public/Me.webp'
 import { FC } from 'react'
 import { RiArrowRightSLine } from 'react-icons/ri'
 
 const Hero: FC = () => {
-  const router = useRouter()
   const { t } = useTranslation()
 
   return (
@@ -35,15 +34,18 @@ const Hero: FC = () => {
           {t('HERO_P_4_SPAN')}
         </span>
       </p>
-      <div className='flex justify-center items-center'>
+      <Link
+        href='/myprojects'
+        className='flex justify-center items-center'
+        scroll={false}
+      >
         <button
-          onClick={() => router.push('/myprojects')}
           type='button'
           className='dark:text-gray-900 text-white hover:bg-[#2C7A7B] bg-[#319795] dark:bg-[#88cccb] dark:hover:bg-[#50D0C4] font-medium rounded-lg text-base px-5 py-2.5 mr-2 mb-2'
         >
           {t('HERO_BUTTON')} <RiArrowRightSLine className='inline text-xl' />{' '}
         </button>
-      </div>
+      </Link>
     </>
   )
 }
