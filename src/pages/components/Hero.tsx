@@ -10,7 +10,7 @@ const Hero: FC = () => {
   const { t } = useTranslation()
 
   return (
-    <div className='mb-10'>
+    <>
       <h2 className='text-5xl py-2 m-3 text-teal-900 font-medium md:text-6xl dark:text-[#20C997] text-center'>
         Juan Carlos Galu&eacute;
       </h2>
@@ -44,7 +44,7 @@ const Hero: FC = () => {
           {t('HERO_BUTTON')} <RiArrowRightSLine className='inline text-xl' />{' '}
         </button>
       </div>
-    </div>
+    </>
   )
 }
 

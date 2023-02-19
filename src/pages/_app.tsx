@@ -1,12 +1,14 @@
 import { I18NProvider } from '@/context/i18n'
 import '@/styles/globals.css'
+import { AnimatePresence } from 'framer-motion'
 import type { AppProps } from 'next/app'
 import Router from 'next/router'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 import { useEffect } from 'react'
+import Layout from './components/Layouts/Main'
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps, router }: AppProps) {
   NProgress.configure({ showSpinner: false })
 
   useEffect(() => {
@@ -35,7 +37,15 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <I18NProvider>
-      <Component {...pageProps} />
+      <Layout>
+        <AnimatePresence
+          mode='wait'
+          onExitComplete={() => window.scrollTo(0, 0)}
+          initial={false}
+        >
+          <Component {...pageProps} key={router.asPath} />
+        </AnimatePresence>
+      </Layout>
     </I18NProvider>
   )
 }

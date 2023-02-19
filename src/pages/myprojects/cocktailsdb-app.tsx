@@ -8,13 +8,13 @@ import CocktailPic4 from 'public/cocktaildb-app/cocktaildb-demo-4.jpg'
 import { AiFillGithub, AiOutlineCheckCircle } from 'react-icons/ai'
 import { BsBoxArrowInUpRight } from 'react-icons/bs'
 import { RiArrowRightSLine } from 'react-icons/ri'
-import AppWrapper from '../components/AppWrapper'
+import Layout from '../components/Layouts/Section'
 
 const CocktailsDbApp: NextPage = () => {
   const { t } = useTranslation()
 
   return (
-    <AppWrapper
+    <Layout
       title={t('COCKTAILS_DB_SEO_TITLE')}
       description={t('COCKTAILS_DB_DESCRIPTION')}
     >
@@ -182,7 +182,7 @@ const CocktailsDbApp: NextPage = () => {
           </figcaption>
         </figure>
       </div>
-    </AppWrapper>
+    </Layout>
   )
 }
 

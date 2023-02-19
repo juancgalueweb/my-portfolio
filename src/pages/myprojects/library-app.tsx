@@ -10,13 +10,13 @@ import LibraryPic6 from 'public/library-app/biblioteca-mern-app-6.jpg'
 import { AiFillGithub, AiOutlineCheckCircle } from 'react-icons/ai'
 import { BsBoxArrowInUpRight } from 'react-icons/bs'
 import { RiArrowRightSLine } from 'react-icons/ri'
-import AppWrapper from '../components/AppWrapper'
+import Layout from '../components/Layouts/Section'
 
 const LibraryApp: NextPage = () => {
   const { t } = useTranslation()
 
   return (
-    <AppWrapper
+    <Layout
       title={t('LIBRARY_APP_SEO_TITLE')}
       description={t('LIBRARY_APP_DESCRIPTION')}
     >
@@ -188,7 +188,7 @@ const LibraryApp: NextPage = () => {
           </figcaption>
         </figure>
       </div>
-    </AppWrapper>
+    </Layout>
   )
 }
 

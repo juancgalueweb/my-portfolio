@@ -16,7 +16,7 @@ const Portfolio: FC = () => {
       <h3 className='m-3 text-3xl text-gray-900 dark:text-slate-200'>
         {t('PORTFOLIO_H3')}
       </h3>
-      <div className='flex flex-col place-items-start gap-5 py-5 lg:flex-row lg:flex-wrap mb-10'>
+      <div className='flex flex-col place-items-start gap-5 py-5 lg:flex-row lg:flex-wrap'>
         <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
           <Link href='/myprojects/tic-tac-toe-app'>
             <Card>

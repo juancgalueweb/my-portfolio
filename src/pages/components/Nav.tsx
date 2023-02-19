@@ -1,23 +1,19 @@
 import { useTranslation } from '@/context/i18n'
-import { CheckValidPath } from '@/services/CheckValidPaths'
+import LanguageSwitch from '@/services/LanguageSwitch'
 import ThemeSwitch from '@/services/ThemeSwitch'
 import styles from '@/styles/Navbar.module.css'
-import { Navbar, Tooltip } from 'flowbite-react'
+import { Navbar } from 'flowbite-react'
 import Image from 'next/image'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 import myLogo from 'public/logo-color.png'
 import { FC } from 'react'
 import { AiFillGithub } from 'react-icons/ai'
 import { FcDocument } from 'react-icons/fc'
-import { HiTranslate } from 'react-icons/hi'
 
 const Nav: FC = () => {
   const { t } = useTranslation()
   const router = useRouter()
-  const { locale, locales, push, pathname } = router
-
-  const restOfLocales = locales && locales.filter(l => l !== locale)
+  const { push, pathname } = router
 
   return (
     <Navbar
@@ -36,24 +32,7 @@ const Nav: FC = () => {
         </span>
       </Navbar.Brand>
       <div className='flex items-center md:order-2'>
-        <Link
-          href={CheckValidPath(pathname)}
-          locale={restOfLocales && restOfLocales[0]}
-        >
-          {locale === 'es' ? (
-            <Tooltip content='es → en' placement='bottom'>
-              <div className='rounded-md hover:rounded-md hover:border-gray-200 hover:bg-gray-200 dark:border-slate-200 dark:bg-slate-200 dark:hover:bg-white dark:hover:border-white p-2 transform transition duration-300 hover:cursor-pointer mx-1'>
-                <HiTranslate className='text-2xl cursor-pointer text-gray-800' />
-              </div>
-            </Tooltip>
-          ) : (
-            <Tooltip content='en → es' placement='bottom'>
-              <div className='rounded-md hover:rounded-md hover:border-gray-200 hover:bg-gray-200 dark:border-slate-200 dark:bg-slate-200 dark:hover:bg-white dark:hover:border-white p-2 transform transition duration-300 hover:cursor-pointer mx-1'>
-                <HiTranslate className='text-2xl cursor-pointer text-gray-800' />
-              </div>
-            </Tooltip>
-          )}
-        </Link>
+        <LanguageSwitch />
         <ThemeSwitch />
         <Navbar.Toggle />
       </div>

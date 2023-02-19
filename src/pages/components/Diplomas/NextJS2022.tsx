@@ -3,7 +3,11 @@ import Image from 'next/image'
 import NextJSDiploma from 'public/diplomas/RootLab-NextJS.jpg'
 import { BsStopwatchFill } from 'react-icons/bs'
 
-const NextJS2022 = () => {
+type DiplomaProps = {
+  latest: boolean
+}
+
+const NextJS2022 = ({ latest }: DiplomaProps) => {
   const { t } = useTranslation()
 
   return (
@@ -25,6 +29,11 @@ const NextJS2022 = () => {
       </span>
       <h3 className='flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white'>
         {t('NextJS2022_H3')}
+        {latest && (
+          <span className='bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3'>
+            {t('LATEST_COURSE')}
+          </span>
+        )}
       </h3>
       <h4 className='mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300 flex items-center'>
         <BsStopwatchFill className='inline text-base mr-1' />

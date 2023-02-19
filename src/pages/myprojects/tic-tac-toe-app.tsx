@@ -5,12 +5,12 @@ import appDemoPic from 'public/tic-tac-toe/tic-tac-toe-demo.jpg'
 import { AiFillGithub } from 'react-icons/ai'
 import { BsBoxArrowInUpRight } from 'react-icons/bs'
 import { RiArrowRightSLine } from 'react-icons/ri'
-import AppWrapper from '../components/AppWrapper'
+import Layout from '../components/Layouts/Section'
 
 const TicTacToeApp: NextPage = () => {
   const { t } = useTranslation()
   return (
-    <AppWrapper
+    <Layout
       title={t('TIC_TAC_TOE_SEO_TITLE')}
       description={t('TIC_TAC_TOE_SEO_DESCRIPTION')}
     >
@@ -81,7 +81,7 @@ const TicTacToeApp: NextPage = () => {
           </figcaption>
         </figure>
       </div>
-    </AppWrapper>
+    </Layout>
   )
 }
 

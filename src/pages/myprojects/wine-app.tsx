@@ -6,13 +6,13 @@ import WinePic2 from 'public/wines-app/wines-app-2.jpg'
 import { AiFillGithub, AiOutlineCheckCircle } from 'react-icons/ai'
 import { BsBoxArrowInUpRight } from 'react-icons/bs'
 import { RiArrowRightSLine } from 'react-icons/ri'
-import AppWrapper from '../components/AppWrapper'
+import Layout from '../components/Layouts/Section'
 
 const WinesApp: NextPage = () => {
   const { t } = useTranslation()
 
   return (
-    <AppWrapper
+    <Layout
       title={t('WINE_APP_SEO_TITLE')}
       description={t('WINE_APP_SEO_DESCRIPTION')}
     >
@@ -128,7 +128,7 @@ const WinesApp: NextPage = () => {
           </figcaption>
         </figure>
       </div>
-    </AppWrapper>
+    </Layout>
   )
 }
 
