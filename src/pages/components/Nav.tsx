@@ -14,7 +14,7 @@ import { FcDocument } from 'react-icons/fc'
 const Nav: FC = () => {
   const { t } = useTranslation()
   const router = useRouter()
-  const { pathname } = router
+  const { pathname, locale } = router
 
   return (
     <Navbar
@@ -81,7 +81,11 @@ const Nav: FC = () => {
           {t('NAVBAR_LINK_4')}
         </a>
         <a
-          href='https://certifications-and-courses.s3.sa-east-1.amazonaws.com/CV/CV+Juan+Galue%CC%81+wd+(2022)_Esp.pdf'
+          href={
+            locale === 'es'
+              ? 'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/CV/CV+Juan+Galue%CC%81+wd+(2023)_Esp.pdf'
+              : 'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/CV/CV+Juan+Galue%CC%81+wd+(2023)_Eng.pdf'
+          }
           target='_blank'
           rel='noopener noreferrer'
           className={`text-base dark:text-slate-200 ${styles['desired-text-color']} hover:underline hover:underline-offset-4 ${styles['extra-padding']} dark:hover:text-white`}

@@ -18,7 +18,7 @@ const Portfolio: FC = () => {
       </h3>
       <div className='flex flex-col place-items-start gap-5 py-5 lg:flex-row lg:flex-wrap'>
         <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
-          <Link href='/myprojects/tic-tac-toe-app'>
+          <Link href='/myprojects/tic-tac-toe-app' scroll={false}>
             <Card>
               <Image
                 src={tictactoeApp}
@@ -36,7 +36,7 @@ const Portfolio: FC = () => {
           </Link>
         </div>
         <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
-          <Link href='/myprojects/cocktailsdb-app'>
+          <Link href='/myprojects/cocktailsdb-app' scroll={false}>
             <Card>
               <Image
                 src={cocktailsApp}
@@ -54,7 +54,7 @@ const Portfolio: FC = () => {
           </Link>
         </div>
         <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
-          <Link href='/myprojects/library-app'>
+          <Link href='/myprojects/library-app' scroll={false}>
             <Card>
               <Image
                 src={libraryApp}
@@ -72,7 +72,7 @@ const Portfolio: FC = () => {
           </Link>
         </div>
         <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
-          <Link href='/myprojects/wine-app'>
+          <Link href='/myprojects/wine-app' scroll={false}>
             <Card>
               <Image
                 src={myWinesApp}
