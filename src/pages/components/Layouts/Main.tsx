@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from '../Footer'
-import Nav from '../Nav'
+import NavBar from '../NavBar'
 
 type MainProps = {
   children: React.ReactNode
@@ -10,7 +10,7 @@ const MainLayout = ({ children }: MainProps) => {
   return (
     <>
       <main className='bg-white dark:bg-[#101827]'>
-        <Nav />
+        <NavBar />
         {children}
       </main>
       <Footer />

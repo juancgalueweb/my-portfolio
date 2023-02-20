@@ -6,7 +6,6 @@ import libraryApp from 'public/biblioteca-mern.webp'
 import cocktailsApp from 'public/cocktails-db.webp'
 import myWinesApp from 'public/mywines-low.jpg'
 import tictactoeApp from 'public/tic-tac-toe.webp'
-
 import { FC } from 'react'
 
 const Portfolio: FC = () => {

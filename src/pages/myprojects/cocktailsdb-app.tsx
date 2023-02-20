@@ -1,6 +1,7 @@
 import { useTranslation } from '@/context/i18n'
 import { NextPage } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import CocktailPic1 from 'public/cocktaildb-app/cocktaildb-demo-1.jpg'
 import CocktailPic2 from 'public/cocktaildb-app/cocktaildb-demo-2.jpg'
 import CocktailPic3 from 'public/cocktaildb-app/cocktaildb-demo-3.jpg'
@@ -19,9 +20,15 @@ const CocktailsDbApp: NextPage = () => {
       description={t('COCKTAILS_DB_DESCRIPTION')}
     >
       <div className='flex justify-start'>
-        <h3 className='m-3 text-3xl text-blue-700 dark:text-pink-400'>
-          {t('COCKTAILS_DB_H3')}{' '}
-          <RiArrowRightSLine className='inline text-3xl' />{' '}
+        <h3 className='m-3 text-3xl'>
+          <Link
+            href='/myprojects'
+            scroll={false}
+            className='dark:text-pink-400 dark:hover:underline dark:hover:underline-offset-4 text-blue-700 hover:underline hover:underline-offset-4'
+          >
+            {t('COCKTAILS_DB_H3')}
+          </Link>
+          <RiArrowRightSLine className='inline text-3xl dark:text-pink-400 text-blue-700' />
           <span className='text-gray-900 dark:text-slate-200'>
             {t('COCKTAILS_DB_H3_SPAN_1')}
           </span>
