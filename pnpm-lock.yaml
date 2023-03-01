@@ -11,6 +11,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.52.0
   '@typescript-eslint/parser': ^5.52.0
   autoprefixer: ^10.4.13
+  classnames: ^2.3.2
   eslint: 8.34.0
   eslint-config-next: 13.1.6
   eslint-config-prettier: ^8.6.0
@@ -39,6 +40,7 @@ dependencies:
   '@types/nprogress': 0.2.0
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
+  classnames: 2.3.2
   eslint-config-next: 13.1.6_7kw3g6rralp5ps6mg3uyzz6azm
   flowbite: 1.6.3
   flowbite-react: 0.3.8_mgvwwo3oxlqkijpgkobyid5yci
