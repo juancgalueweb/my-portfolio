@@ -7,11 +7,7 @@ import PictureOfMe from 'public/Me.webp'
 import { FC } from 'react'
 import { RiArrowRightSLine } from 'react-icons/ri'
 
-const heroTitle = [
-  'MERN Full-stack developer',
-  'Eng-Spa Translator',
-  'Electrical Engineer'
-]
+const heroTitle = ['MERN Full-stack Developer', 'Desarrollador full-stack MERN']
 
 const Hero: FC = () => {
   const { t } = useTranslation()
