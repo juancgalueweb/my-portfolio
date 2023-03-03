@@ -171,5 +171,5 @@
   "MOVIES_APP_P4_SPAN": "Despliegue",
   "MOVIES_APP_P5_SPAN": "Código",
   "MOVIES_APP_FIGCAPTION_1": "Pantalla para buscar una película luego de hacer click al botón de Buscar. Se le dio click al checkbox para ordenar las películas alfabéticamente",
-  "MOVIES_APP_FIGCAPTION_2": "Pantalla para buscar una película mientras se escribe. Se usa un debounce para evitar hacer consulas erróneas a la API"
+  "MOVIES_APP_FIGCAPTION_2": "Pantalla para buscar una película mientras se escribe. Se usa un debounce para evitar hacer consultas erróneas a la API"
 }
