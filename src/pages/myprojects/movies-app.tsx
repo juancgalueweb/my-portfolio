@@ -2,7 +2,8 @@ import { useTranslation } from '@/context/i18n'
 import { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import appDemoPic from 'public/tic-tac-toe/tic-tac-toe-demo.jpg'
+import moviesPic1 from 'public/movies-app/buscador-de-peliculas-1.jpg'
+import moviesPic2 from 'public/movies-app/buscador-de-peliculas-2.jpg'
 import { AiFillGithub, AiOutlineCheckCircle } from 'react-icons/ai'
 import { BsBoxArrowInUpRight } from 'react-icons/bs'
 import { RiArrowRightSLine } from 'react-icons/ri'
@@ -67,30 +68,30 @@ const MoviesApp: NextPage = () => {
       </ul>
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
-          {t('MOVIES_APP_P2_SPAN')}
+          {t('MOVIES_APP_P3_SPAN')}
         </span>
         <a
-          href='https://juancgalueweb.github.io/tic-tac-toe-with-react/'
+          href='https://buscador-de-peliculas-juancgalueweb.vercel.app/'
           target='_blank'
           rel='noopener noreferrer'
           className='dark:text-pink-400 dark:hover:underline dark:hover:underline-offset-4 text-blue-700 hover:underline hover:underline-offset-4'
         >
-          https://juancgalueweb.github.io/tic-tac-toe-with-react/{' '}
+          https://buscador-de-peliculas-juancgalueweb.vercel.app/{' '}
           <BsBoxArrowInUpRight className='dark:text-pink-400 inline ml-1' />
         </a>
       </p>
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
-          {t('MOVIES_APP_P3_SPAN')}
+          {t('MOVIES_APP_P4_SPAN')}
         </span>
-        Github Pages
+        Vercel
       </p>
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
-          {t('MOVIES_APP_P4_SPAN')}
+          {t('MOVIES_APP_P5_SPAN')}
         </span>
         <a
-          href='https://github.com/juancgalueweb/tic-tac-toe-with-react'
+          href='https://github.com/juancgalueweb/buscador-de-peliculas'
           target='_blank'
           rel='noopener noreferrer'
           className='dark:text-pink-400 dark:hover:underline dark:hover:underline-offset-4 text-blue-700 hover:underline hover:underline-offset-4'
@@ -102,18 +103,31 @@ const MoviesApp: NextPage = () => {
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
           Front-end
         </span>
-        React.js, Vite, JavaScript, canvas-confetti
+        Next.js, JavaScript, TailwindCSS, react-icons, just-debounce-it
       </p>
       <div className='flex justify-center items-center m-3'>
         <figure>
           <Image
-            src={appDemoPic}
-            alt='demo app pic'
+            src={moviesPic1}
+            alt='movies app - image when you look for a movie clicking a button'
             placeholder='blur'
             className='w-[800px] h-auto rounded-lg shadow-lg mt-10'
           />
           <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
             {t('MOVIES_APP_FIGCAPTION_1')}
+          </figcaption>
+        </figure>
+      </div>
+      <div className='flex justify-center items-center m-3'>
+        <figure>
+          <Image
+            src={moviesPic2}
+            alt='movies app - image when you look for a movie while typing'
+            placeholder='blur'
+            className='w-[800px] h-auto rounded-lg shadow-lg mt-10'
+          />
+          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
+            {t('MOVIES_APP_FIGCAPTION_2')}
           </figcaption>
         </figure>
       </div>

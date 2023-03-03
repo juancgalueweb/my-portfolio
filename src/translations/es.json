@@ -165,5 +165,11 @@
   "MOVIES_APP_P1_2": ". Permite buscar películas de 2 maneras: escribir la película y usar un botón para que al dar un click se realice la consulta a la API o buscar la película mientras se escribe en el formulario, sin tener que dar click a ningún botón.",
   "MOVIES_APP_P2": "Los hooks de React.js que aprendí a usar en esta App son:",
   "MOVIES_APP_UL_L1": "es un hook que nos permite crear una referencia mutable que persiste durante todo el ciclo de vida del componente. Es muy útil para guardar cualquier valor que puedas mutar, como un identificador o un elemento del DOM, y que cada vez que cambia su valor, no vuelve a renderizar el componente.",
-  "MOVIES_APP_UL_L2": "se utiliza para \"memoizar\" un valor, para no tener que volverlo a calcular, a menos que cambien sus dependencias."
+  "MOVIES_APP_UL_L2": "se utiliza para \"memoizar\" un valor, para no tener que volverlo a calcular, a menos que cambien sus dependencias.",
+  "MOVIES_APP_UL_L3": "este hook utiliza por debajo a useMemo, y tiene la misma función que el useMemo pero está pensado para usarlo exclusivamente con funciones. Ayuda a simplificar la escritura del código mediante un \"azúcar sintáctico\".",
+  "MOVIES_APP_P3_SPAN": "Sitio web",
+  "MOVIES_APP_P4_SPAN": "Despliegue",
+  "MOVIES_APP_P5_SPAN": "Código",
+  "MOVIES_APP_FIGCAPTION_1": "Pantalla para buscar una película luego de hacer click al botón de Buscar. Se le dio click al checkbox para ordenar las películas alfabéticamente",
+  "MOVIES_APP_FIGCAPTION_2": "Pantalla para buscar una película mientras se escribe. Se usa un debounce para evitar hacer consulas erróneas a la API"
 }
