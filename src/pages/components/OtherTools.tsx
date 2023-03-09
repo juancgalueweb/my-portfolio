@@ -22,6 +22,7 @@ import {
 import {
   SiMacos,
   SiMaterialui,
+  SiPostman,
   SiVercel,
   SiVisualstudio,
   SiVultr
@@ -206,6 +207,10 @@ const OtherTools: FC = () => {
                 className='inline mr-2 w-[20px] h-[20px]'
               />
               Chrome Element Inspector
+            </li>
+            <li className='ml-6'>
+              <SiPostman className='inline mr-2 text-[#F26634] text-xl' />
+              Postman
             </li>
           </ul>
         </li>
