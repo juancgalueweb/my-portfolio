@@ -9,7 +9,7 @@ type MainProps = {
 const MainLayout = ({ children }: MainProps) => {
   return (
     <>
-      <main className='bg-white dark:bg-[#101827]'>
+      <main className='bg-slate-50 dark:bg-[#101827]'>
         <NavBar />
         {children}
       </main>
