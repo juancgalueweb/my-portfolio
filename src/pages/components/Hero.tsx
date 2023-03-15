@@ -48,18 +48,15 @@ const Hero: FC = () => {
           {t('HERO_P_4_SPAN')}
         </span>
       </p>
-      <Link
-        href='/myprojects'
-        className='flex justify-center items-center'
-        scroll={false}
-      >
-        <button
-          type='button'
-          className='dark:text-gray-900 text-white hover:bg-[#2C7A7B] bg-[#319795] dark:bg-[#88cccb] dark:hover:bg-[#50D0C4] font-medium rounded-lg text-base px-5 py-2.5 mr-2 mb-2'
+      <div className='flex justify-center'>
+        <Link
+          href='/myprojects'
+          className='flex justify-center items-center dark:text-gray-900 text-white hover:bg-[#2C7A7B] bg-[#319795] dark:bg-[#88cccb] dark:hover:bg-[#50D0C4] font-medium rounded-lg text-base px-5 py-2.5 mr-2 mb-2 w-48'
+          scroll={false}
         >
           {t('HERO_BUTTON')} <RiArrowRightSLine className='inline text-xl' />{' '}
-        </button>
-      </Link>
+        </Link>
+      </div>
     </>
   )
 }
