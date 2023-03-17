@@ -7,7 +7,8 @@ export function CheckValidPath(url: string): string {
     '/myprojects/library-app',
     '/myprojects/tic-tac-toe-app',
     '/myprojects/wine-app',
-    '/myprojects/movies-app'
+    '/myprojects/movies-app',
+    '/myprojects/shopping-cart-app'
   ]
   if (validPaths.includes(url)) {
     return url

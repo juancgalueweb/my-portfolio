@@ -6,6 +6,7 @@ import libraryApp from 'public/biblioteca-mern.webp'
 import moviesApp from 'public/buscador-de-libros-preview.jpg'
 import cocktailsApp from 'public/cocktails-db.webp'
 import myWinesApp from 'public/mywines-low.jpg'
+import reactShoppingCart from 'public/react-shopping-cart.jpg'
 import tictactoeApp from 'public/tic-tac-toe.webp'
 import { FC } from 'react'
 
@@ -17,12 +18,32 @@ const Portfolio: FC = () => {
         {t('PORTFOLIO_H3')}
       </h3>
       <div className='flex flex-col place-items-start gap-5 py-5 lg:flex-row lg:flex-wrap'>
+        {/* Shopping cart app */}
+        <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
+          <Link href='/myprojects/shopping-cart-app' scroll={false}>
+            <Card>
+              <Image
+                src={reactShoppingCart}
+                alt='Shopping cart app home screen image'
+                placeholder='blur'
+                className='rounded'
+              />
+              <h5 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
+                {t('PORTFOLIO_P6_TITLE')}
+              </h5>
+              <p className='font-normal text-gray-700 dark:text-gray-400'>
+                {t('PORTFOLIO_P6_CONTENT')}
+              </p>
+            </Card>
+          </Link>
+        </div>
+        {/* Search movies app */}
         <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
           <Link href='/myprojects/movies-app' scroll={false}>
             <Card>
               <Image
                 src={moviesApp}
-                alt='Buscar de películas app home screen image'
+                alt='Search movies app home screen image'
                 placeholder='blur'
                 className='rounded'
               />
@@ -35,6 +56,7 @@ const Portfolio: FC = () => {
             </Card>
           </Link>
         </div>
+        {/* Tic tac toe app */}
         <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
           <Link href='/myprojects/tic-tac-toe-app' scroll={false}>
             <Card>
@@ -53,6 +75,7 @@ const Portfolio: FC = () => {
             </Card>
           </Link>
         </div>
+        {/* Cocktails DB App */}
         <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
           <Link href='/myprojects/cocktailsdb-app' scroll={false}>
             <Card>
@@ -71,6 +94,7 @@ const Portfolio: FC = () => {
             </Card>
           </Link>
         </div>
+        {/* Library App */}
         <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
           <Link href='/myprojects/library-app' scroll={false}>
             <Card>
@@ -89,6 +113,7 @@ const Portfolio: FC = () => {
             </Card>
           </Link>
         </div>
+        {/* My wines app */}
         <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
           <Link href='/myprojects/wine-app' scroll={false}>
             <Card>
