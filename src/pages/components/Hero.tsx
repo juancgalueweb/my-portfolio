@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import PictureOfMe from 'public/Me.webp'
 import { FC } from 'react'
+import { IoLocationSharp } from 'react-icons/io5'
 import { RiArrowRightSLine } from 'react-icons/ri'
 
 const heroTitle = ['MERN Full-stack Developer', 'Desarrollador full-stack MERN']
@@ -33,6 +34,10 @@ const Hero: FC = () => {
       <div className='relative mx-auto bg-gradient-to-b from-teal-500 dark:from-green-300 rounded-lg my-5 overflow-hidden w-72 h-80 md:w-80 md:h-96'>
         <Image src={PictureOfMe} alt='My profile picture' placeholder='blur' />
       </div>
+      <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-xl dark:text-slate-200 flex items-center'>
+        <IoLocationSharp className='inline text-red-600 text-2xl -mr-4' />{' '}
+        Santiago de Chile
+      </p>
       <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-xl dark:text-slate-200'>
         {t('HERO_P_1')}
       </p>
@@ -43,15 +48,12 @@ const Hero: FC = () => {
         {t('HERO_P_3')}
       </p>
       <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-xl dark:text-slate-200'>
-        {t('HERO_P_4')}{' '}
-        <span className='text-pink-600 dark:text-pink-400'>
-          {t('HERO_P_4_SPAN')}
-        </span>
+        {t('HERO_P_4')}
       </p>
       <div className='flex justify-center'>
         <Link
           href='/myprojects'
-          className='flex justify-center items-center dark:text-gray-900 text-white hover:bg-[#2C7A7B] bg-[#319795] dark:bg-[#88cccb] dark:hover:bg-[#50D0C4] font-medium rounded-lg text-base px-5 py-2.5 mr-2 mb-2 w-48'
+          className='flex justify-center items-center dark:text-gray-900 text-white hover:bg-[#2C7A7B] bg-[#319795] dark:bg-[#88cccb] dark:hover:bg-[#50D0C4] font-medium rounded-lg text-base px-5 py-2.5 mr-2 my-2 w-48'
           scroll={false}
         >
           {t('HERO_BUTTON')} <RiArrowRightSLine className='inline text-xl' />{' '}
