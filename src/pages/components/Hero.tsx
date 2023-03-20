@@ -35,7 +35,7 @@ const Hero: FC = () => {
         <Image src={PictureOfMe} alt='My profile picture' placeholder='blur' />
       </div>
       <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-xl dark:text-slate-200 flex items-center'>
-        <IoLocationSharp className='inline text-red-600 text-2xl -mr-4' />{' '}
+        <IoLocationSharp className='inline text-red-600 text-2xl lg:-mr-4' />{' '}
         Santiago de Chile
       </p>
       <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-xl dark:text-slate-200'>
