@@ -1,11 +1,12 @@
 import { useTranslation } from '@/context/i18n'
+import dynamic from 'next/dynamic'
 import { FC } from 'react'
-import BackEnd from './BackEnd'
 import FrontEnd from './FrontEnd'
-import OtherTools from './OtherTools'
 
 const Technologies: FC = () => {
   const { t } = useTranslation()
+  const BackEnd = dynamic(() => import('./BackEnd'))
+  const OtherTools = dynamic(() => import('./OtherTools'))
 
   return (
     <>

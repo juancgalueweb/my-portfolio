@@ -1,16 +1,22 @@
 import { useTranslation } from '@/context/i18n'
 import { NextPage } from 'next'
-import CodingDojo2021 from '../components/Diplomas/CodingDojo2021'
-import Docker2022 from '../components/Diplomas/Docker2022'
+import dynamic from 'next/dynamic'
 import NextJS2022 from '../components/Diplomas/NextJS2022'
-import PFE2020 from '../components/Diplomas/PFE2020'
-import ScriptingInPython2020 from '../components/Diplomas/ScriptingInPython2020'
 import TypeScript2023 from '../components/Diplomas/TypeScript2023'
-import WDFE2021 from '../components/Diplomas/WDFE2021'
 import Layout from '../components/Layouts/Section'
 
 const Projects: NextPage = () => {
   const { t } = useTranslation()
+
+  const Docker2022 = dynamic(() => import('../components/Diplomas/Docker2022'))
+  const CodingDojo2021 = dynamic(
+    () => import('../components/Diplomas/CodingDojo2021')
+  )
+  const WDFE2021 = dynamic(() => import('../components/Diplomas/WDFE2021'))
+  const ScriptingInPython2020 = dynamic(
+    () => import('../components/Diplomas/ScriptingInPython2020')
+  )
+  const PFE2020 = dynamic(() => import('../components/Diplomas/PFE2020'))
 
   return (
     <Layout

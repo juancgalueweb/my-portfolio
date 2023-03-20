@@ -5,6 +5,7 @@ import Technologies from '../components/Technologies'
 
 const Techs: NextPage = () => {
   const { t } = useTranslation()
+
   return (
     <Layout title={t('TECH_SEO_TITLE')} description={t('TECH_SEO_DESCRIPTION')}>
       <Technologies />
