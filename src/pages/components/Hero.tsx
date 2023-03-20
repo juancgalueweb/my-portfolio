@@ -32,7 +32,7 @@ const Hero: FC = () => {
         {typed}
       </h3>
       <div className='relative mx-auto bg-gradient-to-b from-teal-500 dark:from-green-300 rounded-lg my-5 overflow-hidden w-72 h-80 md:w-80 md:h-96'>
-        <Image src={PictureOfMe} alt='My profile picture' placeholder='blur' />
+        <Image src={PictureOfMe} alt='My profile picture' />
       </div>
       <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-xl dark:text-slate-200 flex items-center'>
         <IoLocationSharp className='inline text-red-600 text-2xl lg:-mr-4' />{' '}
