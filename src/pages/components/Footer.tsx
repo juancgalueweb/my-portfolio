@@ -17,6 +17,7 @@ const FooterApp = () => {
             href='https://www.linkedin.com/in/juancgalue/'
             target='_blank'
             rel='noopener noreferrer'
+            aria-label='Link to my LinkedIn'
           >
             <AiFillLinkedin className='text-[#0B66C2] text-3xl mr-4 md:mr-6' />
           </a>
@@ -26,6 +27,7 @@ const FooterApp = () => {
             href='https://github.com/juancgalueweb'
             target='_blank'
             rel='noopener noreferrer'
+            aria-label='Link to Github repository'
           >
             <AiFillGithub className='text-black dark:text-white text-3xl mr-4 md:mr-6' />
           </a>
@@ -35,6 +37,7 @@ const FooterApp = () => {
             href='https://twitter.com/juancgalue'
             target='_blank'
             rel='noopener noreferrer'
+            aria-label='Link to my Twitter account'
           >
             <AiFillTwitterCircle className='text-[#1DA1F2] text-3xl mr-4 md:mr-6' />
           </a>
@@ -44,6 +47,7 @@ const FooterApp = () => {
             href='mailto: juancgalue@gmail.com?subject=Correo%20desde%20Portafolio%20de%20Juan%20Galue'
             target='_blank'
             rel='noopener noreferrer'
+            aria-label='Link so you can send me an e-mail'
           >
             <AiOutlineMail className='text-3xl' />
           </a>

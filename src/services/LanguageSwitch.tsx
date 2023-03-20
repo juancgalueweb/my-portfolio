@@ -19,6 +19,7 @@ const LanguageSwitch = () => {
             href={CheckValidPath(pathname)}
             locale={restOfLocales && restOfLocales[0]}
             scroll={false}
+            aria-label='Click me to show the content in English'
           >
             <div className='rounded-md hover:rounded-md hover:border-gray-200 hover:bg-gray-200 dark:border-slate-200 dark:bg-slate-200 dark:hover:bg-white dark:hover:border-white p-2 transform transition duration-300 hover:cursor-pointer mx-1'>
               <motion.div key='es' whileTap={{ rotate: 45 }}>
@@ -33,6 +34,7 @@ const LanguageSwitch = () => {
             href={CheckValidPath(pathname)}
             locale={restOfLocales && restOfLocales[0]}
             scroll={false}
+            aria-label='Click me to show the content in Spanish'
           >
             <div className='rounded-md hover:rounded-md hover:border-gray-200 hover:bg-gray-200 dark:border-slate-200 dark:bg-slate-200 dark:hover:bg-white dark:hover:border-white p-2 transform transition duration-300 hover:cursor-pointer mx-1'>
               <motion.div key='es' whileTap={{ rotate: 45 }}>

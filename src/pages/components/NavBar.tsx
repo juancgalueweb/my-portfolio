@@ -92,6 +92,7 @@ const NavBar = () => {
                       target='_blank'
                       rel='noopener noreferrer'
                       className={`text-base dark:text-slate-200 ${styles['desired-text-color']} hover:underline hover:underline-offset-4 ${styles['extra-padding']} dark:hover:text-white`}
+                      aria-label='Link so you can check the code of this portfolio in Github'
                     >
                       <AiFillGithub className='dark:text-white inline mr-1 mb-1 text-base' />
                       {t('NAVBAR_LINK_4')}
@@ -105,6 +106,7 @@ const NavBar = () => {
                       target='_blank'
                       rel='noopener noreferrer'
                       className={`text-base dark:text-slate-200 ${styles['desired-text-color']} hover:underline hover:underline-offset-4 ${styles['extra-padding']} dark:hover:text-white`}
+                      aria-label='Link to my resume in pdf format'
                     >
                       <FcDocument className='inline mr-1 mb-1 text-base' />
                       {t('NAVBAR_RESUME_BUTTON')}
@@ -141,6 +143,7 @@ const NavBar = () => {
                 target='_blank'
                 rel='noopener noreferrer'
                 className={`text-base dark:text-slate-200 ${styles['desired-text-color']} hover:underline hover:underline-offset-4 ${styles['extra-padding']} dark:hover:text-white block`}
+                aria-label='Link so you can check the code of this portfolio in Github'
               >
                 <AiFillGithub className='dark:text-white inline mr-1 mb-1 text-base' />
                 {t('NAVBAR_LINK_4')}
@@ -154,6 +157,7 @@ const NavBar = () => {
                 target='_blank'
                 rel='noopener noreferrer'
                 className={`text-base dark:text-slate-200 ${styles['desired-text-color']} hover:underline hover:underline-offset-4 ${styles['extra-padding']} dark:hover:text-white block`}
+                aria-label='Link to my resume in pdf format'
               >
                 <FcDocument className='inline mr-1 mb-1 text-base' />
                 {t('NAVBAR_RESUME_BUTTON')}
