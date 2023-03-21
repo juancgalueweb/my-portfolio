@@ -2,10 +2,13 @@ import { useTranslation } from '@/context/i18n'
 import { NextPage } from 'next'
 import dynamic from 'next/dynamic'
 import Layout from '../components/Layouts/Section'
+import Loading from '../components/Loading'
 
 const Projects: NextPage = () => {
   const { t } = useTranslation()
-  const AllDiplomas = dynamic(() => import('../components/AllDiplomas'))
+  const AllDiplomas = dynamic(() => import('../components/AllDiplomas'), {
+    loading: () => <Loading />
+  })
 
   return (
     <Layout
