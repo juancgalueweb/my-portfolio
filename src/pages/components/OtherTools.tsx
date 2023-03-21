@@ -21,7 +21,7 @@ import {
 } from 'react-icons/fa'
 import {
   SiMacos,
-  SiMaterialui,
+  SiMui,
   SiPostman,
   SiVercel,
   SiVisualstudio,
@@ -61,8 +61,7 @@ const OtherTools: FC = () => {
             <li className='ml-12'>Bootstrap</li>
             <li className='ml-12'>Sass</li>
             <li className='ml-6'>
-              <SiMaterialui className='inline text-[#0A7BF7] mr-1' /> Material
-              UI
+              <SiMui className='inline text-[#0A7BF7] mr-1' /> Material UI
             </li>
           </ul>
         </li>
