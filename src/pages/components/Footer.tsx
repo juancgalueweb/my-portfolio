@@ -7,8 +7,8 @@ import {
 
 const FooterApp = () => {
   return (
-    <footer className='p-4 bg-white shadow md:flex md:items-center md:justify-between dark:bg-gray-800 border-t dark:border-none'>
-      <span className='text-sm text-gray-500 sm:text-center dark:text-gray-400'>
+    <footer className='p-4 bg-white shadow md:flex md:items-center md:justify-between dark:bg-gray-dark-mode-800 border-t dark:border-none'>
+      <span className='text-sm text-gray-500 sm:text-center dark:text-gray-200'>
         &copy; 2023 Juan Carlos Galu&eacute;
       </span>
       <ul className='flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0'>

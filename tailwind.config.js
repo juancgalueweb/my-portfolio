@@ -12,6 +12,20 @@ module.exports = {
     extend: {
       fontFamily: {
         ruslan: ['Ruslan Display', 'sans-serif']
+      },
+      colors: {
+        'gray-dark-mode': {
+          50: '#373737',
+          100: '#353535',
+          200: '#333333',
+          300: '#2E2E2E',
+          400: '#2C2C2C',
+          500: '#272727',
+          600: '#242424',
+          700: '#222222',
+          800: '#1E1E1E',
+          900: '#121212'
+        }
       }
     }
   },

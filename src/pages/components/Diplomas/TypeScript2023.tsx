@@ -35,7 +35,7 @@ const TypeScript2023 = ({ latest }: DiplomaProps) => {
           </span>
         )}
       </h3>
-      <h4 className='mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300 flex items-center'>
+      <h4 className='mt-3 mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300 flex items-center'>
         <BsStopwatchFill className='inline text-base mr-1' />
         {t('TypeScript2023_H4_1')}
       </h4>
@@ -58,7 +58,7 @@ const TypeScript2023 = ({ latest }: DiplomaProps) => {
         href='https://certifications-and-courses.s3.sa-east-1.amazonaws.com/Microsoft/Achievements+-+juancarlosgalue-3004+_+Microsoft+Learn.pdf'
         target='_blank'
         rel='noopener noreferrer'
-        className='inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700'
+        className='inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-slate-100 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700'
       >
         <svg
           className='w-4 h-4 mr-2'

@@ -47,7 +47,7 @@ const NavBar = () => {
   return (
     <Disclosure
       as='nav'
-      className='sticky top-0 z-10 backdrop-filter backdrop-blur-lg bg-opacity-60 bg-slate-100 border-b dark:bg-[#1F2937] dark:border-gray-600 dark:bg-opacity-30'
+      className='sticky top-0 z-10 backdrop-filter backdrop-blur-lg bg-opacity-60 bg-slate-100 border-b dark:bg-gray-dark-mode-600 dark:border-gray-600 dark:bg-opacity-30'
     >
       {({ open }) => (
         <>
