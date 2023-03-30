@@ -1,9 +1,4 @@
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiFillTwitterCircle,
-  AiOutlineMail
-} from 'react-icons/ai'
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai'
 
 const FooterApp = () => {
   return (
@@ -30,16 +25,6 @@ const FooterApp = () => {
             aria-label='Link to Github repository'
           >
             <AiFillGithub className='text-black dark:text-white text-3xl mr-4 md:mr-6' />
-          </a>
-        </li>
-        <li>
-          <a
-            href='https://twitter.com/juancgalue'
-            target='_blank'
-            rel='noopener noreferrer'
-            aria-label='Link to my Twitter account'
-          >
-            <AiFillTwitterCircle className='text-[#1DA1F2] text-3xl mr-4 md:mr-6' />
           </a>
         </li>
         <li>

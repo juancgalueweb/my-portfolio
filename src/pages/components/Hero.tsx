@@ -3,8 +3,10 @@ import useTyped, { TypePhase } from '@/hooks/useTyped'
 import cn from 'classnames'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import PictureOfMe from 'public/Me2.webp'
 import { FC } from 'react'
+import { FcDocument } from 'react-icons/fc'
 import { IoLocationSharp } from 'react-icons/io5'
 import { RiArrowRightSLine } from 'react-icons/ri'
 
@@ -12,6 +14,7 @@ const heroTitle = ['MERN Full-stack Developer', 'Desarrollador full-stack MERN']
 
 const Hero: FC = () => {
   const { t } = useTranslation()
+  const { locale } = useRouter()
   const { typed, selectedTyped, phase } = useTyped(heroTitle)
 
   return (
@@ -44,16 +47,23 @@ const Hero: FC = () => {
       <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-xl dark:text-slate-200'>
         {t('HERO_P_2')}
       </p>
-      <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-xl dark:text-slate-200'>
-        {t('HERO_P_3')}
-      </p>
-      <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-xl dark:text-slate-200'>
-        {t('HERO_P_4')}
-      </p>
-      <div className='flex justify-center'>
+      <div className='flex justify-around'>
+        <a
+          href={
+            locale === 'es'
+              ? 'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/CV/CV+Juan+Galue%CC%81+wd+(2023)_Esp.pdf'
+              : 'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/CV/CV+Juan+Galue%CC%81+wd+(2023)_Eng.pdf'
+          }
+          target='_blank'
+          rel='noopener noreferrer'
+          className='flex justify-center items-center font-medium rounded-lg text-base px-5 py-2.5 mr-2 my-2 w-fit text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80'
+        >
+          <FcDocument className='inline mr-1 mb-1 text-2xl' />
+          {t('NAVBAR_RESUME_BUTTON')}
+        </a>
         <Link
           href='/myprojects'
-          className='flex justify-center items-center dark:text-gray-900 text-white hover:bg-[#2C7A7B] bg-[#146160] dark:bg-[#88cccb] dark:hover:bg-[#50D0C4] font-medium rounded-lg text-base px-5 py-2.5 mr-2 my-2 w-48'
+          className='flex justify-center items-center font-medium rounded-lg text-base px-5 py-2.5 mr-2 my-2 w-fit text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80'
           scroll={false}
         >
           {t('HERO_BUTTON')} <RiArrowRightSLine className='inline text-xl' />{' '}
