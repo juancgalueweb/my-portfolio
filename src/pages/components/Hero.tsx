@@ -58,7 +58,7 @@ const Hero: FC = () => {
           rel='noopener noreferrer'
           className='flex justify-center items-center font-medium rounded-lg text-base px-5 py-2.5 mr-2 my-2 w-fit text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80'
         >
-          <FcDocument className='inline mr-1 mb-1 text-2xl' />
+          <FcDocument className='inline mr-1 text-2xl' />
           {t('NAVBAR_RESUME_BUTTON')}
         </a>
         <Link
@@ -66,7 +66,8 @@ const Hero: FC = () => {
           className='flex justify-center items-center font-medium rounded-lg text-base px-5 py-2.5 mr-2 my-2 w-fit text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80'
           scroll={false}
         >
-          {t('HERO_BUTTON')} <RiArrowRightSLine className='inline text-xl' />{' '}
+          {t('HERO_BUTTON')}{' '}
+          <RiArrowRightSLine className='inline mr-1 text-2xl' />{' '}
         </Link>
       </div>
     </>
