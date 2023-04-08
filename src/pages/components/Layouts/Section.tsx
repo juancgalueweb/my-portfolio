@@ -24,10 +24,7 @@ const SectionLayout = ({ title, children, description }: LayoutProps) => {
         <title>{title}</title>
         {description && <meta name='description' content={description} />}
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta
-          name='google-site-verification'
-          content='RRh9mqgpDLIa-aNDEciseHa9KhNW2mmpuoFEs8MLn8w'
-        />
+        <meta name='robots' content='all' />
         <link rel='shortcut icon' href='favicon1.png' type='image/x-icon' />
       </Head>
       <ScrollToTop
