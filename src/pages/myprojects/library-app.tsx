@@ -80,6 +80,7 @@ const LibraryApp: NextPage = () => {
           target='_blank'
           rel='noopener noreferrer'
           className='dark:text-pink-400 dark:hover:underline dark:hover:underline-offset-4 text-blue-700 hover:underline hover:underline-offset-4'
+          aria-label='Link to the MERN library application'
         >
           https://biblioteca-mern.juancgalue-web.cl/{' '}
           <BsBoxArrowInUpRight className='dark:text-pink-400 inline ml-1' />
@@ -100,6 +101,7 @@ const LibraryApp: NextPage = () => {
           target='_blank'
           rel='noopener noreferrer'
           className='dark:text-pink-400 dark:hover:underline dark:hover:underline-offset-4 text-blue-700 hover:underline hover:underline-offset-4'
+          aria-label='Link to the github repository of the MERN library application'
         >
           <AiFillGithub className='text-black dark:text-white text-3xl inline' />
         </a>

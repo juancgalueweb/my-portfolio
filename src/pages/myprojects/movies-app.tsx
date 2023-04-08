@@ -41,6 +41,7 @@ const MoviesApp: NextPage = () => {
           target='_blank'
           rel='noopener noreferrer'
           className='dark:text-pink-400 dark:hover:underline dark:hover:underline-offset-4 text-blue-700 hover:underline hover:underline-offset-4'
+          aria-label='Link to omdbapi website'
         >
           OMDB Api
         </a>
@@ -81,6 +82,7 @@ const MoviesApp: NextPage = () => {
           target='_blank'
           rel='noopener noreferrer'
           className='dark:text-pink-400 dark:hover:underline dark:hover:underline-offset-4 text-blue-700 hover:underline hover:underline-offset-4'
+          aria-label='Link to the movie search application'
         >
           https://buscador-de-peliculas-juancgalueweb.vercel.app/{' '}
           <BsBoxArrowInUpRight className='dark:text-pink-400 inline ml-1' />
@@ -101,6 +103,7 @@ const MoviesApp: NextPage = () => {
           target='_blank'
           rel='noopener noreferrer'
           className='dark:text-pink-400 dark:hover:underline dark:hover:underline-offset-4 text-blue-700 hover:underline hover:underline-offset-4'
+          aria-label='Link to the github repository of the movie search application'
         >
           <AiFillGithub className='text-black dark:text-white text-3xl inline' />
         </a>

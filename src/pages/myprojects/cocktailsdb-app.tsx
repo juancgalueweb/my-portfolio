@@ -44,6 +44,7 @@ const CocktailsDbApp: NextPage = () => {
           target='_blank'
           rel='noopener noreferrer'
           className='dark:text-pink-400 dark:hover:underline dark:hover:underline-offset-4 text-blue-700 hover:underline hover:underline-offset-4'
+          aria-label='Link to the cocktaildb website'
         >
           TheCocktailDB
         </a>
@@ -56,6 +57,7 @@ const CocktailsDbApp: NextPage = () => {
           target='_blank'
           rel='noopener noreferrer'
           className='dark:text-pink-400 dark:hover:underline dark:hover:underline-offset-4 text-blue-700 hover:underline hover:underline-offset-4'
+          aria-label='Link to the plaiceholder website'
         >
           Plaiceholder
         </a>
@@ -87,6 +89,7 @@ const CocktailsDbApp: NextPage = () => {
           target='_blank'
           rel='noopener noreferrer'
           className='dark:text-pink-400 dark:hover:underline dark:hover:underline-offset-4 text-blue-700 hover:underline hover:underline-offset-4'
+          aria-label='Link to the cocktails DB application'
         >
           https://cocktailsdb.juancgalue-web.cl/{' '}
           <BsBoxArrowInUpRight className='dark:text-pink-400 inline ml-1' />
@@ -121,6 +124,7 @@ const CocktailsDbApp: NextPage = () => {
           target='_blank'
           rel='noopener noreferrer'
           className='dark:text-pink-400 dark:hover:underline dark:hover:underline-offset-4 text-blue-700 hover:underline hover:underline-offset-4'
+          aria-label='Link to the github repository of the cocktails DB application'
         >
           <AiFillGithub className='text-black dark:text-white text-3xl inline' />
         </a>
