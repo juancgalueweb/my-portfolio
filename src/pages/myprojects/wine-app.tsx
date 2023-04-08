@@ -5,7 +5,6 @@ import Link from 'next/link'
 import WinePic1 from 'public/wines-app/wines-app-1.webp'
 import WinePic2 from 'public/wines-app/wines-app-2.jpg'
 import { AiFillGithub, AiOutlineCheckCircle } from 'react-icons/ai'
-import { BsBoxArrowInUpRight } from 'react-icons/bs'
 import { RiArrowRightSLine } from 'react-icons/ri'
 import Layout from '../components/Layouts/Section'
 
@@ -67,7 +66,7 @@ const WinesApp: NextPage = () => {
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
           {t('LIBRARY_APP_P3_SPAN')}
         </span>
-        <a
+        {/* <a
           href='https://mywines.juancgalue-web.cl/home'
           target='_blank'
           rel='noopener noreferrer'
@@ -75,7 +74,10 @@ const WinesApp: NextPage = () => {
         >
           https://mywines.juancgalue-web.cl/home{' '}
           <BsBoxArrowInUpRight className='dark:text-pink-400 inline ml-1' />
-        </a>
+        </a> */}
+        <span className=' text-[#B10000] dark:text-[#FF7172]'>
+          {t('WINE_APP_P3')}
+        </span>
       </p>
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
