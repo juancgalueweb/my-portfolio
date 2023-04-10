@@ -17,6 +17,9 @@ const Portfolio: FC = () => {
       <h3 className='m-3 text-3xl text-gray-900 dark:text-slate-200'>
         {t('PORTFOLIO_H3')}
       </h3>
+      <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
+        {t('PROJECTS_INTRO')}
+      </p>
       <div className='flex flex-col place-items-start gap-5 py-5 lg:flex-row lg:flex-wrap'>
         {/* Shopping Cart */}
         <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
