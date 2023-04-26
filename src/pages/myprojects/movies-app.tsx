@@ -114,28 +114,28 @@ const MoviesApp: NextPage = () => {
         </span>
         Next.js, JavaScript, TailwindCSS, react-icons, just-debounce-it
       </p>
-      <div className='flex justify-center items-center m-3'>
-        <figure>
+      <div className='my-10 mx-3'>
+        <figure className='flex justify-center items-center flex-col'>
           <Image
             src={moviesPic1}
             alt='movies app - image when you look for a movie clicking a button'
             placeholder='blur'
             className='w-[800px] h-auto rounded-lg shadow-lg mt-10'
           />
-          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
+          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight'>
             {t('MOVIES_APP_FIGCAPTION_1')}
           </figcaption>
         </figure>
       </div>
-      <div className='flex justify-center items-center m-3'>
-        <figure>
+      <div className='my-10 mx-3'>
+        <figure className='flex justify-center items-center flex-col'>
           <Image
             src={moviesPic2}
             alt='movies app - image when you look for a movie while typing'
             placeholder='blur'
             className='w-[800px] h-auto rounded-lg shadow-lg mt-10'
           />
-          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
+          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight'>
             {t('MOVIES_APP_FIGCAPTION_2')}
           </figcaption>
         </figure>

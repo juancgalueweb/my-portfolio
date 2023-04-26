@@ -113,28 +113,28 @@ const WinesApp: NextPage = () => {
         Bcryptjs, cors, dotenv, express, fs-extra, jsonwebtoken, multer, sharp,
         MongoDB, aws-sdk
       </p>
-      <div className='flex justify-center items-center my-10 mx-3'>
-        <figure>
+      <div className='my-10 mx-3'>
+        <figure className='flex justify-center items-center flex-col'>
           <Image
             src={WinePic1}
             alt='Wines demo app pic 1'
             className='w-[800px] h-auto rounded-lg shadow-md'
             placeholder='blur'
           />
-          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
+          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight'>
             {t('WINE_APP_FIGCAPTION_1')}
           </figcaption>
         </figure>
       </div>
-      <div className='flex justify-center items-center my-10 mx-3'>
-        <figure>
+      <div className='my-10 mx-3'>
+        <figure className='flex justify-center items-center flex-col'>
           <Image
             src={WinePic2}
             alt='Wines demo app pic 2'
             className='w-[800px] h-auto rounded-lg shadow-md'
             placeholder='blur'
           />
-          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
+          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight'>
             {t('WINE_APP_FIGCAPTION_2')}
           </figcaption>
         </figure>

@@ -119,80 +119,80 @@ const LibraryApp: NextPage = () => {
         </span>
         Bcryptjs, cors, dotenv, express, jsonwebtoken, SendinBlue, MongoDB
       </p>
-      <div className='flex justify-center items-center my-10 mx-3'>
-        <figure>
+      <div className='my-10 mx-3'>
+        <figure className='flex justify-center items-center flex-col'>
           <Image
             src={LibraryPic1}
             alt='Library demo app pic 1'
             className='w-[800px] h-auto rounded-lg shadow-md'
             placeholder='blur'
           />
-          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
+          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight'>
             {t('LIBRARY_APP_FIGCAPTION_1')}
           </figcaption>
         </figure>
       </div>
-      <div className='flex justify-center items-center my-10 mx-3'>
-        <figure>
+      <div className='my-10 mx-3'>
+        <figure className='flex justify-center items-center flex-col'>
           <Image
             src={LibraryPic2}
             alt='Library demo app pic 2'
             className='w-[800px] h-auto rounded-lg shadow-md'
             placeholder='blur'
           />
-          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
+          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight'>
             {t('LIBRARY_APP_FIGCAPTION_2')}
           </figcaption>
         </figure>
       </div>
-      <div className='flex justify-center items-center my-10 mx-3'>
-        <figure>
+      <div className='my-10 mx-3'>
+        <figure className='flex justify-center items-center flex-col'>
           <Image
             src={LibraryPic3}
             alt='Library demo app pic 3'
             className='w-[800px] h-auto rounded-lg shadow-md'
             placeholder='blur'
           />
-          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
+          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight'>
             {t('LIBRARY_APP_FIGCAPTION_3')}
           </figcaption>
         </figure>
       </div>
-      <div className='flex justify-center items-center my-10 mx-3'>
-        <figure>
+      <div className='my-10 mx-3'>
+        <figure className='flex justify-center items-center flex-col'>
           <Image
             src={LibraryPic4}
             alt='Library demo app pic 4'
             className='w-[800px] h-auto rounded-lg shadow-md'
             placeholder='blur'
           />
-          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
+          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight'>
             {t('LIBRARY_APP_FIGCAPTION_4')}
           </figcaption>
         </figure>
       </div>
-      <div className='flex justify-center items-center my-10 mx-3'>
-        <figure>
+      <div className='my-10 mx-3'>
+        <figure className='flex justify-center items-center flex-col'>
           <Image
             src={LibraryPic5}
             alt='Library demo app pic 5'
             className='w-[800px] h-auto rounded-lg shadow-md'
             placeholder='blur'
           />
-          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
+          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight'>
             {t('LIBRARY_APP_FIGCAPTION_5')}
           </figcaption>
         </figure>
       </div>
-      <div className='flex justify-center items-center my-10 mx-3'>
-        <figure>
+      <div className='my-10 mx-3'>
+        <figure className='flex justify-center items-center flex-col'>
           <Image
             src={LibraryPic6}
             alt='Library demo app pic 6'
             className='w-[800px] h-auto rounded-lg shadow-md'
             placeholder='blur'
           />
-          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
+          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight'>
             {t('LIBRARY_APP_FIGCAPTION_6')}
           </figcaption>
         </figure>

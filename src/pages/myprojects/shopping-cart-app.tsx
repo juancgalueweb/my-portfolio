@@ -66,28 +66,28 @@ const ShoppingCartApp: NextPage = () => {
             <em>useContext: </em>
           </strong>
           {t('SHOPPING_CART_APP_UL_L2')}
-          <div className='flex justify-center items-center my-10'>
-            <figure>
+          <div className='my-10 mx-3'>
+            <figure className='flex justify-center items-center flex-col'>
               <Image
                 src={propsDrillingImage}
                 alt='Props drilling diagram'
                 placeholder='blur'
                 className='w-[400px] h-auto rounded-lg shadow-lg mx-auto'
               />
-              <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
+              <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight'>
                 {t('SHOPPING_CART_APP_UL_L2_FIGCAPTION_1')}
               </figcaption>
             </figure>
           </div>
-          <div className='flex justify-center items-center my-10'>
-            <figure>
+          <div className='my-10 mx-3'>
+            <figure className='flex justify-center items-center flex-col'>
               <Image
                 src={useContextImage}
                 alt='useContext diagram'
                 placeholder='blur'
                 className='w-[400px] h-auto rounded-lg shadow-lg mx-auto'
               />
-              <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
+              <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight'>
                 {t('SHOPPING_CART_APP_UL_L2_FIGCAPTION_2')}
               </figcaption>
             </figure>
@@ -142,8 +142,8 @@ const ShoppingCartApp: NextPage = () => {
         </span>
         Vite, JavaScript, TailwindCSS, react-icons
       </p>
-      <div className='flex justify-center items-center m-3'>
-        <figure>
+      <div className='my-10 mx-3'>
+        <figure className='flex justify-center items-center flex-col'>
           <Image
             src={shoppingCartPic1}
             alt='movies app - image when you look for a movie clicking a button'
@@ -155,8 +155,8 @@ const ShoppingCartApp: NextPage = () => {
           </figcaption>
         </figure>
       </div>
-      <div className='flex justify-center items-center m-3'>
-        <figure>
+      <div className='my-10 mx-3'>
+        <figure className='flex justify-center items-center flex-col'>
           <Image
             src={shoppingCartPic2}
             alt='movies app - image when you look for a movie while typing'
