@@ -221,7 +221,7 @@
   "GOOGLE_TRANSLATE_APP_H3_SPAN_1": "Google Translate Clone",
   "GOOGLE_TRANSLATE_APP_H3_SPAN_2": "May/2023",
   "GOOGLE_TRANSLATE_APP_P1": "This project consists of a simple clone of Google Translate, it is designed to translate only 3 languages: Spanish, English and German, although it also has a function to detect the source language automatically.",
-  "GOOGLE_TRANSLATE_APP_UL_L1": "All the logic is encapsulated in a useReducer.",
+  "GOOGLE_TRANSLATE_APP_UL_L1": "All the logic encapsulated in a useReducer.",
   "GOOGLE_TRANSLATE_APP_UL_L2": "Allows you to switch languages by clicking on the arrows.",
   "GOOGLE_TRANSLATE_APP_UL_L3": "If you already have a text written in the source language, and you change the target language, it will automatically be translated into the new selected language.",
   "GOOGLE_TRANSLATE_APP_UL_L4": "Allows you to copy the translated text to the clipboard.",

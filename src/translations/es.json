@@ -222,7 +222,7 @@
   "GOOGLE_TRANSLATE_APP_H3_SPAN_1": "Clon de Google Translate",
   "GOOGLE_TRANSLATE_APP_H3_SPAN_2": "may/2023",
   "GOOGLE_TRANSLATE_APP_P1": "Este proyecto consiste en un clon sencillo de Google Translate, está diseñado para traducir solo 3 idiomas: español, inglés y alemán, aunque también tiene una función para detectar el idioma de origen de manera automática.",
-  "GOOGLE_TRANSLATE_APP_UL_L1": "Toda la lógica está encapsulada en un useReducer.",
+  "GOOGLE_TRANSLATE_APP_UL_L1": "Toda la lógica encapsulada en un useReducer.",
   "GOOGLE_TRANSLATE_APP_UL_L2": "Permite intercambiar los idiomas haciendo click en las flechas.",
   "GOOGLE_TRANSLATE_APP_UL_L3": "Si ya tienes un texto escrito en el idioma de origen, y cambias el idioma de destino, automáticamente se traducirá al nuevo idioma seleccionado.",
   "GOOGLE_TRANSLATE_APP_UL_L4": "Permite copiar en el portapapeles el texto traducido.",
