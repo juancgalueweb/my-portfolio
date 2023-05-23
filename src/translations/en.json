@@ -228,5 +228,10 @@
   "GOOGLE_TRANSLATE_APP_UL_L5": "Allows you to reproduce the translated text.",
   "GOOGLE_TRANSLATE_APP_UL_L6": "It has a debounce that makes the translation request to the API after 500ms after the user stops typing.",
   "GOOGLE_TRANSLATE_APP_P3": "This application does not have deployment, but we can review the code in a face-to-face or virtual interview, and if you like I can do the live deployment as a test.",
-  "GOOGLE_TRANSLATE_APP_FIGCAPTION_1": "Screen of the app where you can see the drop-down menu of the source and target languages, the arrows to switch languages, the button to copy the translated text to the clipboard and the speaker to reproduce the translated text."
+  "GOOGLE_TRANSLATE_APP_FIGCAPTION_1": "Screen of the app where you can see the drop-down menu of the source and target languages, the arrows to switch languages, the button to copy the translated text to the clipboard and the speaker to reproduce the translated text.",
+  "IELTS_2014_H3": "Academic IELTS",
+  "IELTS_2014_H4_1": "2 weeks",
+  "IELTS_2014_H4_2": "Awarded by: British Council",
+  "IELTS_2014_TIME": "August 7, 2014",
+  "IELTS_2014_P": "Overall band score of 7.0 out of 9.0"
 }

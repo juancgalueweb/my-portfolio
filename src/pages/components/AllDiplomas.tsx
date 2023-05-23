@@ -1,5 +1,6 @@
 import CodingDojo2021 from './Diplomas/CodingDojo2021'
 import Docker2022 from './Diplomas/Docker2022'
+import IELTS from './Diplomas/IELTS'
 import NextJS2022 from './Diplomas/NextJS2022'
 import PFE2020 from './Diplomas/PFE2020'
 import ScriptingInPython2020 from './Diplomas/ScriptingInPython2020'
@@ -18,6 +19,7 @@ const AllDiplomas = () => {
       <WDFE2021 />
       <ScriptingInPython2020 />
       <PFE2020 />
+      <IELTS />
     </>
   )
 }

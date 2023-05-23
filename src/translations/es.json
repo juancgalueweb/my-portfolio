@@ -229,5 +229,10 @@
   "GOOGLE_TRANSLATE_APP_UL_L5": "Permite reproducir el texto traducido.",
   "GOOGLE_TRANSLATE_APP_UL_L6": "Tiene un debounce que hace la petición de traducción a la API luego de que transcurren 500ms desde que el usuario deja de escribir.",
   "GOOGLE_TRANSLATE_APP_P3": "Esta aplicación no tiene despliegue, pero podemos revisar el código en una entrevista presencial o virtual, y si gustan puedo hacer el despliegue en vivo a manera de prueba.",
-  "GOOGLE_TRANSLATE_APP_FIGCAPTION_1": "Pantalla de la app donde pueden observar el menú desplegable del idioma de origen y el idioma destino, las flechas para intercambiar los idiomas, el botón para copiar el texto traducido en el portapapeles y el parlante para reproducir dicho texto."
+  "GOOGLE_TRANSLATE_APP_FIGCAPTION_1": "Pantalla de la app donde pueden observar el menú desplegable del idioma de origen y el idioma destino, las flechas para intercambiar los idiomas, el botón para copiar el texto traducido en el portapapeles y el parlante para reproducir dicho texto.",
+  "IELTS_2014_H3": "IELTS Académico",
+  "IELTS_2014_H4_1": "2 semanas",
+  "IELTS_2014_H4_2": "Otorgado por: British Council",
+  "IELTS_2014_TIME": "07 de agosto de 2014",
+  "IELTS_2014_P": "Promedio global de 7.0 de 9.0"
 }
