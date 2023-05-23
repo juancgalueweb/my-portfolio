@@ -2,6 +2,7 @@ import { useTranslation } from '@/context/i18n'
 import Image from 'next/image'
 import AntDesignLogo from 'public/ant-design.svg'
 import FrontendPic from 'public/developer-activity-bro.svg'
+import ZustandPic from 'public/zustand.png'
 import { FC } from 'react'
 import {
   SiCss3,
@@ -79,6 +80,14 @@ const FrontEnd: FC = () => {
         <li className='text-gray-800 py-1 dark:text-slate-200 md:text-lg'>
           <SiTailwindcss className='inline text-[#37BDF9] mr-2' />
           Tailwind CSS
+        </li>
+        <li className='text-gray-800 py-1 dark:text-slate-200 md:text-lg'>
+          <Image
+            src={ZustandPic}
+            alt='Zustand icon'
+            className='inline mr-2 w-[20px] h-[20px]'
+          />
+          Zustand
         </li>
       </ul>
     </div>
