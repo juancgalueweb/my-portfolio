@@ -86,6 +86,7 @@ const FrontEnd: FC = () => {
             src={ZustandPic}
             alt='Zustand icon'
             className='inline mr-2 w-[20px] h-[20px]'
+            placeholder='blur'
           />
           Zustand
         </li>
