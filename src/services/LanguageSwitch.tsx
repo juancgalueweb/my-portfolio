@@ -9,7 +9,7 @@ const LanguageSwitch = () => {
   const router = useRouter()
   const { locale, locales, pathname } = router
 
-  const restOfLocales = locales && locales.filter(l => l !== locale)
+  const restOfLocales = locales?.filter(l => l !== locale)
 
   return (
     <>
@@ -17,7 +17,7 @@ const LanguageSwitch = () => {
         <Tooltip content='es → en' placement='bottom' trigger='hover'>
           <Link
             href={CheckValidPath(pathname)}
-            locale={restOfLocales && restOfLocales[0]}
+            locale={restOfLocales?.[0]}
             scroll={false}
             aria-label='Click me to show the content in English'
           >
@@ -32,7 +32,7 @@ const LanguageSwitch = () => {
         <Tooltip content='en → es' placement='bottom' trigger='hover'>
           <Link
             href={CheckValidPath(pathname)}
-            locale={restOfLocales && restOfLocales[0]}
+            locale={restOfLocales?.[0]}
             scroll={false}
             aria-label='Click me to show the content in Spanish'
           >

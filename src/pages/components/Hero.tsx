@@ -1,5 +1,6 @@
 import { useTranslation } from '@/context/i18n'
-import useTyped, { TypePhase } from '@/hooks/useTyped'
+import useTyped from '@/hooks/useTyped'
+import { TypePhase } from '@/types.d'
 import cn from 'classnames'
 import Image from 'next/image'
 import Link from 'next/link'

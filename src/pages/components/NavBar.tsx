@@ -2,6 +2,7 @@ import { useTranslation } from '@/context/i18n'
 import LanguageSwitch from '@/services/LanguageSwitch'
 import ThemeSwitch from '@/services/ThemeSwitch'
 import styles from '@/styles/Navbar.module.css'
+import { NavigationProps } from '@/types.d'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
@@ -14,12 +15,6 @@ import { FcDocument } from 'react-icons/fc'
 const NavBar = () => {
   const { t } = useTranslation()
   const { pathname, locale } = useRouter()
-
-  type NavigationProps = {
-    name: string
-    href: string
-    current: boolean
-  }
 
   const navigation: NavigationProps[] = [
     {

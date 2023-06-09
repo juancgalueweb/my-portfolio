@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 const isDark = (): boolean =>
   //Function that will return boolean if any of the condition is satisfied
-  (localStorage && localStorage.theme === 'dark') || //Condition 1 - has local storage and theme = dark in local storage is found
+  localStorage?.theme === 'dark' || //Condition 1 - has local storage and theme = dark in local storage is found
   (!('theme' in localStorage) &&
     window.matchMedia('(prefers-color-scheme: dark)').matches) //Condition 2 - No theme key in local storage but media color scheme is dark
 

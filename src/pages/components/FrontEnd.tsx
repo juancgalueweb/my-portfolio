@@ -5,6 +5,7 @@ import FrontendPic from 'public/developer-activity-bro.svg'
 import ZustandPic from 'public/zustand.png'
 import { FC } from 'react'
 import {
+  SiAstro,
   SiCss3,
   SiHtml5,
   SiJavascript,
@@ -89,6 +90,10 @@ const FrontEnd: FC = () => {
             placeholder='blur'
           />
           Zustand
+        </li>
+        <li className='text-gray-800 py-1 dark:text-slate-200 md:text-lg'>
+          <SiAstro className='inline mr-2' />
+          Astro
         </li>
       </ul>
     </div>

@@ -1,12 +1,8 @@
-import React from 'react'
+import { type ReactChildren } from '@/types.d'
 import Footer from '../Footer'
 import NavBar from '../NavBar'
 
-type MainProps = {
-  children: React.ReactNode
-}
-
-const MainLayout = ({ children }: MainProps) => {
+const MainLayout = ({ children }: ReactChildren) => {
   return (
     <>
       <main className='bg-slate-50 dark:bg-gray-dark-mode-900'>

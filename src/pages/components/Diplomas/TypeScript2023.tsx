@@ -1,11 +1,8 @@
 import { useTranslation } from '@/context/i18n'
+import { type DiplomaProps } from '@/types.d'
 import Image from 'next/image'
 import TSDiploma from 'public/diplomas/microsoft-typescript.webp'
 import { BsStopwatchFill } from 'react-icons/bs'
-
-type DiplomaProps = {
-  latest: boolean
-}
 
 const TypeScript2023 = ({ latest }: DiplomaProps) => {
   const { t } = useTranslation()

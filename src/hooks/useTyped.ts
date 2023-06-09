@@ -1,10 +1,5 @@
+import { TypePhase } from '@/types.d'
 import { useEffect, useState } from 'react'
-
-export enum TypePhase {
-  Typing,
-  Pausing,
-  Deleting
-}
 
 const TYPING_INTERVAL = 150
 const PAUSE_MS = 2000

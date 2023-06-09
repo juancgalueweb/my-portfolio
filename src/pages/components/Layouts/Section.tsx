@@ -1,15 +1,9 @@
 import styles from '@/styles/ScrollToTop.module.css'
+import { type LayoutProps } from '@/types.d'
 import { motion } from 'framer-motion'
 import Head from 'next/head'
-import React from 'react'
 import { HiArrowUp } from 'react-icons/hi'
 import ScrollToTop from 'react-scroll-to-top'
-
-type LayoutProps = {
-  title: string
-  children: React.ReactNode
-  description: string
-}
 
 const SectionLayout = ({ title, children, description }: LayoutProps) => {
   const variants = {

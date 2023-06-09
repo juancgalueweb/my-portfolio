@@ -1,11 +1,8 @@
 import { useTranslation } from '@/context/i18n'
+import { type DiplomaProps } from '@/types.d'
 import Image from 'next/image'
 import ScrumFoundationDiploma from 'public/diplomas/ScrumFoundation.jpg'
 import { BsStopwatchFill } from 'react-icons/bs'
-
-type DiplomaProps = {
-  latest: boolean
-}
 
 const ScrumFoundation2023 = ({ latest }: DiplomaProps) => {
   const { t } = useTranslation()
