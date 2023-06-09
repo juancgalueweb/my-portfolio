@@ -1,11 +1,14 @@
-import { useTranslation } from '@/context/i18n'
+import useTranslation from '@/hooks/useTranslation'
 import { NextPage } from 'next'
 import dynamic from 'next/dynamic'
 import Layout from '../components/Layouts/Section'
+import Loading from '../components/Loading'
 
 const Projects: NextPage = () => {
   const { t } = useTranslation()
-  const Portfolio = dynamic(() => import('../components/Portfolio'))
+  const Portfolio = dynamic(() => import('../components/Portfolio'), {
+    loading: () => <Loading />
+  })
 
   return (
     <Layout

@@ -1,4 +1,4 @@
-import { useTranslation } from '@/context/i18n'
+import useTranslation from '@/hooks/useTranslation'
 import Image from 'next/image'
 import AntDesignLogo from 'public/ant-design.svg'
 import FrontendPic from 'public/developer-activity-bro.svg'

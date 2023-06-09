@@ -1,4 +1,4 @@
-import { useTranslation } from '@/context/i18n'
+import useTranslation from '@/hooks/useTranslation'
 import { Button } from 'flowbite-react'
 import Head from 'next/head'
 import Image from 'next/image'

@@ -1,4 +1,4 @@
-import { useTranslation } from '@/context/i18n'
+import useTranslation from '@/hooks/useTranslation'
 import useTyped from '@/hooks/useTyped'
 import { TypePhase } from '@/types.d'
 import cn from 'classnames'

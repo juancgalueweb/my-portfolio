@@ -1,4 +1,4 @@
-import { useTranslation } from '@/context/i18n'
+import useTranslation from '@/hooks/useTranslation'
 import LanguageSwitch from '@/services/LanguageSwitch'
 import ThemeSwitch from '@/services/ThemeSwitch'
 import styles from '@/styles/Navbar.module.css'

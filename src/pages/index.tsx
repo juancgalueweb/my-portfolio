@@ -1,4 +1,4 @@
-import { useTranslation } from '@/context/i18n'
+import useTranslation from '@/hooks/useTranslation'
 import Hero from './components/Hero'
 import Layout from './components/Layouts/Section'
 

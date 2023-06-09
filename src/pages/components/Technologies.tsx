@@ -1,4 +1,4 @@
-import { useTranslation } from '@/context/i18n'
+import useTranslation from '@/hooks/useTranslation'
 import { FC } from 'react'
 import BackEnd from './BackEnd'
 import FrontEnd from './FrontEnd'

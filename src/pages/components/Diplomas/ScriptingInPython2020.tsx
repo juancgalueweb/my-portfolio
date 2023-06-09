@@ -1,4 +1,4 @@
-import { useTranslation } from '@/context/i18n'
+import useTranslation from '@/hooks/useTranslation'
 import Image from 'next/image'
 import ScriptingInPythonDiploma from 'public/diplomas/ScriptingInPython.jpg'
 import { BsStopwatchFill } from 'react-icons/bs'

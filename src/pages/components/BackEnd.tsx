@@ -1,4 +1,4 @@
-import { useTranslation } from '@/context/i18n'
+import useTranslation from '@/hooks/useTranslation'
 import Image from 'next/image'
 import BackendPic from 'public/backend-amico.svg'
 import { FC } from 'react'
