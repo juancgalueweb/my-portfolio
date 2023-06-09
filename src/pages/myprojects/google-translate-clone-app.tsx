@@ -73,12 +73,6 @@ const GoogleTranslateCloneApp: NextPage = () => {
           {t('GOOGLE_TRANSLATE_APP_P3')}
         </span>
       </p>
-      {/* <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
-        <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
-          {t('LIBRARY_APP_P4_SPAN')}
-        </span>
-        {t('WINE_APP_P4')}
-      </p> */}
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
           {t('LIBRARY_APP_P5_SPAN')}
@@ -97,7 +91,7 @@ const GoogleTranslateCloneApp: NextPage = () => {
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
           Front-end
         </span>
-        React, Typescript, Bootstrap, react-toastify
+        React, Vite, Typescript, Bootstrap, react-toastify
       </p>
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
