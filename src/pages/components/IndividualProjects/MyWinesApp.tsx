@@ -4,12 +4,28 @@ import Link from 'next/link'
 import myWinesApp from 'public/mywines-low.jpg'
 import { type FC } from 'react'
 import { BsFillCalendar2CheckFill } from 'react-icons/bs'
+import AWSS3Badge from '../Badges/AWSS3Badge'
+import DockerBadge from '../Badges/DockerBadge'
+import JavascriptBadge from '../Badges/JavascriptBadge'
+import MongoDBBadge from '../Badges/MongoDBBadge'
+import NodeBadge from '../Badges/NodeBadge'
+import ReactBadge from '../Badges/ReactBadge'
+import ViteBadge from '../Badges/ViteBadge'
 
 const MyWinesApp: FC = () => {
   const { t } = useTranslation()
 
   return (
-    <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
+    <div className='basis-1/3 flex-1 mx-3 my-5 hover:scale-[1.01] transform transition duration-300 relative'>
+      <div className='absolute -top-7 left-2 w-full flex gap-2'>
+        <ReactBadge />
+        <ViteBadge />
+        <JavascriptBadge />
+        <DockerBadge />
+        <MongoDBBadge />
+        <AWSS3Badge />
+        <NodeBadge />
+      </div>
       <Link
         href='/myprojects/wine-app'
         scroll={false}

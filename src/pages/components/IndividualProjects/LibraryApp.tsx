@@ -4,12 +4,28 @@ import Link from 'next/link'
 import libraryApp from 'public/biblioteca-mern.webp'
 import { type FC } from 'react'
 import { BsFillCalendar2CheckFill } from 'react-icons/bs'
+import AntDesignBadge from '../Badges/AntDesignBadge'
+import ExpressBadge from '../Badges/ExpressBadge'
+import JavascriptBadge from '../Badges/JavascriptBadge'
+import MongoDBBadge from '../Badges/MongoDBBadge'
+import NodeBadge from '../Badges/NodeBadge'
+import ReactBadge from '../Badges/ReactBadge'
+import ViteBadge from '../Badges/ViteBadge'
 
 const LibraryApp: FC = () => {
   const { t } = useTranslation()
 
   return (
-    <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
+    <div className='basis-1/3 flex-1 mx-3 my-5 hover:scale-[1.01] transform transition duration-300 relative'>
+      <div className='absolute -top-7 left-2 w-full flex gap-2'>
+        <ReactBadge />
+        <ViteBadge />
+        <JavascriptBadge />
+        <AntDesignBadge />
+        <MongoDBBadge />
+        <NodeBadge />
+        <ExpressBadge />
+      </div>
       <Link
         href='/myprojects/library-app'
         scroll={false}

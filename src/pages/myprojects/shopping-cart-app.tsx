@@ -140,7 +140,7 @@ const ShoppingCartApp: NextPage = () => {
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
           Front-end
         </span>
-        Vite, JavaScript, TailwindCSS, react-icons
+        React, Vite, JavaScript, TailwindCSS, react-icons
       </p>
       <div className='my-10 mx-3'>
         <figure className='flex justify-center items-center flex-col'>

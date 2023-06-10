@@ -4,12 +4,26 @@ import Link from 'next/link'
 import cocktailsApp from 'public/cocktails-db.webp'
 import { type FC } from 'react'
 import { BsFillCalendar2CheckFill } from 'react-icons/bs'
+import AntDesignBadge from '../Badges/AntDesignBadge'
+import NextJSBadge from '../Badges/NextJSBadge'
+import PlaiceholderBadge from '../Badges/PlaiceholderBadge'
+import ReactBadge from '../Badges/ReactBadge'
+import TailwindBadge from '../Badges/TailwindBadge'
+import TypescriptBadge from '../Badges/TypescriptBadge'
 
 const CocktailsDBApp: FC = () => {
   const { t } = useTranslation()
 
   return (
-    <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
+    <div className='basis-1/3 flex-1 mx-3 my-5 hover:scale-[1.01] transform transition duration-300 relative'>
+      <div className='absolute -top-7 left-2 w-full flex gap-2'>
+        <ReactBadge />
+        <NextJSBadge />
+        <TypescriptBadge />
+        <TailwindBadge />
+        <AntDesignBadge />
+        <PlaiceholderBadge />
+      </div>
       <Link
         href='/myprojects/cocktailsdb-app'
         scroll={false}

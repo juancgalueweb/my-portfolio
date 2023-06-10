@@ -4,11 +4,19 @@ import Link from 'next/link'
 import tictactoeApp from 'public/tic-tac-toe.webp'
 import { type FC } from 'react'
 import { BsFillCalendar2CheckFill } from 'react-icons/bs'
+import JavascriptBadge from '../Badges/JavascriptBadge'
+import ReactBadge from '../Badges/ReactBadge'
+import ViteBadge from '../Badges/ViteBadge'
 
 const TicTacToeApp: FC = () => {
   const { t } = useTranslation()
   return (
-    <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
+    <div className='basis-1/3 flex-1 mx-3 my-5 hover:scale-[1.01] transform transition duration-300 relative'>
+      <div className='absolute -top-7 left-2 w-full flex gap-2'>
+        <ReactBadge />
+        <ViteBadge />
+        <JavascriptBadge />
+      </div>
       <Link
         href='/myprojects/tic-tac-toe-app'
         scroll={false}

@@ -15,7 +15,7 @@ const GoogleTranslateCloneApp: FC = () => {
   const { t } = useTranslation()
 
   return (
-    <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300 relative'>
+    <div className='basis-1/3 flex-1 mx-3 my-5 hover:scale-[1.01] transform transition duration-300 relative'>
       <div className='absolute -top-7 left-2 w-full flex gap-2'>
         <ReactBadge />
         <ViteBadge />

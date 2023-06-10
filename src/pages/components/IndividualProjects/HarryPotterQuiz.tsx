@@ -4,12 +4,24 @@ import Link from 'next/link'
 import harryPotterQuiz from 'public/harry-potter-quiz-preview.jpg'
 import { type FC } from 'react'
 import { BsFillCalendar2CheckFill } from 'react-icons/bs'
+import MaterialUIBadge from '../Badges/MaterialUIBadge'
+import ReactBadge from '../Badges/ReactBadge'
+import TypescriptBadge from '../Badges/TypescriptBadge'
+import ViteBadge from '../Badges/ViteBadge'
+import ZustandBadge from '../Badges/ZustandBadge'
 
 const HarryPotterQuiz: FC = () => {
   const { t } = useTranslation()
 
   return (
-    <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
+    <div className='basis-1/3 flex-1 mx-3 my-5 hover:scale-[1.01] transform transition duration-300 relative'>
+      <div className='absolute -top-7 left-2 w-full flex gap-2'>
+        <ReactBadge />
+        <ViteBadge />
+        <TypescriptBadge />
+        <ZustandBadge />
+        <MaterialUIBadge />
+      </div>
       <Link
         href='/myprojects/harry-potter-quiz'
         scroll={false}

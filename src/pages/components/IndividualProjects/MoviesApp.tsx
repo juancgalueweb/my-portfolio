@@ -4,12 +4,22 @@ import Link from 'next/link'
 import moviesApp from 'public/buscador-de-libros-preview.jpg'
 import { type FC } from 'react'
 import { BsFillCalendar2CheckFill } from 'react-icons/bs'
+import JavascriptBadge from '../Badges/JavascriptBadge'
+import NextJSBadge from '../Badges/NextJSBadge'
+import ReactBadge from '../Badges/ReactBadge'
+import TailwindBadge from '../Badges/TailwindBadge'
 
 const MoviesApp: FC = () => {
   const { t } = useTranslation()
 
   return (
-    <div className='basis-1/3 flex-1 m-3 hover:scale-[1.01] transform transition duration-300'>
+    <div className='basis-1/3 flex-1 mx-3 my-5 hover:scale-[1.01] transform transition duration-300 relative'>
+      <div className='absolute -top-7 left-2 w-full flex gap-2'>
+        <ReactBadge />
+        <NextJSBadge />
+        <JavascriptBadge />
+        <TailwindBadge />
+      </div>
       <Link
         href='/myprojects/movies-app'
         scroll={false}

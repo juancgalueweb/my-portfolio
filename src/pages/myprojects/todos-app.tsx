@@ -122,7 +122,7 @@ const TodosApp: NextPage = () => {
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
           Front-end
         </span>
-        React, Typescript, axios, react-pin-field, react-router-dom,
+        React, Vite, Typescript, axios, react-pin-field, react-router-dom,
         react-toastify, todomvc-app-css
       </p>
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>

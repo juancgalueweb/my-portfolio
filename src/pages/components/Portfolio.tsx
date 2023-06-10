@@ -24,7 +24,7 @@ const Portfolio: FC = () => {
       <h2 className='m-3 text-2xl text-teal-900 dark:text-[#20C997]'>
         {t('PROJECTS_WITH_DEPLOYMENTS')}
       </h2>
-      <div className='flex flex-col place-items-start gap-5 py-5 lg:flex-row lg:flex-wrap'>
+      <div className='flex flex-col place-items-center lg:place-items-start gap-5 py-5 mt-5 lg:flex-row lg:flex-wrap'>
         <HarryPotterQuiz />
         <TodosApp />
         <ShoppingCart />
@@ -36,7 +36,7 @@ const Portfolio: FC = () => {
       <h2 className='m-3 text-2xl text-teal-900 dark:text-[#20C997]'>
         {t('PROJECTS_WITHOUT_DEPLOYMENTS')}
       </h2>
-      <div className='flex flex-col place-items-start gap-5 py-5 lg:flex-row lg:flex-wrap'>
+      <div className='flex flex-col place-items-center lg:place-items-start gap-5 py-5 mt-5 lg:flex-row lg:flex-wrap'>
         <MyWinesApp />
         <GoogleTranslateCloneApp />
       </div>
