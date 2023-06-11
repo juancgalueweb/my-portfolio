@@ -15,9 +15,9 @@ const Portfolio: FC = () => {
 
   return (
     <>
-      <h3 className='m-3 text-3xl text-teal-900 dark:text-[#20C997]'>
+      <h1 className='m-3 text-3xl text-teal-900 dark:text-[#20C997]'>
         {t('PORTFOLIO_H3')}
-      </h3>
+      </h1>
       <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         {t('PROJECTS_INTRO')}
       </p>

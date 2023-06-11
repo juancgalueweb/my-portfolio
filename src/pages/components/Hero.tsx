@@ -20,10 +20,10 @@ const Hero: FC = () => {
 
   return (
     <>
-      <h2 className='text-5xl py-2 m-3 text-teal-900 font-medium md:text-6xl dark:text-[#20C997] text-center'>
+      <h1 className='text-5xl py-2 m-3 text-teal-900 font-medium md:text-6xl dark:text-[#20C997] text-center'>
         Juan Carlos Galu&eacute;
-      </h2>
-      <h3
+      </h1>
+      <h2
         className={cn(
           'text-2xl py-2 m-3 md-text-3xl text-gray-900 dark:text-slate-200 text-center',
           {
@@ -34,7 +34,7 @@ const Hero: FC = () => {
         aria-label={selectedTyped}
       >
         {typed}
-      </h3>
+      </h2>
       <div className='relative mx-auto bg-gradient-to-b from-teal-500 dark:from-green-300 rounded-lg my-5 overflow-hidden w-72 h-80 md:w-80 md:h-96'>
         <Image src={PictureOfMe} alt='My profile picture' placeholder='blur' />
       </div>

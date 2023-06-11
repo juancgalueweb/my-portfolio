@@ -31,9 +31,9 @@ const ShoppingCart: FC = () => {
           placeholder='blur'
           className='rounded'
         />
-        <h5 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white my-4'>
+        <h3 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white my-4'>
           {t('PORTFOLIO_P6_TITLE')}
-        </h5>
+        </h3>
         <p className='font-normal text-gray-700 dark:text-gray-400'>
           {t('PORTFOLIO_P6_CONTENT')}
         </p>
