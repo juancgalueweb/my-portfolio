@@ -1,6 +1,6 @@
 const ReactRouterBadge = () => {
   return (
-    <div className='w-11 h-11 rounded-full border border-gray-200 z-10 flex items-center justify-center bg-slate-50 p-1'>
+    <div className='w-10 h-10 rounded-full border border-gray-200 z-10 flex items-center justify-center bg-slate-50 p-1'>
       <svg
         viewBox='0 -58 256 256'
         version='1.1'

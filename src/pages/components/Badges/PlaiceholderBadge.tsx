@@ -6,7 +6,7 @@ const PlaiceholderBadge = () => {
     <Image
       src={plaiceholderLogo}
       alt='Plaiceholder logo'
-      className='w-11 h-11 rounded-full border border-gray-200 z-10 p-1 bg-white'
+      className='w-10 h-10 rounded-full border border-gray-200 z-10 p-1 bg-white'
     />
   )
 }

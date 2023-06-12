@@ -1,7 +1,7 @@
 import { SiNextdotjs } from 'react-icons/si'
 
 const NextJSBadge = () => {
-  return <SiNextdotjs className='w-11 h-11 rounded-full z-10 bg-slate-50' />
+  return <SiNextdotjs className='w-10 h-10 rounded-full z-10 bg-slate-50' />
 }
 
 export default NextJSBadge

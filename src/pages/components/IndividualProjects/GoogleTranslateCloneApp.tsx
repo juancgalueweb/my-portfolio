@@ -4,6 +4,7 @@ import Link from 'next/link'
 import googleTranslateCloneApp from 'public/google-translate-clone-preview.jpg'
 import { type FC } from 'react'
 import { BsFillCalendar2CheckFill } from 'react-icons/bs'
+import BootstrapBadge from '../Badges/BootstrapBadge'
 import ExpressBadge from '../Badges/ExpressBadge'
 import NodeBadge from '../Badges/NodeBadge'
 import OpenAIBadge from '../Badges/OpenAIBadge'
@@ -19,6 +20,7 @@ const GoogleTranslateCloneApp: FC = () => {
       <div className='absolute -top-7 left-2 w-full flex gap-2'>
         <ReactBadge />
         <ViteBadge />
+        <BootstrapBadge />
         <TypescriptBadge />
         <OpenAIBadge />
         <NodeBadge />

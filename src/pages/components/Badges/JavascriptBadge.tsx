@@ -1,6 +1,6 @@
 const JavascriptBadge = () => {
   return (
-    <div className='w-11 h-11 z-10'>
+    <div className='w-10 h-10 z-10'>
       <svg
         viewBox='0 0 256 256'
         version='1.1'

@@ -1,6 +1,6 @@
 const OpenAIBadge = () => {
   return (
-    <div className='w-11 h-11 rounded-full border border-gray-200 z-10 bg-[#19C37D] p-1.5'>
+    <div className='w-10 h-10 rounded-full border border-gray-200 z-10 bg-[#19C37D] p-1.5'>
       <svg
         fill='#FFFFFF'
         viewBox='0 0 24 24'

@@ -5,6 +5,7 @@ import libraryApp from 'public/biblioteca-mern.webp'
 import { type FC } from 'react'
 import { BsFillCalendar2CheckFill } from 'react-icons/bs'
 import AntDesignBadge from '../Badges/AntDesignBadge'
+import BootstrapBadge from '../Badges/BootstrapBadge'
 import ExpressBadge from '../Badges/ExpressBadge'
 import JavascriptBadge from '../Badges/JavascriptBadge'
 import MongoDBBadge from '../Badges/MongoDBBadge'
@@ -22,6 +23,7 @@ const LibraryApp: FC = () => {
         <ViteBadge />
         <JavascriptBadge />
         <AntDesignBadge />
+        <BootstrapBadge />
         <MongoDBBadge />
         <NodeBadge />
         <ExpressBadge />

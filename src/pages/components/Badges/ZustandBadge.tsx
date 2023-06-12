@@ -6,7 +6,7 @@ const ZustandBadge = () => {
     <Image
       src={zustandLogo}
       alt='AWS S3 Logo'
-      className='w-11 h-11 rounded-full z-10 bg-slate-50'
+      className='w-10 h-10 rounded-full z-10 bg-slate-50'
     />
   )
 }
