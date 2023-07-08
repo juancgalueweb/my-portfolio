@@ -1,10 +1,19 @@
 import useTranslation from '@/hooks/useTranslation'
-import { type DiplomaProps } from '@/types.d'
+import { type DiplomaTemplateProps } from '@/types.d'
 import Image from 'next/image'
-import TSDiploma from 'public/diplomas/microsoft-typescript.webp'
 import { BsStopwatchFill } from 'react-icons/bs'
 
-const TypeScript2023 = ({ latest }: DiplomaProps) => {
+const DiplomaTemplate = ({
+  latest,
+  title,
+  courseDuration,
+  certifyingCompany,
+  certificationIssuedDate,
+  certificationContent,
+  diplomaImageExternalUrl,
+  diplomaAWSUrl,
+  fetchingPriority
+}: DiplomaTemplateProps) => {
   const { t } = useTranslation()
 
   return (
@@ -25,7 +34,7 @@ const TypeScript2023 = ({ latest }: DiplomaProps) => {
         </svg>
       </span>
       <h3 className='flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white'>
-        Build JavaScript applications using TypeScript
+        <span dangerouslySetInnerHTML={{ __html: title }}></span>
         {latest && (
           <span className='bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3'>
             {t('LATEST_COURSE')}
@@ -34,25 +43,28 @@ const TypeScript2023 = ({ latest }: DiplomaProps) => {
       </h3>
       <h4 className='mt-3 mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300 flex items-center'>
         <BsStopwatchFill className='inline text-base mr-1' />
-        {t('TypeScript2023_H4_1')}
+        {t(`${courseDuration}`)}
       </h4>
-      <h4 className='mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'>
-        {t('TypeScript2023_H4_2')}
-      </h4>
+      <h4
+        className='mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'
+        dangerouslySetInnerHTML={{ __html: t(`${certifyingCompany}`) }}
+      ></h4>
       <time className='block mb-2 text-sm font-normal leading-none text-gray-700 dark:text-slate-300'>
-        {t('TypeScript2023_TIME')}
+        {t(`${certificationIssuedDate}`)}
       </time>
       <p className='mb-4 text-base font-normal text-gray-800 dark:text-slate-200'>
-        {t('TypeScript2023_P')}
+        {t(`${certificationContent}`)}
       </p>
       <Image
-        src={TSDiploma}
-        alt='TypeScript diploma image'
+        src={diplomaImageExternalUrl}
+        alt={`Diploma image from ${title}`}
         className='w-[400px] h-auto rounded-lg shadow-md mb-4'
-        placeholder='blur'
+        priority={fetchingPriority}
+        width={400}
+        height={400}
       />
       <a
-        href='https://certifications-and-courses.s3.sa-east-1.amazonaws.com/Microsoft/Achievements+-+juancarlosgalue-3004+_+Microsoft+Learn.pdf'
+        href={`${diplomaAWSUrl}`}
         target='_blank'
         rel='noopener noreferrer'
         className='inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-slate-100 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700'
@@ -75,4 +87,4 @@ const TypeScript2023 = ({ latest }: DiplomaProps) => {
   )
 }
 
-export default TypeScript2023
+export default DiplomaTemplate

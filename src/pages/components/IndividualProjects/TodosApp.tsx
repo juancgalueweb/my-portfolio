@@ -36,6 +36,7 @@ const TodosApp: FC = () => {
           alt='Todos app home screen image'
           placeholder='blur'
           className='rounded'
+          priority
         />
         <h3 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white my-4'>
           {t('PORTFOLIO_P7_TITLE')}

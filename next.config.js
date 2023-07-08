@@ -5,6 +5,13 @@ const nextConfig = {
   i18n: {
     locales: ['en', 'es'],
     defaultLocale: 'es'
+  },
+  images: {
+    remotePatterns: [
+      {
+        hostname: 'certifications-and-courses.s3.sa-east-1.amazonaws.com'
+      }
+    ]
   }
 }
 

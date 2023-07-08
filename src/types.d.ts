@@ -22,14 +22,22 @@ export interface LayoutProps {
   description: string
 }
 
-export interface DiplomaProps {
-  latest: boolean
-}
-
 export interface LanguagesProps {
   [key: string]: { [key: string]: string }
 }
 
 export interface I18NContextType {
   t: (key: string) => string
+}
+
+export interface DiplomaTemplateProps {
+  latest: boolean
+  title: string
+  courseDuration: string
+  certifyingCompany: string
+  certificationIssuedDate: string
+  certificationContent: string
+  diplomaImageExternalUrl: string
+  diplomaAWSUrl: string
+  fetchingPriority: boolean
 }

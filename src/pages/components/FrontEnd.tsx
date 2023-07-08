@@ -28,6 +28,7 @@ const FrontEnd: FC = () => {
           src={FrontendPic}
           alt='Frontend development image'
           className='rounded mb-4 w-[300px] h-auto'
+          priority
         />
         <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-xs mt-2 font-extralight text-center'>
           <a

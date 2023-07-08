@@ -32,6 +32,7 @@ const HarryPotterQuiz: FC = () => {
           alt='Harry Potter Quiz home screen image'
           placeholder='blur'
           className='rounded'
+          priority
         />
         <h3 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white my-4'>
           {t('PORTFOLIO_P9_TITLE')}
