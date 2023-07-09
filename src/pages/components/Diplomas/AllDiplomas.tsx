@@ -1,6 +1,6 @@
 import { diplomasInfo } from '@/data/diplomasInfo'
 import { DiplomaTemplateProps } from '@/types.d'
-import DiplomaTemplate from './Diplomas/DiplomaTemplate'
+import DiplomaTemplate from './DiplomaTemplate'
 
 const AllDiplomas = () => {
   const renderDiploma = (diploma: DiplomaTemplateProps) => {

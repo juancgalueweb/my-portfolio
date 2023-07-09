@@ -1,6 +1,6 @@
 import useTranslation from '@/hooks/useTranslation'
-import Hero from './components/Hero'
 import Layout from './components/Layouts/Section'
+import Hero from './components/MainPage/Hero'
 
 export default function Home() {
   const { t } = useTranslation()
