@@ -1,7 +1,7 @@
-export const diplomasInfo = [
-  {
+export const diplomasInfo = {
+  scrumFundation: {
     latest: true,
-    title: 'Scrum Foundation Professional Certificate SFPC&trade;',
+    title: 'Scrum Foundation Professional Certificate SFPC',
     courseDuration: 'SCRUM_FOUNDATION_2023_H4_1',
     certifyingCompany: 'SCRUM_FOUNDATION_2023_H4_2',
     certificationIssuedDate: 'SCRUM_FOUNDATION_2023_TIME',
@@ -11,7 +11,7 @@ export const diplomasInfo = [
       'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/CertiProf/Certiprof+Certificate+Scrum+Fundation.pdf',
     fetchingPriority: true
   },
-  {
+  typescript: {
     latest: false,
     title: 'Build JavaScript applications using TypeScript',
     courseDuration: 'TypeScript2023_H4_1',
@@ -23,7 +23,7 @@ export const diplomasInfo = [
       'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/Microsoft/Achievements+-+juancarlosgalue-3004+_+Microsoft+Learn.pdf',
     fetchingPriority: true
   },
-  {
+  nextjs: {
     latest: false,
     title: 'NextJS2022_H3',
     courseDuration: 'NextJS2022_H4_1',
@@ -35,7 +35,7 @@ export const diplomasInfo = [
       'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/Rootlab/Juan+Carlos+Galue_Certificado-RootLab_Next.JS.pdf',
     fetchingPriority: false
   },
-  {
+  docker: {
     latest: false,
     title: 'Docker for the Absolute Beginner - Hands On - DevOps',
     courseDuration: 'Docker2022_H4_1',
@@ -47,7 +47,7 @@ export const diplomasInfo = [
       'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/Udemy/docker-for-the-absolute-beginner.pdf',
     fetchingPriority: false
   },
-  {
+  codingDojo: {
     latest: false,
     title: 'CodingDojo2021_H3',
     courseDuration: 'CodingDojo2021_H4_1',
@@ -59,7 +59,7 @@ export const diplomasInfo = [
       'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/CodingDojo/Certificado+MERN+-+Juan+Carlos+Galue.pdf',
     fetchingPriority: false
   },
-  {
+  devslopes: {
     latest: false,
     title: 'Devslopes - 30 Day Code Challenge JavaScript',
     courseDuration: 'DEVSLOPES_2021_H4_1',
@@ -71,7 +71,7 @@ export const diplomasInfo = [
       'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/Devslopes/certificate-154782045.jpg',
     fetchingPriority: false
   },
-  {
+  webDesignForEverybody: {
     latest: false,
     title: 'Web Design for Everybody: Basics of Web Development & Coding',
     courseDuration: 'WDFE2021_H4_1',
@@ -83,7 +83,7 @@ export const diplomasInfo = [
       'https://www.coursera.org/account/accomplishments/specialization/56DFBMK3X5J3',
     fetchingPriority: false
   },
-  {
+  scriptingInPython: {
     latest: false,
     title: 'Introduction to Scripting in Python',
     courseDuration: 'ScriptingInPython2020_H4_1',
@@ -95,7 +95,7 @@ export const diplomasInfo = [
       'https://www.coursera.org/account/accomplishments/specialization/CYPAYBNMGSUM',
     fetchingPriority: false
   },
-  {
+  pythonForEverybody: {
     latest: false,
     title: 'Python for Everybody',
     courseDuration: 'PFE2020_H4_1',
@@ -107,7 +107,7 @@ export const diplomasInfo = [
       'https://www.coursera.org/account/accomplishments/specialization/B6BEZVWETQY7',
     fetchingPriority: false
   },
-  {
+  ielts: {
     latest: false,
     title: 'IELTS_2014_H3',
     courseDuration: 'IELTS_2014_H4_1',
@@ -119,4 +119,4 @@ export const diplomasInfo = [
       'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/IELTS.pdf',
     fetchingPriority: false
   }
-]
+}

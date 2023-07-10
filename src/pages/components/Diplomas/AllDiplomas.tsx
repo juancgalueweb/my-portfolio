@@ -1,23 +1,27 @@
-import { diplomasInfo } from '@/data/diplomasInfo'
-import DiplomaTemplate from './DiplomaTemplate'
+import CodingDojo from './CodingDojo'
+import Devslopes from './Devslopes'
+import Docker from './Docker'
+import Ielts from './Ielts'
+import NextJs from './NextJs'
+import Python4Everybody from './Python4Everybody'
+import ScriptingInPython from './ScriptingInPython'
+import ScrumFundation from './ScrumFundation'
+import Typescript from './Typescript'
+import WebDesign4Everybody from './WebDesign4Everybody'
 
 const AllDiplomas = () => {
   return (
     <>
-      {diplomasInfo.map(diploma => (
-        <DiplomaTemplate
-          key={diploma.title}
-          latest={diploma.latest}
-          title={diploma.title}
-          courseDuration={diploma.courseDuration}
-          certifyingCompany={diploma.certifyingCompany}
-          certificationIssuedDate={diploma.certificationIssuedDate}
-          certificationContent={diploma.certificationContent}
-          diplomaImageName={diploma.diplomaImageName}
-          diplomaAWSUrl={diploma.diplomaAWSUrl}
-          fetchingPriority={diploma.fetchingPriority}
-        />
-      ))}
+      <ScrumFundation />
+      <Typescript />
+      <NextJs />
+      <Docker />
+      <CodingDojo />
+      <Devslopes />
+      <WebDesign4Everybody />
+      <ScriptingInPython />
+      <Python4Everybody />
+      <Ielts />
     </>
   )
 }

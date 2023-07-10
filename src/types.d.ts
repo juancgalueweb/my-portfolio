@@ -29,15 +29,3 @@ export interface LanguagesProps {
 export interface I18NContextType {
   t: (key: string) => string
 }
-
-export interface DiplomaTemplateProps {
-  latest: boolean
-  title: string
-  courseDuration: string
-  certifyingCompany: string
-  certificationIssuedDate: string
-  certificationContent: string
-  diplomaImageName: string
-  diplomaAWSUrl: string
-  fetchingPriority: boolean
-}
