@@ -58,10 +58,10 @@ const DiplomaTemplate = ({
       <Image
         src={diplomaImageExternalUrl}
         alt={`Diploma image from ${title}`}
-        className='w-[400px] h-auto rounded-lg shadow-md mb-4'
+        className='rounded-lg shadow-md mb-4 w-auto h-auto'
         priority={fetchingPriority}
         width={400}
-        height={400}
+        height={290}
       />
       <a
         href={`${diplomaAWSUrl}`}
