@@ -6,24 +6,10 @@ export const diplomasInfo = [
     certifyingCompany: 'SCRUM_FOUNDATION_2023_H4_2',
     certificationIssuedDate: 'SCRUM_FOUNDATION_2023_TIME',
     certificationContent: 'SCRUM_FOUNDATION_2023_P',
-    diplomaImageExternalUrl:
-      'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/diploma-images/ScrumFoundation.jpg',
+    diplomaImageName: 'ScrumFoundation.jpg',
     diplomaAWSUrl:
       'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/CertiProf/Certiprof+Certificate+Scrum+Fundation.pdf',
     fetchingPriority: true
-  },
-  {
-    latest: false,
-    title: 'Devslopes - 30 Day Code Challenge JavaScript',
-    courseDuration: 'DEVSLOPES_2021_H4_1',
-    certifyingCompany: 'DEVSLOPES_2021_H4_2',
-    certificationIssuedDate: 'DEVSLOPES_2021_TIME',
-    certificationContent: 'DEVSLOPES_2021_P',
-    diplomaImageExternalUrl:
-      'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/diploma-images/Devslopes_2021.jpeg',
-    diplomaAWSUrl:
-      'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/Devslopes/certificate-154782045.jpg',
-    fetchingPriority: false
   },
   {
     latest: false,
@@ -32,8 +18,7 @@ export const diplomasInfo = [
     certifyingCompany: 'TypeScript2023_H4_2',
     certificationIssuedDate: 'TypeScript2023_TIME',
     certificationContent: 'TypeScript2023_P',
-    diplomaImageExternalUrl:
-      'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/diploma-images/microsoft-typescript.webp',
+    diplomaImageName: 'microsoft-typescript.webp',
     diplomaAWSUrl:
       'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/Microsoft/Achievements+-+juancarlosgalue-3004+_+Microsoft+Learn.pdf',
     fetchingPriority: true
@@ -45,8 +30,7 @@ export const diplomasInfo = [
     certifyingCompany: 'NextJS2022_H4_2',
     certificationIssuedDate: 'NextJS2022_TIME',
     certificationContent: 'NextJS2022_P',
-    diplomaImageExternalUrl:
-      'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/diploma-images/RootLab-NextJS.jpg',
+    diplomaImageName: 'RootLab-NextJS.jpg',
     diplomaAWSUrl:
       'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/Rootlab/Juan+Carlos+Galue_Certificado-RootLab_Next.JS.pdf',
     fetchingPriority: false
@@ -58,8 +42,7 @@ export const diplomasInfo = [
     certifyingCompany: 'Docker2022_H4_2',
     certificationIssuedDate: 'Docker2022_TIME',
     certificationContent: 'Docker2022_P',
-    diplomaImageExternalUrl:
-      'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/diploma-images/docker-udemy.jpg',
+    diplomaImageName: 'docker-udemy.jpg',
     diplomaAWSUrl:
       'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/Udemy/docker-for-the-absolute-beginner.pdf',
     fetchingPriority: false
@@ -71,10 +54,21 @@ export const diplomasInfo = [
     certifyingCompany: 'CodingDojo2021_H4_2',
     certificationIssuedDate: 'CodingDojo2021_TIME',
     certificationContent: 'CodingDojo2021_P',
-    diplomaImageExternalUrl:
-      'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/diploma-images/Coding-Dojo.jpg',
+    diplomaImageName: 'Coding-Dojo.jpg',
     diplomaAWSUrl:
       'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/CodingDojo/Certificado+MERN+-+Juan+Carlos+Galue.pdf',
+    fetchingPriority: false
+  },
+  {
+    latest: false,
+    title: 'Devslopes - 30 Day Code Challenge JavaScript',
+    courseDuration: 'DEVSLOPES_2021_H4_1',
+    certifyingCompany: 'DEVSLOPES_2021_H4_2',
+    certificationIssuedDate: 'DEVSLOPES_2021_TIME',
+    certificationContent: 'DEVSLOPES_2021_P',
+    diplomaImageName: 'Devslopes_2021.jpeg',
+    diplomaAWSUrl:
+      'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/Devslopes/certificate-154782045.jpg',
     fetchingPriority: false
   },
   {
@@ -84,8 +78,7 @@ export const diplomasInfo = [
     certifyingCompany: 'WDFE2021_H4_2',
     certificationIssuedDate: 'WDFE2021_TIME',
     certificationContent: 'WDFE2021_P',
-    diplomaImageExternalUrl:
-      'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/diploma-images/WDFE.jpg',
+    diplomaImageName: 'WDFE.jpg',
     diplomaAWSUrl:
       'https://www.coursera.org/account/accomplishments/specialization/56DFBMK3X5J3',
     fetchingPriority: false
@@ -97,8 +90,7 @@ export const diplomasInfo = [
     certifyingCompany: 'ScriptingInPython2020_H4_2',
     certificationIssuedDate: 'ScriptingInPython2020_TIME',
     certificationContent: 'ScriptingInPython2020_P',
-    diplomaImageExternalUrl:
-      'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/diploma-images/ScriptingInPython.jpg',
+    diplomaImageName: 'ScriptingInPython.jpg',
     diplomaAWSUrl:
       'https://www.coursera.org/account/accomplishments/specialization/CYPAYBNMGSUM',
     fetchingPriority: false
@@ -110,8 +102,7 @@ export const diplomasInfo = [
     certifyingCompany: 'PFE2020_H4_2',
     certificationIssuedDate: 'PFE2020_TIME',
     certificationContent: 'PFE2020_P',
-    diplomaImageExternalUrl:
-      'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/diploma-images/PFEDiploma.jpg',
+    diplomaImageName: 'PFEDiploma.jpg',
     diplomaAWSUrl:
       'https://www.coursera.org/account/accomplishments/specialization/B6BEZVWETQY7',
     fetchingPriority: false
@@ -123,8 +114,7 @@ export const diplomasInfo = [
     certifyingCompany: 'IELTS_2014_H4_2',
     certificationIssuedDate: 'IELTS_2014_TIME',
     certificationContent: 'IELTS_2014_P',
-    diplomaImageExternalUrl:
-      'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/diploma-images/ielts-preview.jpg',
+    diplomaImageName: 'ielts-preview.jpg',
     diplomaAWSUrl:
       'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/IELTS.pdf',
     fetchingPriority: false

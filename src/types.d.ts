@@ -37,7 +37,7 @@ export interface DiplomaTemplateProps {
   certifyingCompany: string
   certificationIssuedDate: string
   certificationContent: string
-  diplomaImageExternalUrl: string
+  diplomaImageName: string
   diplomaAWSUrl: string
   fetchingPriority: boolean
 }

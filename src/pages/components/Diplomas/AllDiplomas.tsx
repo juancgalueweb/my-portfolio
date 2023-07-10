@@ -13,7 +13,7 @@ const AllDiplomas = () => {
           certifyingCompany={diploma.certifyingCompany}
           certificationIssuedDate={diploma.certificationIssuedDate}
           certificationContent={diploma.certificationContent}
-          diplomaImageExternalUrl={diploma.diplomaImageExternalUrl}
+          diplomaImageName={diploma.diplomaImageName}
           diplomaAWSUrl={diploma.diplomaAWSUrl}
           fetchingPriority={diploma.fetchingPriority}
         />
