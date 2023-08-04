@@ -5,6 +5,7 @@ import harryPotterQuiz from 'public/harry-potter-quiz-preview.jpg'
 import { type FC } from 'react'
 import { BsFillCalendar2CheckFill } from 'react-icons/bs'
 import MaterialUIBadge from '../Badges/MaterialUIBadge'
+import OnlineStatus from '../Badges/OnlineStatus'
 import ReactBadge from '../Badges/ReactBadge'
 import TypescriptBadge from '../Badges/TypescriptBadge'
 import ViteBadge from '../Badges/ViteBadge'
@@ -40,10 +41,13 @@ const HarryPotterQuiz: FC = () => {
         <p className='font-normal text-gray-700 dark:text-gray-400'>
           {t('PORTFOLIO_P9_CONTENT')}
         </p>
-        <p className='font-bold text-gray-900 dark:text-white mt-4 flex items-center'>
-          <BsFillCalendar2CheckFill className='inline-block text-xl mr-2' />{' '}
-          <span>{t('HPQ_APP_H3_SPAN_2')}</span>
-        </p>
+        <footer className='flex justify-between items-center mt-4'>
+          <p className='font-bold text-gray-900 dark:text-white flex items-center'>
+            <BsFillCalendar2CheckFill className='inline-block text-xl mr-2' />{' '}
+            <span>{t('HPQ_APP_H3_SPAN_2')}</span>
+          </p>
+          <OnlineStatus />
+        </footer>
       </Link>
     </div>
   )

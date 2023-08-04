@@ -9,6 +9,7 @@ import DockerBadge from '../Badges/DockerBadge'
 import JavascriptBadge from '../Badges/JavascriptBadge'
 import MongoDBBadge from '../Badges/MongoDBBadge'
 import NodeBadge from '../Badges/NodeBadge'
+import OfflineStatus from '../Badges/OfflineStatus'
 import ReactBadge from '../Badges/ReactBadge'
 import ViteBadge from '../Badges/ViteBadge'
 
@@ -43,10 +44,13 @@ const MyWinesApp: FC = () => {
         <p className='font-normal text-gray-700 dark:text-gray-400'>
           {t('PORTFOLIO_P4_CONTENT')}
         </p>
-        <p className='font-bold text-gray-900 dark:text-white mt-4 flex items-center'>
-          <BsFillCalendar2CheckFill className='inline-block text-xl mr-2' />{' '}
-          <span>{t('WINE_APP_H3_SPAN_2')}</span>
-        </p>
+        <footer className='flex justify-between items-center mt-4'>
+          <p className='font-bold text-gray-900 dark:text-white flex items-center'>
+            <BsFillCalendar2CheckFill className='inline-block text-xl mr-2' />{' '}
+            <span>{t('WINE_APP_H3_SPAN_2')}</span>
+          </p>
+          <OfflineStatus />
+        </footer>
       </Link>
     </div>
   )
