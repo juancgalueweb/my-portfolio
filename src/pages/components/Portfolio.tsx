@@ -6,6 +6,7 @@ import HarryPotterQuiz from './IndividualProjects/HarryPotterQuiz'
 import LibraryApp from './IndividualProjects/LibraryApp'
 import MoviesApp from './IndividualProjects/MoviesApp'
 import MyWinesApp from './IndividualProjects/MyWinesApp'
+import ReadingList from './IndividualProjects/ReadingList'
 import ShoppingCart from './IndividualProjects/ShoppingCart'
 import TicTacToeApp from './IndividualProjects/TicTacToeApp'
 import TodosApp from './IndividualProjects/TodosApp'
@@ -22,6 +23,7 @@ const Portfolio: FC = () => {
         {t('PROJECTS_INTRO')}
       </p>
       <div className='flex flex-col place-items-center lg:place-items-start gap-5 py-5 mt-5 lg:flex-row lg:flex-wrap'>
+        <ReadingList />
         <HarryPotterQuiz />
         <GoogleTranslateCloneApp />
         <TodosApp />
