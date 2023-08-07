@@ -18,11 +18,15 @@ export default function App({ Component, pageProps, router }: AppProps) {
         window.matchMedia('(prefers-color-scheme: dark)').matches)
     ) {
       //check if there is any key for theme in local storage and if the system color theme is dark
-      document.documentElement.classList.remove('light') //OPTIONAL - remove light from the html document if any
-      document.documentElement.classList.add('dark') // add dark to the <html></html> itself as <html class='dark'></html>
+      //OPTIONAL - remove light from the html document if any
+      document.documentElement.classList.remove('light')
+      // add dark to the <html></html> itself as <html class='dark'></html>
+      document.documentElement.classList.add('dark')
     } else {
-      document.documentElement.classList.remove('dark') // remove dark from the html document if any
-      document.documentElement.classList.add('light') //OPTIONAL - add light to the <html></html> itself as <html class='light'></html>
+      // remove dark from the html document if any
+      document.documentElement.classList.remove('dark')
+      //OPTIONAL - add light to the <html></html> itself as <html class='light'></html>
+      document.documentElement.classList.add('light')
     }
   }, [])
 
