@@ -1,9 +1,17 @@
 import useTranslation from '@/hooks/useTranslation'
+import {
+  MediaCommunitySkin,
+  MediaOutlet,
+  MediaPlayer,
+  MediaPoster
+} from '@vidstack/react'
 import { NextPage } from 'next'
 import Link from 'next/link'
 import { AiFillGithub } from 'react-icons/ai'
 import { BsBoxArrowInUpRight, BsFillCheckCircleFill } from 'react-icons/bs'
 import { RiArrowRightSLine } from 'react-icons/ri'
+import 'vidstack/styles/community-skin/video.css'
+import 'vidstack/styles/defaults.css'
 import Layout from '../components/Layouts/Section'
 
 const ReadingListApp: NextPage = () => {
@@ -50,35 +58,35 @@ const ReadingListApp: NextPage = () => {
       </p>
       <ul className='py-2 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <li>
-          <BsFillCheckCircleFill className='inline mr-2 text-[#00C500]' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('READING_LIST_UL_L1')}
         </li>
         <li>
-          <BsFillCheckCircleFill className='inline mr-2 text-[#00C500]' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('READING_LIST_UL_L2')}
         </li>
         <li>
-          <BsFillCheckCircleFill className='inline mr-2 text-[#00C500]' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('READING_LIST_UL_L3')}
         </li>
         <li>
-          <BsFillCheckCircleFill className='inline mr-2 text-[#00C500]' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('READING_LIST_UL_L4')}
         </li>
         <li>
-          <BsFillCheckCircleFill className='inline mr-2 text-[#00C500]' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('READING_LIST_UL_L5')}
         </li>
         <li>
-          <BsFillCheckCircleFill className='inline mr-2 text-[#00C500]' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('READING_LIST_UL_L6')}
         </li>
         <li>
-          <BsFillCheckCircleFill className='inline mr-2 text-[#00C500]' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('READING_LIST_UL_L7')}
         </li>
         <li>
-          <BsFillCheckCircleFill className='inline mr-2 text-[#00C500]' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('READING_LIST_UL_L8')}
         </li>
         <li>
@@ -138,6 +146,18 @@ const ReadingListApp: NextPage = () => {
       <p className='indent-6 py-2 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         {t('READING_LIST_P5')}
       </p>
+      <MediaPlayer
+        title='Reading list app'
+        src='https://d3ml0dc5hiowr8.cloudfront.net/reading_list_preview.mp4'
+        poster='https://certifications-and-courses.s3.sa-east-1.amazonaws.com/image-posters/reading-list.webp'
+        aspectRatio={16 / 9}
+        className='border-0'
+      >
+        <MediaOutlet>
+          <MediaPoster alt='App image preview' />
+        </MediaOutlet>
+        <MediaCommunitySkin />
+      </MediaPlayer>
     </Layout>
   )
 }
