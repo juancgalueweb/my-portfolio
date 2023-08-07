@@ -7,8 +7,8 @@ import TodosPic2 from 'public/todos-app/todos-app-2.jpg'
 import TodosPic3 from 'public/todos-app/todos-app-3.jpg'
 import TodosPic4 from 'public/todos-app/todos-app-4.jpg'
 import TodosPic5 from 'public/todos-app/todos-app-5.jpg'
-import { AiFillGithub, AiOutlineCheckCircle } from 'react-icons/ai'
-import { BsBoxArrowInUpRight } from 'react-icons/bs'
+import { AiFillGithub } from 'react-icons/ai'
+import { BsBoxArrowInUpRight, BsFillCheckCircleFill } from 'react-icons/bs'
 import { RiArrowRightSLine } from 'react-icons/ri'
 import Layout from '../components/Layouts/Section'
 
@@ -46,15 +46,15 @@ const TodosApp: NextPage = () => {
       </p>
       <ul className='py-2 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('TODOS_APP_UL1_L1')}
         </li>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('TODOS_APP_UL1_L2')}
         </li>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('TODOS_APP_UL1_L3')}
         </li>
       </ul>
@@ -63,23 +63,23 @@ const TodosApp: NextPage = () => {
       </p>
       <ul className='py-2 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('TODOS_APP_UL2_L1')}
         </li>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('TODOS_APP_UL2_L2')}
         </li>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('TODOS_APP_UL2_L3')}
         </li>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('TODOS_APP_UL2_L4')}
         </li>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('TODOS_APP_UL2_L5')}
         </li>
       </ul>

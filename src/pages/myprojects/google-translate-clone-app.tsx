@@ -3,7 +3,8 @@ import { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import googleTranslatePic1 from 'public/google-translate-clone/google-translate-clone-pic1.jpg'
-import { AiFillGithub, AiOutlineCheckCircle } from 'react-icons/ai'
+import { AiFillGithub } from 'react-icons/ai'
+import { BsFillCheckCircleFill } from 'react-icons/bs'
 import { RiArrowRightSLine } from 'react-icons/ri'
 import Layout from '../components/Layouts/Section'
 
@@ -41,27 +42,27 @@ const GoogleTranslateCloneApp: NextPage = () => {
       </p>
       <ul className='py-2 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('GOOGLE_TRANSLATE_APP_UL_L1')}
         </li>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('GOOGLE_TRANSLATE_APP_UL_L2')}
         </li>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('GOOGLE_TRANSLATE_APP_UL_L3')}
         </li>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('GOOGLE_TRANSLATE_APP_UL_L4')}
         </li>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('GOOGLE_TRANSLATE_APP_UL_L5')}
         </li>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('GOOGLE_TRANSLATE_APP_UL_L6')}
         </li>
       </ul>

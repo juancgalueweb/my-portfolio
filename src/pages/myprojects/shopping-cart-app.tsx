@@ -7,7 +7,7 @@ import shoppingCartPic1 from 'public/shopping-cart-app/shopping-cart-demo-1.jpg'
 import shoppingCartPic2 from 'public/shopping-cart-app/shopping-cart-demo-2.jpg'
 import useContextImage from 'public/shopping-cart-app/useContext.jpg'
 import { AiFillGithub, AiOutlineCheckCircle } from 'react-icons/ai'
-import { BsBoxArrowInUpRight } from 'react-icons/bs'
+import { BsBoxArrowInUpRight, BsFillCheckCircleFill } from 'react-icons/bs'
 import { RiArrowRightSLine } from 'react-icons/ri'
 import Layout from '../components/Layouts/Section'
 
@@ -54,14 +54,14 @@ const ShoppingCartApp: NextPage = () => {
       </p>
       <ul className='py-2 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           <strong>
             <em>useId: </em>
           </strong>
           {t('SHOPPING_CART_APP_UL_L1')}
         </li>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           <strong>
             <em>useContext: </em>
           </strong>

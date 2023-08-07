@@ -6,8 +6,8 @@ import CocktailPic1 from 'public/cocktaildb-app/cocktaildb-demo-1.jpg'
 import CocktailPic2 from 'public/cocktaildb-app/cocktaildb-demo-2.jpg'
 import CocktailPic3 from 'public/cocktaildb-app/cocktaildb-demo-3.jpg'
 import CocktailPic4 from 'public/cocktaildb-app/cocktaildb-demo-4.jpg'
-import { AiFillGithub, AiOutlineCheckCircle } from 'react-icons/ai'
-import { BsBoxArrowInUpRight } from 'react-icons/bs'
+import { AiFillGithub } from 'react-icons/ai'
+import { BsBoxArrowInUpRight, BsFillCheckCircleFill } from 'react-icons/bs'
 import { RiArrowRightSLine } from 'react-icons/ri'
 import Layout from '../components/Layouts/Section'
 
@@ -68,15 +68,15 @@ const CocktailsDbApp: NextPage = () => {
       </p>
       <ul className='py-2 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('COCKTAILS_DB_UL_L1')}
         </li>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('COCKTAILS_DB_UL_L2')}
         </li>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('COCKTAILS_DB_UL_L3')}
         </li>
       </ul>

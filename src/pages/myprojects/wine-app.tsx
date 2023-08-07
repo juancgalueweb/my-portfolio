@@ -4,7 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import WinePic1 from 'public/wines-app/wines-app-1.webp'
 import WinePic2 from 'public/wines-app/wines-app-2.jpg'
-import { AiFillGithub, AiOutlineCheckCircle } from 'react-icons/ai'
+import { AiFillGithub } from 'react-icons/ai'
+import { BsFillCheckCircleFill } from 'react-icons/bs'
 import { RiArrowRightSLine } from 'react-icons/ri'
 import Layout from '../components/Layouts/Section'
 
@@ -42,23 +43,23 @@ const WinesApp: NextPage = () => {
       </p>
       <ul className='py-2 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('WINE_APP_UL_L1')}
         </li>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('WINE_APP_UL_L2')}
         </li>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('WINE_APP_UL_L3')}
         </li>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('WINE_APP_UL_L4')}
         </li>
         <li>
-          <AiOutlineCheckCircle className='inline mr-2' />
+          <BsFillCheckCircleFill className='inline mr-2 mb-1 text-[#00C500]' />
           {t('WINE_APP_UL_L5')}
         </li>
       </ul>
