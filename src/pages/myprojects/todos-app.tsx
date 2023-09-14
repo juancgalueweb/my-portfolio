@@ -6,7 +6,8 @@ import TodosPic1 from 'public/todos-app/todos-app-1.jpg'
 import TodosPic2 from 'public/todos-app/todos-app-2.jpg'
 import TodosPic3 from 'public/todos-app/todos-app-3.jpg'
 import TodosPic4 from 'public/todos-app/todos-app-4.jpg'
-import TodosPic5 from 'public/todos-app/todos-app-5.jpg'
+import TodosPic5 from 'public/todos-app/todos-app-5.webp'
+import TodosPic6 from 'public/todos-app/todos-app-6.webp'
 import { AiFillGithub } from 'react-icons/ai'
 import { BsBoxArrowInUpRight, BsFillCheckCircleFill } from 'react-icons/bs'
 import { RiArrowRightSLine } from 'react-icons/ri'
@@ -194,6 +195,19 @@ const TodosApp: NextPage = () => {
           />
           <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight'>
             {t('TODOS_APP_FIGCAPTION_5')}
+          </figcaption>
+        </figure>
+      </div>
+      <div className='my-10 mx-3'>
+        <figure className='flex justify-center items-center flex-col'>
+          <Image
+            src={TodosPic6}
+            alt='Todos demo app pic 6'
+            className='w-[500px] h-auto rounded-lg shadow-md'
+            placeholder='blur'
+          />
+          <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight'>
+            {t('TODOS_APP_FIGCAPTION_6')}
           </figcaption>
         </figure>
       </div>

@@ -213,6 +213,7 @@
   "TODOS_APP_FIGCAPTION_3": "You will be automatically redirected to log-in if all your attempts are unsuccessful",
   "TODOS_APP_FIGCAPTION_4": "At all times the user will have feedback on messages from the backend or frontend, using the react-toastify library",
   "TODOS_APP_FIGCAPTION_5": "Application welcome screen",
+  "TODOS_APP_FIGCAPTION_6": "Modal to create a task",
   "DEPLOYMENT": "Deployment",
   "PORTFOLIO_P8_TITLE": "Google Translate clone",
   "PORTFOLIO_P8_CONTENT": "Made with Typescript and the Open IA API. Supports 3 languages.",
