@@ -1,6 +1,17 @@
 export const diplomasInfo = {
-  scrumFundation: {
+  efset: {
     latest: true,
+    title: 'EFSET English Certificate C2 Proficient',
+    courseDuration: 'EFSET_2021_H4_1',
+    certifyingCompany: 'EFSET_2021_H4_2',
+    certificationIssuedDate: 'EFSET_2021_TIME',
+    certificationContent: 'EFSET_2021_P',
+    diplomaImageName: 'EF_SET.webp',
+    diplomaAWSUrl: 'https://www.efset.org/cert/HbFMs3',
+    fetchingPriority: true
+  },
+  scrumFundation: {
+    latest: false,
     title: 'Scrum Foundation Professional Certificate SFPC',
     courseDuration: 'SCRUM_FOUNDATION_2023_H4_1',
     certifyingCompany: 'SCRUM_FOUNDATION_2023_H4_2',
@@ -21,7 +32,7 @@ export const diplomasInfo = {
     diplomaImageName: 'microsoft-typescript.webp',
     diplomaAWSUrl:
       'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/Microsoft/Achievements+-+juancarlosgalue-3004+_+Microsoft+Learn.pdf',
-    fetchingPriority: true
+    fetchingPriority: false
   },
   nextjs: {
     latest: false,
