@@ -6,7 +6,7 @@ import { type FC } from 'react'
 import { BsFillCalendar2CheckFill } from 'react-icons/bs'
 import AntDesignBadge from '../Badges/AntDesignBadge'
 import NextJSBadge from '../Badges/NextJSBadge'
-import OnlineStatus from '../Badges/OnlineStatus'
+import OfflineStatus from '../Badges/OfflineStatus'
 import PlaiceholderBadge from '../Badges/PlaiceholderBadge'
 import ReactBadge from '../Badges/ReactBadge'
 import TailwindBadge from '../Badges/TailwindBadge'
@@ -50,7 +50,7 @@ const CocktailsDBApp: FC = () => {
               <BsFillCalendar2CheckFill className='inline-block text-xl mr-2' />{' '}
               <span>{t('COCKTAILS_DB_H3_SPAN_2')}</span>
             </p>
-            <OnlineStatus />
+            <OfflineStatus />
           </footer>
         </div>
       </Link>
