@@ -10,7 +10,7 @@ import ExpressBadge from '../Badges/ExpressBadge'
 import JavascriptBadge from '../Badges/JavascriptBadge'
 import MongoDBBadge from '../Badges/MongoDBBadge'
 import NodeBadge from '../Badges/NodeBadge'
-import OnlineStatus from '../Badges/OnlineStatus'
+import OfflineStatus from '../Badges/OfflineStatus'
 import ReactBadge from '../Badges/ReactBadge'
 import ViteBadge from '../Badges/ViteBadge'
 
@@ -54,7 +54,7 @@ const LibraryApp: FC = () => {
               <BsFillCalendar2CheckFill className='inline-block text-xl mr-2' />{' '}
               <span>{t('LIBRARY_APP_H3_SPAN_2')}</span>
             </p>
-            <OnlineStatus />
+            <OfflineStatus />
           </footer>
         </div>
       </Link>

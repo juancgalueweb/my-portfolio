@@ -9,7 +9,7 @@ import LibraryPic4 from 'public/library-app/biblioteca-mern-app-4.jpg'
 import LibraryPic5 from 'public/library-app/biblioteca-mern-app-5.jpg'
 import LibraryPic6 from 'public/library-app/biblioteca-mern-app-6.jpg'
 import { AiFillGithub } from 'react-icons/ai'
-import { BsBoxArrowInUpRight, BsFillCheckCircleFill } from 'react-icons/bs'
+import { BsFillCheckCircleFill } from 'react-icons/bs'
 import { RiArrowRightSLine } from 'react-icons/ri'
 import Layout from '../components/Layouts/Section'
 
@@ -75,7 +75,7 @@ const LibraryApp: NextPage = () => {
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
           {t('LIBRARY_APP_P3_SPAN')}
         </span>
-        <a
+        {/* <a
           href='https://biblioteca-mern.juancgalue-web.cl/'
           target='_blank'
           rel='noopener noreferrer'
@@ -84,7 +84,10 @@ const LibraryApp: NextPage = () => {
         >
           https://biblioteca-mern.juancgalue-web.cl/{' '}
           <BsBoxArrowInUpRight className='dark:text-pink-400 inline ml-1' />
-        </a>
+        </a> */}
+        <span className=' text-[#B10000] dark:text-[#FF7172]'>
+          {t('LIBRARY_APP_P3')}
+        </span>
       </p>
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
