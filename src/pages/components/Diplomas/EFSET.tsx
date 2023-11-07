@@ -4,7 +4,7 @@ import Image from 'next/image'
 import image from 'public/diplomas/EF_SET.webp'
 import { BsStopwatchFill } from 'react-icons/bs'
 import CalendarSVG from '../Icons/CalendarSVG'
-import DownloadSVG from '../Icons/DownloadSVG'
+import DiplomaSVG from '../Icons/DiplomaSVG'
 
 const EFSET = () => {
   const { t } = useTranslation()
@@ -58,7 +58,7 @@ const EFSET = () => {
         rel='noopener noreferrer'
         className='inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-slate-100 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700'
       >
-        <DownloadSVG />
+        <DiplomaSVG />
         {t('DIPLOMAS_BUTTON')}
       </a>
     </li>
