@@ -1,6 +1,18 @@
 export const diplomasInfo = {
-  efset: {
+  nocountry: {
     latest: true,
+    title: 'NO_COUNTRY_2023_H3',
+    courseDuration: 'NO_COUNTRY_2023_H4_1',
+    certifyingCompany: 'NO_COUNTRY_2023_H4_2',
+    certificationIssuedDate: 'NO_COUNTRY_2023_TIME',
+    certificationContent: 'NO_COUNTRY_2023_P',
+    diplomaImageName: 'NO_COUNTRY.webp',
+    diplomaAWSUrl:
+      'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/No_Country/No_Country_seleccionado_11.jpg',
+    fetchingPriority: true
+  },
+  efset: {
+    latest: false,
     title: 'EFSET English Certificate C2 Proficient',
     courseDuration: 'EFSET_2021_H4_1',
     certifyingCompany: 'EFSET_2021_H4_2',
@@ -20,7 +32,7 @@ export const diplomasInfo = {
     diplomaImageName: 'ScrumFoundation.jpg',
     diplomaAWSUrl:
       'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/CertiProf/Certiprof+Certificate+Scrum+Fundation.pdf',
-    fetchingPriority: true
+    fetchingPriority: false
   },
   typescript: {
     latest: false,
