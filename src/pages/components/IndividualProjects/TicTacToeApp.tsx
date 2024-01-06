@@ -21,9 +21,9 @@ const TicTacToeApp: FC = () => {
       <Link
         href='/myprojects/tic-tac-toe-app'
         scroll={false}
-        className='block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-dark-mode-700 dark:border-gray-dark-mode-500 dark:hover:bg-gray-dark-mode-500 lg:h-[410px]'
+        className='block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-dark-mode-700 dark:border-gray-dark-mode-500 dark:hover:bg-gray-dark-mode-500 lg:h-[460px]'
       >
-        <div className='flex flex-col justify-between lg:h-[370px]'>
+        <div className='flex flex-col justify-between lg:h-[420px]'>
           <header>
             <Image
               src={tictactoeApp}

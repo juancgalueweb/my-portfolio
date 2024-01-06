@@ -1,4 +1,5 @@
-import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import EmailSVG from './Icons/EmailSVG'
 
 const FooterApp = () => {
   return (
@@ -6,7 +7,7 @@ const FooterApp = () => {
       <span className='text-sm text-gray-500 sm:text-center dark:text-gray-200'>
         &copy; 2023 Juan Carlos Galu&eacute;
       </span>
-      <ul className='flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0'>
+      <ul className='flex w-40 justify-between items-center'>
         <li>
           <a
             href='https://www.linkedin.com/in/juancgalue/'
@@ -14,7 +15,7 @@ const FooterApp = () => {
             rel='noopener noreferrer'
             aria-label='Link to my LinkedIn'
           >
-            <AiFillLinkedin className='text-[#0B66C2] text-3xl mr-4 md:mr-6' />
+            <AiFillLinkedin className='text-[#0B66C2] h-8 w-8 hover:scale-125 hover:brightness-125 transform transition-all duration-500 ease-in-out' />
           </a>
         </li>
         <li>
@@ -24,7 +25,7 @@ const FooterApp = () => {
             rel='noopener noreferrer'
             aria-label='Link to Github repository'
           >
-            <AiFillGithub className='text-black dark:text-white text-3xl mr-4 md:mr-6' />
+            <AiFillGithub className='text-black dark:text-white h-8 w-8 hover:scale-125 hover:brightness-125 transform transition-all duration-500 ease-in-out' />
           </a>
         </li>
         <li>
@@ -34,7 +35,7 @@ const FooterApp = () => {
             rel='noopener noreferrer'
             aria-label='Link so you can send me an e-mail'
           >
-            <AiOutlineMail className='text-3xl' />
+            <EmailSVG />
           </a>
         </li>
       </ul>

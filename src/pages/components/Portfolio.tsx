@@ -1,5 +1,6 @@
 import useTranslation from '@/hooks/useTranslation'
 import { FC } from 'react'
+import ChatApp from './IndividualProjects/ChatApp'
 import CocktailsDBApp from './IndividualProjects/CocktailsDBApp'
 import GoogleTranslateCloneApp from './IndividualProjects/GoogleTranslateCloneApp'
 import HarryPotterQuiz from './IndividualProjects/HarryPotterQuiz'
@@ -23,6 +24,7 @@ const Portfolio: FC = () => {
         {t('PROJECTS_INTRO')}
       </p>
       <div className='flex flex-col place-items-center lg:place-items-start gap-5 py-5 mt-5 lg:flex-row lg:flex-wrap'>
+        <ChatApp />
         <ReadingList />
         <HarryPotterQuiz />
         <GoogleTranslateCloneApp />

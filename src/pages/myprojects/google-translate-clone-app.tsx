@@ -71,7 +71,7 @@ const GoogleTranslateCloneApp: NextPage = () => {
           {t('LIBRARY_APP_P3_SPAN')}
         </span>
         <span className=' text-[#B10000] dark:text-[#FF7172]'>
-          {t('GOOGLE_TRANSLATE_APP_P3')}
+          {t('DEPLOY_NOT_AVAILABLE')}
         </span>
       </p>
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
@@ -83,7 +83,7 @@ const GoogleTranslateCloneApp: NextPage = () => {
           target='_blank'
           rel='noopener noreferrer'
           className='dark:text-pink-400 dark:hover:underline dark:hover:underline-offset-4 text-blue-700 hover:underline hover:underline-offset-4'
-          aria-label='Link to the github repository of the wines application'
+          aria-label='Link to the github repository of the google translate clone application'
         >
           <AiFillGithub className='text-black dark:text-white text-3xl inline' />
         </a>

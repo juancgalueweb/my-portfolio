@@ -30,9 +30,9 @@ const GoogleTranslateCloneApp: FC = () => {
       <Link
         href='/myprojects/google-translate-clone-app'
         scroll={false}
-        className='block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-dark-mode-700 dark:border-gray-dark-mode-500 dark:hover:bg-gray-dark-mode-500 lg:h-[360px]'
+        className='block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-dark-mode-700 dark:border-gray-dark-mode-500 dark:hover:bg-gray-dark-mode-500 lg:h-[480px]'
       >
-        <div className='flex flex-col justify-between lg:h-[320px]'>
+        <div className='flex flex-col justify-between lg:h-[440px]'>
           <header>
             <Image
               src={googleTranslateCloneApp}

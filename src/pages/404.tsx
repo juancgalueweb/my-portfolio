@@ -20,7 +20,7 @@ export default function Custom404() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='shortcut icon' href='favicon1.png' type='image/x-icon' />
       </Head>
-      <main className='bg-white dark:bg-[#101827] w-full mx-auto pt-10 min-h-screen'>
+      <main className='bg-slate-50 dark:bg-gray-dark-mode-900 w-full mx-auto pt-10 min-h-screen'>
         <figure>
           <figcaption className='leading-relaxed text-gray-800 dark:text-slate-200 text-sm mt-2 font-extralight text-center'>
             <a
@@ -38,12 +38,17 @@ export default function Custom404() {
           />
         </figure>
         <div className='max-w-3xl flex justify-between items-center my-10 mx-auto'>
-          <Button gradientDuoTone='purpleToBlue' onClick={() => router.back()}>
+          <Button
+            gradientDuoTone='purpleToBlue'
+            onClick={() => router.back()}
+            className='hover:scale-125 hover:brightness-125 transform transition-all duration-500 ease-in-out'
+          >
             {t('404_BUTTON_1')}
           </Button>
           <Button
             gradientDuoTone='greenToBlue'
             onClick={() => router.push('/')}
+            className='hover:scale-125 hover:brightness-125 transform transition-all duration-500 ease-in-out'
           >
             {t('404_BUTTON_2')} <FaHome className='inline text-xl ml-2' />
           </Button>

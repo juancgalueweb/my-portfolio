@@ -12,7 +12,8 @@ export function CheckValidPath(url: string): string {
     '/myprojects/todos-app',
     '/myprojects/google-translate-clone-app',
     '/myprojects/harry-potter-quiz',
-    '/myprojects/reading-list-app'
+    '/myprojects/reading-list-app',
+    '/myprojects/chat-app'
   ]
   if (validPaths.includes(url)) {
     return url

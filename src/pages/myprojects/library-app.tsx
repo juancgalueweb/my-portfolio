@@ -86,7 +86,7 @@ const LibraryApp: NextPage = () => {
           <BsBoxArrowInUpRight className='dark:text-pink-400 inline ml-1' />
         </a> */}
         <span className=' text-[#B10000] dark:text-[#FF7172]'>
-          {t('LIBRARY_APP_P3')}
+          {t('DEPLOY_NOT_AVAILABLE_YET')}
         </span>
       </p>
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>

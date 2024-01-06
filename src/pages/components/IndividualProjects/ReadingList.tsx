@@ -26,9 +26,9 @@ const ReadingList: FC = () => {
       <Link
         href='/myprojects/reading-list-app'
         scroll={false}
-        className='block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-dark-mode-700 dark:border-gray-dark-mode-500 dark:hover:bg-gray-dark-mode-500 lg:h-[480px]'
+        className='block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-dark-mode-700 dark:border-gray-dark-mode-500 dark:hover:bg-gray-dark-mode-500 lg:h-[420px]'
       >
-        <div className='flex flex-col justify-between lg:h-[440px]'>
+        <div className='flex flex-col justify-between lg:h-[380px]'>
           <header>
             <Image
               src={readingListPreview}
