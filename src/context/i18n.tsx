@@ -18,9 +18,10 @@ export function I18NProvider({ children }: ReactChildren) {
   const t = useCallback(
     (key: string) => {
       if (locale != null) {
-        return languages[locale][key]
+        const language = languages[locale]
+        return language ? languages[locale][key] : key
       }
-      return ''
+      return key
     },
     [locale]
   )
