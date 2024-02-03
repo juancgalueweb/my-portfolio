@@ -57,8 +57,8 @@ const Hero: FC = () => {
         <a
           href={
             locale === 'es'
-              ? 'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/CV/CV+Juan+Galue%CC%81+wd+(2023)_Esp.pdf'
-              : 'https://certifications-and-courses.s3.sa-east-1.amazonaws.com/CV/CV+Juan+Galue%CC%81+wd+(2023)_Eng.pdf'
+              ? 'https://cv-json-es-juancgalueweb.vercel.app/'
+              : 'https://cv-json-en-juancgalueweb.vercel.app/'
           }
           target='_blank'
           rel='noopener noreferrer'
