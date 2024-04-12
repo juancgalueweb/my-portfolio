@@ -9,7 +9,7 @@ import TodosPic4 from 'public/todos-app/todos-app-4.jpg'
 import TodosPic5 from 'public/todos-app/todos-app-5.webp'
 import TodosPic6 from 'public/todos-app/todos-app-6.webp'
 import { AiFillGithub } from 'react-icons/ai'
-import { BsBoxArrowInUpRight, BsFillCheckCircleFill } from 'react-icons/bs'
+import { BsFillCheckCircleFill } from 'react-icons/bs'
 import { RiArrowRightSLine } from 'react-icons/ri'
 import Layout from '../components/Layouts/Section'
 
@@ -88,22 +88,9 @@ const TodosApp: NextPage = () => {
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
           {t('LIBRARY_APP_P3_SPAN')}
         </span>
-        <a
-          href='https://todos.juancgalue-web.cl'
-          target='_blank'
-          rel='noopener noreferrer'
-          className='dark:text-pink-400 dark:hover:underline dark:hover:underline-offset-4 text-blue-700 hover:underline hover:underline-offset-4'
-          aria-label='Link to the MERN library application'
-        >
-          https://todos.juancgalue-web.cl{' '}
-          <BsBoxArrowInUpRight className='dark:text-pink-400 inline ml-1' />
-        </a>
-      </p>
-      <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
-        <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>
-          {t('LIBRARY_APP_P4_SPAN')}
+        <span className=' text-[#B10000] dark:text-[#FF7172]'>
+          {t('DEPLOY_NOT_AVAILABLE')}
         </span>
-        {t('LIBRARY_APP_P4')}
       </p>
       <p className='py-1 m-3 leading-relaxed text-gray-800 md:text-lg dark:text-slate-200'>
         <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-1.5 rounded dark:bg-green-900 dark:text-green-300'>

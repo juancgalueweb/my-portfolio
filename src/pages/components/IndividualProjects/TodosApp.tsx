@@ -7,7 +7,7 @@ import { BsFillCalendar2CheckFill } from 'react-icons/bs'
 import ExpressBadge from '../Badges/ExpressBadge'
 import MongoDBBadge from '../Badges/MongoDBBadge'
 import NodeBadge from '../Badges/NodeBadge'
-import OnlineStatus from '../Badges/OnlineStatus'
+import OfflineStatus from '../Badges/OfflineStatus'
 import ReactBadge from '../Badges/ReactBadge'
 import ReactRouterBadge from '../Badges/ReactRouterBadge'
 import TypescriptBadge from '../Badges/TypescriptBadge'
@@ -53,7 +53,7 @@ const TodosApp: FC = () => {
               <BsFillCalendar2CheckFill className='inline-block text-xl mr-2' />{' '}
               <span>{t('TODOS_APP_H3_SPAN_2')}</span>
             </p>
-            <OnlineStatus />
+            <OfflineStatus />
           </footer>
         </div>
       </Link>
